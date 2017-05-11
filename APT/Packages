@@ -1,0 +1,196 @@
+Package: docker-engine
+Architecture: amd64
+Version: 17.06.0~dev~git20170425.093341.0.f9a45b7-0~debian-stretch
+Priority: optional
+Section: admin
+Maintainer: Docker <support@docker.com>
+Installed-Size: 107981
+Depends: iptables, init-system-helpers (>= 1.18~), libapparmor1 (>= 2.6~devel), libc6 (>= 2.17), libdevmapper1.02.1 (>= 2:1.02.97), libltdl7 (>= 2.4.6), libseccomp2 (>= 2.1.0), libsystemd0
+Recommends: aufs-tools, ca-certificates, cgroupfs-mount | cgroup-lite, git, xz-utils
+Conflicts: docker (<< 1.5~), docker-engine-cs, docker.io, lxc-docker, lxc-docker-virtual-package
+Filename: ./docker-engine_17.06.0~dev~git20170425.093341.0.f9a45b7-0~debian-stretch_amd64.deb
+Size: 21647406
+MD5sum: ca11f2bd12e6b8c6d991d85b9942715b
+SHA1: 3990116420179589f21ab3bb949d71f9c7b38244
+SHA256: 7212b9a6d575807946f9a5358ffd3e27e9819ea869dcec42ffdb0bc3f6e38be9
+SHA512: f4ee183ab822f299a4015f3d0a0df7dd22ab489d0e073e0b51b2a0932ab01069a5afc4ab5b39b0497676f87a620d31774fe6947d0d60c0674a1edf55a80b810d
+Homepage: https://dockerproject.org
+Description: Docker: the open-source application container engine
+ Docker is an open source project to build, ship and run any application as a
+ lightweight container
+ .
+ Docker containers are both hardware-agnostic and platform-agnostic. This means
+ they can run anywhere, from your laptop to the largest EC2 compute instance and
+ everything in between - and they don't require you to use a particular
+ language, framework or packaging system. That makes them great building blocks
+ for deploying and scaling web apps, databases, and backend services without
+ depending on a particular stack or provider.
+
+Package: docker-engine
+Architecture: amd64
+Version: 17.06.0~dev~git20170425.093341.0.f9a45b7-0~ubuntu-xenial
+Priority: optional
+Section: admin
+Maintainer: Docker <support@docker.com>
+Installed-Size: 90569
+Depends: iptables, init-system-helpers (>= 1.18~), lsb-base (>= 4.1+Debian11ubuntu7), libapparmor1 (>= 2.6~devel), libc6 (>= 2.17), libdevmapper1.02.1 (>= 2:1.02.97), libltdl7 (>= 2.4.6), libseccomp2 (>= 2.1.0), libsystemd0
+Recommends: aufs-tools, ca-certificates, cgroupfs-mount | cgroup-lite, git, xz-utils, apparmor
+Conflicts: docker (<< 1.5~), docker-engine-cs, docker.io, lxc-docker, lxc-docker-virtual-package
+Filename: ./docker-engine_17.06.0~dev~git20170425.093341.0.f9a45b7-0~ubuntu-xenial_amd64.deb
+Size: 19410434
+MD5sum: efbccd82c2600b1313e3a79278da4196
+SHA1: e04bba42f91b0c904291fd742eff5bc462e24c2d
+SHA256: 7fadcd600646ee513cddbc3372cdfbb23a85c88d3ad7082b4b0567396d76db71
+SHA512: d16e25f2f065f61f7a3b6efb4e29dc05b2f356482efb24dc7b86efa9abaf6c962be1093d18edad605ed8e9616e4fda75904cc910613064c83200815780ac87cc
+Homepage: https://dockerproject.org
+Description: Docker: the open-source application container engine
+ Docker is an open source project to build, ship and run any application as a
+ lightweight container
+ .
+ Docker containers are both hardware-agnostic and platform-agnostic. This means
+ they can run anywhere, from your laptop to the largest EC2 compute instance and
+ everything in between - and they don't require you to use a particular
+ language, framework or packaging system. That makes them great building blocks
+ for deploying and scaling web apps, databases, and backend services without
+ depending on a particular stack or provider.
+
+Package: docker-engine
+Architecture: amd64
+Version: 17.06.0~dev~git20170425.093341.0.f9a45b7-0~debian-jessie
+Priority: optional
+Section: admin
+Maintainer: Docker <support@docker.com>
+Installed-Size: 90266
+Depends: iptables, init-system-helpers (>= 1.18~), libapparmor1 (>= 2.6~devel), libc6 (>= 2.17), libdevmapper1.02.1 (>= 2:1.02.90), libltdl7 (>= 2.4.2), libsystemd0
+Recommends: aufs-tools, ca-certificates, cgroupfs-mount | cgroup-lite, git, xz-utils
+Conflicts: docker (<< 1.5~), docker-engine-cs, docker.io, lxc-docker, lxc-docker-virtual-package
+Filename: ./docker-engine_17.06.0~dev~git20170425.093341.0.f9a45b7-0~debian-jessie_amd64.deb
+Size: 19381840
+MD5sum: a2674c8da3bbe75b778a1a873aaa9269
+SHA1: 58be9415e4959ca37af1e14f58040c8d46a9aa86
+SHA256: dfe6ad08c4b5224a7faeba12a334e3cc1296eec5a62deb0db834097b1a6b9abd
+SHA512: f0dee7b42967a672ad9179e0b55b2887f98b563fc9030cfe19a08f927f7bf3e7791f07b7b3155461e5e57dee1463a2329da904a9d4664090fed10b9152196569
+Homepage: https://dockerproject.org
+Description: Docker: the open-source application container engine
+ Docker is an open source project to build, ship and run any application as a
+ lightweight container
+ .
+ Docker containers are both hardware-agnostic and platform-agnostic. This means
+ they can run anywhere, from your laptop to the largest EC2 compute instance and
+ everything in between - and they don't require you to use a particular
+ language, framework or packaging system. That makes them great building blocks
+ for deploying and scaling web apps, databases, and backend services without
+ depending on a particular stack or provider.
+
+Package: docker-engine
+Architecture: amd64
+Version: 17.06.0~dev~git20170425.093341.0.f9a45b7-0~debian-wheezy
+Priority: optional
+Section: admin
+Maintainer: Docker <support@docker.com>
+Installed-Size: 90125
+Depends: iptables, init-system-helpers (>= 1.18~), libapparmor1 (>= 2.6~devel), libc6 (>= 2.9), libdevmapper1.02.1 (>= 2:1.02.63), libltdl7 (>= 2.4.2)
+Recommends: aufs-tools, ca-certificates, cgroupfs-mount | cgroup-lite, git, xz-utils
+Conflicts: docker (<< 1.5~), docker-engine-cs, docker.io, lxc-docker, lxc-docker-virtual-package
+Filename: ./docker-engine_17.06.0~dev~git20170425.093341.0.f9a45b7-0~debian-wheezy_amd64.deb
+Size: 27774408
+MD5sum: cd4dc75d6f9c4d72a8ff8f19e5871dfb
+SHA1: 4a6865628a05c78846a0a314f9794e1fe6825abd
+SHA256: 114fa52b55ebc99ce7b72c16d69867d2534417dce16114648d7cf8ad4c78ea4e
+SHA512: 614a98cbe3818f8417b9cd8bc2019b0c600127f412a7bc3a013d09fa205a48c71c2cbd189a3416d24ec7e7864abfac31e78c93b20c141e776ca3a52623622222
+Homepage: https://dockerproject.org
+Description: Docker: the open-source application container engine
+ Docker is an open source project to build, ship and run any application as a
+ lightweight container
+ .
+ Docker containers are both hardware-agnostic and platform-agnostic. This means
+ they can run anywhere, from your laptop to the largest EC2 compute instance and
+ everything in between - and they don't require you to use a particular
+ language, framework or packaging system. That makes them great building blocks
+ for deploying and scaling web apps, databases, and backend services without
+ depending on a particular stack or provider.
+
+Package: docker-engine
+Architecture: amd64
+Version: 17.06.0~dev~git20170425.093341.0.f9a45b7-0~ubuntu-yakkety
+Priority: optional
+Section: admin
+Maintainer: Docker <support@docker.com>
+Installed-Size: 108055
+Depends: iptables, init-system-helpers (>= 1.18~), libapparmor1 (>= 2.6~devel), libc6 (>= 2.17), libdevmapper1.02.1 (>= 2:1.02.97), libltdl7 (>= 2.4.6), libseccomp2 (>= 2.1.0), libsystemd0
+Recommends: aufs-tools, ca-certificates, cgroupfs-mount | cgroup-lite, git, xz-utils, apparmor
+Conflicts: docker (<< 1.5~), docker-engine-cs, docker.io, lxc-docker, lxc-docker-virtual-package
+Filename: ./docker-engine_17.06.0~dev~git20170425.093341.0.f9a45b7-0~ubuntu-yakkety_amd64.deb
+Size: 21110524
+MD5sum: 51f144dc9fbec6f0bafc44048a84ca29
+SHA1: 6e3057d66f42076fb35ba3152a820e295ddb7ba2
+SHA256: cb16a85337a8d7a3435ed9a49b44f314b661fd0b699ebd867f268d4bec467153
+SHA512: 491abb1ed1efefa7ebbc2044e81d3bcffa9d8580d1a4fe11218303fecc3f6e209c3802b2d23c089d6c2f001964b0c73f95bd8fb99a043bfe611a3eb0ab66148b
+Homepage: https://dockerproject.org
+Description: Docker: the open-source application container engine
+ Docker is an open source project to build, ship and run any application as a
+ lightweight container
+ .
+ Docker containers are both hardware-agnostic and platform-agnostic. This means
+ they can run anywhere, from your laptop to the largest EC2 compute instance and
+ everything in between - and they don't require you to use a particular
+ language, framework or packaging system. That makes them great building blocks
+ for deploying and scaling web apps, databases, and backend services without
+ depending on a particular stack or provider.
+
+Package: docker-engine
+Architecture: amd64
+Version: 17.06.0~dev~git20170425.093341.0.f9a45b7-0~ubuntu-zesty
+Priority: optional
+Section: admin
+Maintainer: Docker <support@docker.com>
+Installed-Size: 108059
+Depends: iptables, init-system-helpers (>= 1.18~), libapparmor1 (>= 2.6~devel), libc6 (>= 2.17), libdevmapper1.02.1 (>= 2:1.02.97), libltdl7 (>= 2.4.6), libseccomp2 (>= 2.1.0), libsystemd0
+Recommends: aufs-tools, ca-certificates, cgroupfs-mount | cgroup-lite, git, xz-utils, apparmor
+Conflicts: docker (<< 1.5~), docker-engine-cs, docker.io, lxc-docker, lxc-docker-virtual-package
+Filename: ./docker-engine_17.06.0~dev~git20170425.093341.0.f9a45b7-0~ubuntu-zesty_amd64.deb
+Size: 21642148
+MD5sum: 480886623038aa798ccfe13234fda3de
+SHA1: 51a8ac797a9b151dd8f2aca34786225124cf0aa7
+SHA256: 67773483e655fc9b942b06f96c07ed9a0e26725d6fa65f723ad7dfddbac03883
+SHA512: 51b653ab9aef02ced69b10016c468e5e6465bafa54b2fc685b0bb904fb8864eea5328701dbd6f3b611df7209740cc5ae02f4643c4948d62727d72df555847491
+Homepage: https://dockerproject.org
+Description: Docker: the open-source application container engine
+ Docker is an open source project to build, ship and run any application as a
+ lightweight container
+ .
+ Docker containers are both hardware-agnostic and platform-agnostic. This means
+ they can run anywhere, from your laptop to the largest EC2 compute instance and
+ everything in between - and they don't require you to use a particular
+ language, framework or packaging system. That makes them great building blocks
+ for deploying and scaling web apps, databases, and backend services without
+ depending on a particular stack or provider.
+
+Package: docker-engine
+Architecture: amd64
+Version: 17.06.0~dev~git20170425.093341.0.f9a45b7-0~ubuntu-trusty
+Priority: optional
+Section: admin
+Maintainer: Docker <support@docker.com>
+Installed-Size: 90257
+Depends: iptables, init-system-helpers (>= 1.13~), sysv-rc (>= 2.88dsf-24) | file-rc (>= 0.8.16), libapparmor1 (>= 2.6~devel), libc6 (>= 2.17), libdevmapper1.02.1 (>= 2:1.02.63), libltdl7 (>= 2.4.2), libsystemd-journal0 (>= 201)
+Recommends: aufs-tools, ca-certificates, cgroupfs-mount | cgroup-lite, git, xz-utils, apparmor
+Conflicts: docker (<< 1.5~), docker-engine-cs, docker.io, lxc-docker, lxc-docker-virtual-package
+Filename: ./docker-engine_17.06.0~dev~git20170425.093341.0.f9a45b7-0~ubuntu-trusty_amd64.deb
+Size: 19339610
+MD5sum: 51fe3aac81aa8f557ac64037eb6f241d
+SHA1: e8bca44cd3ed4f182c75a4317574ac0f3dd9f12e
+SHA256: 761f87532d1007c28d0472c60a74f78d03ea32e093b6ff53fdd4a3c8ffecc01c
+SHA512: 0015ad53a7aa432ab9a065aef61eedcd3f8ef5579029e5a7d6a9d0396202b7e1f329c09902e98a1ba51c88e1b881612089182d61221d04117edead748755fe43
+Homepage: https://dockerproject.org
+Description: Docker: the open-source application container engine
+ Docker is an open source project to build, ship and run any application as a
+ lightweight container
+ .
+ Docker containers are both hardware-agnostic and platform-agnostic. This means
+ they can run anywhere, from your laptop to the largest EC2 compute instance and
+ everything in between - and they don't require you to use a particular
+ language, framework or packaging system. That makes them great building blocks
+ for deploying and scaling web apps, databases, and backend services without
+ depending on a particular stack or provider.
+
