@@ -56,6 +56,9 @@
                         <a class="page-scroll" href="#services">Services</a>
                     </li>
                     <li>
+                        <a class="page-scroll" href="#documentation">Documentation</a>
+                    </li>
+                    <li>
                         <a class="page-scroll" href="#portfolio">Portfolio</a>
                     </li>
                     <li>
@@ -79,7 +82,7 @@
         <div class="container">
             <div class="intro-text">
                 <div class="intro-lead-in">Welcome To SCONE!</div>
-                <div class="intro-heading">A Secure Container Environment</div>
+                <div class="intro-heading">A Secure Docker-Compatible Container Environment using Intel SGX</div>
                 <a href="#services" class="page-scroll btn btn-xl">Tell Me More</a>
             </div>
         </div>
@@ -91,20 +94,11 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Services</h2>
-                    <h3 class="section-subheading text-muted">We provide popular services like memcached within secure containers.</h3>
+                    <h3 class="section-subheading text-muted">We provide a variant of Docker containers that run inside of SGX enclaves, i.e., main memory is encrypted.</h3>
+
                 </div>
             </div>
             <div class="row text-center">
-                <div class="col-md-4">
-		          <a href="https://shop.spreadshirt.de/sconecontainers/" class="btn btn-default">
-                    <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
-                    </span>
-		          </a>
-                  <h4 class="service-heading">Merchandise</h4>
-                  <p class="text-muted">We have a beautiful set of merchandise related to SCONE. Help us to spread the word!</p>
-                </div>
                 <div class="col-md-4">
                   <a href="#portfolio"  class="page-scroll btn btn-default">
                     <span class="fa-stack fa-4x">
@@ -117,23 +111,51 @@
                     <p class="text-muted">We provide popular services like mysql, apache, memcache, sqlight, nginx inside secure containers.</p>
                 </div>
                 <div class="col-md-4">
+		          <a href="https://shop.spreadshirt.de/sconecontainers/" class="btn btn-default">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                    </span>
+		          </a>
+                  <h4 class="service-heading">Merchandise</h4>
+                  <p class="text-muted">We have a beautiful set of merchandise related to SCONE. Help us to spread the word!</p>
+                </div>
+                <div class="col-md-4">
 		  <a href="https://www.usenix.org/conference/osdi16/technical-sessions/presentation/arnautov"  class="btn btn-default">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
                     </span>
 		  </a>
-                    <h4 class="service-heading">SGX-Supported Security</h4>
-                    <p class="text-muted">Not only network traffic and files are encrypted but even the processing of services is encrypted with the help of Intel SGX.
+                    <h4 class="service-heading">Publications</h4>
+                    <p class="text-muted">
+                        Not only network traffic and files are encrypted but even the processing of services is encrypted with the help of Intel SGX.
                         Read our OSDI2016 paper to learn the technical details.
                     </p>
                 </div>
             </div>
+
         </div>
     </section>
 
+    <section id="documentation" class="bg-light-gray">>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Technical Documentation</h2>
+<pre><code class="codeblock">
+docker pull sconecuratedimages/sconedocu
+docker run -d -p 8080:80  sconecuratedimages/sconedocu
+open http://127.0.0.1:8080
+</code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- Portfolio Grid Section -->
-    <section id="portfolio" class="bg-light-gray">
+    <section id="portfolio">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -231,7 +253,7 @@
     </section>
 
     <!-- About Section -->
-    <section id="about">
+    <section id="about"  class="bg-light-gray">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -375,41 +397,13 @@
         </div>
     </section>
 
-    <!-- Clients Aside -->
-    <aside class="clients">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <img src="img/logos/envato.jpg" class="img-responsive img-centered" alt="">
-                    </a>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <img src="img/logos/designmodo.jpg" class="img-responsive img-centered" alt="">
-                    </a>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <img src="img/logos/themeforest.jpg" class="img-responsive img-centered" alt="">
-                    </a>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <img src="img/logos/creative-market.jpg" class="img-responsive img-centered" alt="">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </aside>
-
-    <!-- Contact Section -->
+     <!-- Contact Section -->
     <section id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Contact Us</h2>
-                    <h3 class="section-subheading text-muted">If you are interested in SCONE or if you want to work for us, please send email to Christof Fetzer.</h3>
+                    <h3 class="section-subheading text-muted">If you are interested in SCONE or if you want to work for us, please send email to <a href="mailto:scone.containers@gmail.com">Scone Containers</a>.</h3>
                 </div>
             </div>
         </div>
@@ -419,7 +413,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; Scone Containers 2016</span>
+                    <span class="copyright">Copyright &copy; Scone Containers 2017</span>
                 </div>
                 <div class="col-md-4">
                     <ul class="list-inline social-buttons">
