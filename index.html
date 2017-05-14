@@ -34,7 +34,6 @@
 </head>
 
 <body id="page-top" class="index">
-
     <!-- Navigation -->
     <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
         <div class="container">
@@ -53,19 +52,13 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services">Services</a>
+                        <a class="page-scroll" href="#portfolio">Overview</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#documentation">Documentation</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#about">About</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#team">Team</a>
+                        <a class="page-scroll" href="#services">Services</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
@@ -82,11 +75,150 @@
         <div class="container">
             <div class="intro-text">
                 <div class="intro-lead-in">Welcome To SCONE!</div>
-                <div class="intro-heading">A Secure Docker-Compatible Container Environment using Intel SGX</div>
-                <a href="#services" class="page-scroll btn btn-xl">Tell Me More</a>
+                <div class="intro-heading">A Docker-Compatible Secure Container Environment using Intel SGX</div>
+                <a href="#portfolio" class="page-scroll btn btn-xl">Tell Me More</a>
             </div>
         </div>
     </header>
+
+    <!-- Tell me more  Section -->
+    <section id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">SCONE in a nutshell</h2>
+                    <h3 class="section-subheading text-muted">SCONE's unique features.</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#usp1" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/appsecurity.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Application-Oriented Security</h4>
+                        <p class="text-muted">Ensure application security even in untrusted environments.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#usp2" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/sgxenclaves.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Intel SGX Support</h4>
+                        <p class="text-muted">Encrypted main memory with Intel SGX ensures confidentialitiy and integrity.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#usp3" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/crosscompilers.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Cross-Compiler support</h4>
+                        <p class="text-muted">SCONE support cross-compilers for C, C++, Rust, Go and an interpreter for Pyhton.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#usp4" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/dockerintegration.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Docker Integration</h4>
+                        <p class="text-muted">Support of Stack and Compose files to deploy an application.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#usp5" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/shielding.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Shielding</h4>
+                        <p class="text-muted">Supports transparent encrpytion of files and network traffic.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#usp6" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/curatedimages.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Curated SCONE Container Images</h4>
+                        <p class="text-muted">SCONE supports a set of standard services like nginx, etc</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="documentation" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Technical Documentation</h2>
+                    <h3 class="section-subheading text-muted">We provide developer-/operations-oriented documentation as well as scientific papers.</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <A href="https://sconedocs.github.io/"><img src="img/team/1.jpg" class="img-responsive img-circle" alt=""></A>
+                        <h4>Technical Documentation</h4>
+                        <p class="text-muted">Tutorial and technical details.</p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                    <a href="#techdoc1" class="portfolio-link"  data-toggle="modal">
+
+                        <img src="img/team/3.jpg" class="img-responsive img-circle" alt=""> </A>
+                        <h4>Offline Documentation</h4>
+                        <p class="text-muted">We provide Docker container image of the SCONE documentation.</p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <A href="https://www.usenix.org/system/files/conference/osdi16/osdi16-arnautov.pdf">
+                        <img src="img/team/2.jpg" class="img-responsive img-circle" alt=""></A>
+                        <h4>Academic Publications</h4>
+                        <p class="text-muted">We published several papers related to SCONE. A good starting point 
+                            is our OSDI2016 paper that is linked above.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <!-- Services Section -->
     <section id="services">
@@ -94,306 +226,48 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Services</h2>
-                    <h3 class="section-subheading text-muted">We provide a variant of Docker containers that run inside of SGX enclaves, i.e., main memory is encrypted.</h3>
+                    <h3 class="section-subheading text-muted">We offer our customers different service levels.</h3>
 
                 </div>
             </div>
             <div class="row text-center">
                 <div class="col-md-4">
-                  <a href="#portfolio"  class="page-scroll btn btn-default">
+                  <a href="mailto:scone.containers@gmail.com"  class="page-scroll btn btn-default">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
                     </span>
 		          </a>
 
-                    <h4 class="service-heading">Secure Services</h4>
-                    <p class="text-muted">We provide popular services like mysql, apache, memcache, sqlight, nginx inside secure containers.</p>
+                    <h4 class="service-heading">SCONE Community Edition</h4>
+                    <p class="text-muted">We provide a community edition of our services. This services run inside of enclaves in pre-release mode, i.e.,
+                        one can view the memory content of these enclaves with an appropriate debugger. 
+                    </p>
                 </div>
                 <div class="col-md-4">
-		          <a href="https://shop.spreadshirt.de/sconecontainers/" class="btn btn-default">
+		          <a href="mailto:scone.containers@gmail.com" class="btn btn-default">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
                     </span>
 		          </a>
-                  <h4 class="service-heading">Merchandise</h4>
-                  <p class="text-muted">We have a beautiful set of merchandise related to SCONE. Help us to spread the word!</p>
+                  <h4 class="service-heading">SCONE Standard Edition</h4>
+                  <p class="text-muted">Services run inside of enclaves - without the possibility of inspections. This includes business day support.</p>
                 </div>
                 <div class="col-md-4">
-		  <a href="https://www.usenix.org/conference/osdi16/technical-sessions/presentation/arnautov"  class="btn btn-default">
+		  <a href="mailto:scone.containers@gmail.com"  class="btn btn-default">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
                     </span>
 		  </a>
-                    <h4 class="service-heading">Publications</h4>
+                    <h4 class="service-heading">SCONE Enterprise Edition</h4>
                     <p class="text-muted">
-                        Not only network traffic and files are encrypted but even the processing of services is encrypted with the help of Intel SGX.
-                        Read our OSDI2016 paper to learn the technical details.
+                        Services run inside of enclaves - without the possibility of inspections. Access to all source code. This includes priority support.
                     </p>
                 </div>
             </div>
 
-        </div>
-    </section>
-
-    <section id="documentation" class="bg-light-gray">>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Technical Documentation</h2>
-<pre><code class="codeblock">
-docker pull sconecuratedimages/sconedocu
-docker run -d -p 8080:80  sconecuratedimages/sconedocu
-open http://127.0.0.1:8080
-</code></pre>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Portfolio Grid Section -->
-    <section id="portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Portfolio</h2>
-                    <h3 class="section-subheading text-muted">We currently support a set of secure services. These are Docker compatible containers but the processing is encrypted (runs inside SGX enclaves), all network traffic is encrypted and the files are encrypted.</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/roundicons.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>nginx</h4>
-                        <p class="text-muted">nginx in secure container.</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/startup-framework.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Apache</h4>
-                        <p class="text-muted">Apache in secure container.</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/treehouse.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Secure Memcached</h4>
-                        <p class="text-muted">Memcached in secure container.</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/golden.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Sqllite</h4>
-                        <p class="text-muted">SQLLight in secure container</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/escape.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>MySQL</h4>
-                        <p class="text-muted">MYSQL in secure container</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/dreams.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>REDIS</h4>
-                        <p class="text-muted">REDIS in secure container</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about"  class="bg-light-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">About</h2>
-                    <h3 class="section-subheading text-muted">SCONE's history.</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <ul class="timeline">
-                        <li>
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/1.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>Summer 2014</h4>
-                                    <h4 class="subheading">SGX specification</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Intel releases the specification of SGX version 1!</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="timeline-inverted">
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/2.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>Fall 2014</h4>
-                                    <h4 class="subheading">SERECA Proposal</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">We submit an EU H2020 proposal to investigate the use of SGX enclaves for building microservices!</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/3.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>March 2015</h4>
-                                    <h4 class="subheading">SERECA project starts</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">We start the project but no SGX hardware available yet!</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="timeline-inverted">
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/4.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>Fall 2015</h4>
-                                    <h4 class="subheading">SGX Hardware</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">SGX Hardware becomes available!</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="timeline-inverted">
-                            <div class="timeline-image">
-                                <h4>SCONE
-                                    <br>is
-                                    <br>available!</h4>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Team Section -->
-    <section id="team" class="bg-light-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Our Amazing Team</h2>
-                    <h3 class="section-subheading text-muted">The main developers of SCONE.</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <img src="img/team/1.jpg" class="img-responsive img-circle" alt="">
-                        <h4>Developer</h4>
-                        <p class="text-muted">Container Expert</p>
-                        <ul class="list-inline social-buttons">
-                            <li><a href="#"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <img src="img/team/1.jpg" class="img-responsive img-circle" alt="">
-                        <h4>Developer</h4>
-                        <p class="text-muted">Library Developer</p>
-                        <ul class="list-inline social-buttons">
-                            <li><a href="#"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <img src="img/team/1.jpg" class="img-responsive img-circle" alt="">
-                        <h4>Developer 3</h4>
-                        <p class="text-muted">Driver Developer</p>
-                        <ul class="list-inline social-buttons">
-                            <li><a href="#"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <p class="large text-muted">We are hiring! Please drop us an email if you want to join the team!</p>
-                </div>
-            </div>
         </div>
     </section>
 
@@ -440,6 +314,297 @@ open http://127.0.0.1:8080
     <!-- Portfolio Modals -->
     <!-- Use the modals below to showcase details about your portfolio projects! -->
 
+    <!-- Portfolio Modal USP1 -->
+    <div class="portfolio-modal modal fade" id="usp1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>Application-Oriented Security.</h2>
+                                <p class="item-intro text-muted">SCONE provides application-oriented security, i.e., 
+                                    confidentiality as well as integrity of the application can be ensured even if executing in untrusted environments.
+                                    In untrusted environments, we have to protect against adversaries that have gained root access and can use this to read or even
+                                    modify our application's data.</p>
+                                <img class="img-responsive img-centered" src="img/portfolio/appsecurity.png" alt="">
+                               
+                                <p><strong>SCONE</strong> supports naturally modern cloud-native applications that are composed of a set of microservices.
+                                    Our general recommendation is that each microservice runs inside of an 
+                                    <a href="#usp2" class="portfolio-link" data-toggle="modal">Intel SGX enclave</a>. 
+                                    SCONE helps to protect an application from attacks via the operating system, other applications as well as internal
+                                    APIs of the applications. In many cases, microservices only need to be recompiled with our
+                                     <a href="#usp3" class="portfolio-link"  data-toggle="modal">SCONE crosscompilers</a>. 
+                                </p>
+                                
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Portfolio USP 2 -->
+    <div class="portfolio-modal modal fade" id="usp2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>Intel SGX Enclaves.</h2>
+                                <p class="item-intro text-muted">SCONE uses Intel SGX Enclaves to protect application components.</p>
+                                <img class="img-responsive img-centered" src="img/portfolio/sgxenclaves.png" alt="">
+                                <p>SCONE helps developers to run their applications inside of SGX enclaves. An Intel SGX enclave
+                                    facilitates an application to protect its data from accesses by all other software - even the operating system.
+                                    In particular, an application can protect all its data against adversaries with root access. 
+                                    A root user cannot dump the main memory of an application to get access to all its keys. Often, configuration
+                                    files of applications are only protected by the filesystem. Again, a user with root access can read
+                                    these configuration files and all secrets that they might contain. 
+                                    SCONE uses SGX to help to encrypt configuration files to protect these again. 
+                                </p>
+                            
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Portfolio USP 3 -->
+    <div class="portfolio-modal modal fade" id="usp3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>SCONE crosscompiler support.</h2>
+                                <p class="item-intro text-muted">SCONE support cross-compilers for C, C++, Rust, Go and Fortran.</p>
+                                <img class="img-responsive img-centered" src="img/portfolio/crosscompilers.png" alt="">
+                                    <p>                                
+                                    <strong>SCONE</strong> supports different programming languages. We provide different base container
+                                    images that can be pulled from DockerHub. These images permit to create new container images with the help of Dockerfiles.
+                                    For more difficult builds, one would probably use makefiles. 
+                                    We provide some examples in our <A href="https://sconedocs.github.io/">SCONE tutorial</A>.
+                                    </p>
+                               
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Portfolio USP 4 -->
+    <div class="portfolio-modal modal fade" id="usp4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>SCONE Docker Integration.</h2>
+                                <p class="item-intro text-muted">SCONE supports the Docker workflow of creating applications.</p>
+                                <img class="img-responsive img-centered" src="img/portfolio/dockerintegration.png" alt="">
+                                    <p>                                
+                                    <strong>SCONE</strong> supports the development and operations of applications similar to that
+                                    of Docker. However, SCONE will run the microservices of an application inside of containers. 
+                                    A developer can build custom microservices and combine these with standard secure container images
+                                    (i.e., curated images) that can be downloaded from DockerHub.
+
+                                    We provide some examples in our <A href="https://sconedocs.github.io/">SCONE tutorial</A>.
+                                    </p>
+
+                                <img class="img-responsive img-centered" src="img/portfolio/sconearchitecture.png" alt="">
+                               
+                                    <p>                                
+                                <strong>SCONE</strong> helps to ensure the confidentiality and integrity of an application.
+                                The availability is ensured by the container cluster - currently, this is Docker Swarm. 
+                                The Docker Engines of the swarm are not trusted - in this way, we can decouple the security of an
+                                 application from the security of the Docker Swarm. The Docker Swarm might run on physical hosts (MaaS)
+                                 or on top of virtual machines (IaaS).
+                                    </p>
+
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Portfolio USP 5 -->
+    <div class="portfolio-modal modal fade" id="usp5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>SCONE Shielding.</h2>
+                                <p class="item-intro text-muted">SCONE supports transparent encryption of files, network traffic and stdin/stdout.</p>
+                                <img class="img-responsive img-centered" src="img/portfolio/shielding.png" alt="">
+                                
+                                    <p>                                
+                                    Legacy services like memcached, were designed for operating in a trusted environment. 
+                                    Hence, they do not support TLS yet. <strong>SCONE</strong> supports the transparent encryption
+                                    of the network traffic. To do so, one can enable the network shield as part of the stack/compose file.
+                                    </p>
+
+                                    <p>   
+                                    While some applications (like MySQL) can encrypt some of their files, most applications do not provide file
+                                    encryption. Hence, we provide a mechanism in SCONE to transparently encrypt files. This mechanism is switched on
+                                    via the stack/compose file of an application.                            
+                                    </p>
+
+                                    <p>  
+                                    We also provide a mechanism to transparently encrypt <strong>stdin, stdout</strong> and <strong>stderr</strong>.  Again,
+                                    this can be switched on in    the stack/compose file of an application. 
+                                    </p>
+
+                                    <p>  
+                                    Some applications will get their secrets via environment variables or command line arguments. SCONE supports
+                                    the secure transfer of the environment variables and command line arguments via the SCONE configuration and
+                                    attestation service.                          
+                                    </p>
+
+                                    <p>  
+                                    We provide some examples in our <A href="https://sconedocs.github.io/">SCONE tutorial</A>.
+                                    </p>
+                               
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Portfolio USP 6 -->
+    <div class="portfolio-modal modal fade" id="usp6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>SCONE Curated Images.</h2>
+                                <p class="item-intro text-muted">SCONE support a set of curated container images.</p>
+                                <img class="img-responsive img-centered" src="img/portfolio/curatedimages.png" alt="">
+                                
+                                    <p>  
+                                    <strong>SCONE</strong> supports a set of curated images to simplify the task 
+                                    of application developer. For most of the standard services, we will provide
+                                    a SCONE image that runs inside of an SGX enclave. The application developer
+                                    can customize the image via a Docker compose / stack file.
+                                    </p>
+
+                                    <p>  
+                                     
+                                    We provide some examples in our <A href="https://sconedocs.github.io/">SCONE tutorial</A>.
+                                    </p>
+                               
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Portfolio USP 6 -->
+    <div class="portfolio-modal modal fade" id="techdoc1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>SCONE Documentation Image.</h2>
+                                <p class="item-intro text-muted">For offline viewing, we provide a container image containing
+                                    the SCONE technical documentation together wita webserver (nginx).</p>
+                                
+                                    <p>  
+                                    To serve the SCONE technical documentation running in a local container, first, ensure
+                                    that you have Docker running. Second, you can view the documentation by executing the
+                                    following commands:
+
+<pre><code class="codeblock">
+docker pull sconecuratedimages/sconedocu
+docker run -d -p 8080:80  sconecuratedimages/sconedocu
+open http://127.0.0.1:8080
+</code></pre>
+                        
+                                    </p>
+
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Portfolio Modal 1 -->
     <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
@@ -455,9 +620,9 @@ open http://127.0.0.1:8080
                         <div class="col-lg-8 col-lg-offset-2">
                             <div class="modal-body">
                                 <!-- Project Details Go Here -->
-                                <h2>Nginx.</h2>
+                                <h2>Application-oriented Security.</h2>
                                 <p class="item-intro text-muted">We provide a secure container image for nginx.</p>
-                                <img class="img-responsive img-centered" src="img/portfolio/roundicons-free.png" alt="">
+                                <img class="img-responsive img-centered" src="img/portfolio/appsecurity.png" alt="">
                                 <p>You can subscribe to our nginx secure container service</p>
                                 <p>
                                     <strong>Secure container</strong> means that nginx runs inside a SGX enclave,
