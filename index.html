@@ -579,17 +579,16 @@
                         <div class="col-lg-8 col-lg-offset-2">
                             <div class="modal-body">
                                 <!-- Project Details Go Here -->
-                                <h2>SCONE Documentation Image.</h2>
-                                <p class="item-intro text-muted">For offline viewing, we provide a container image containing
-                                    the SCONE technical documentation together wita webserver (nginx).</p>
+                                <h2>SCONE Documentation Docker Container.</h2>
+                                <p class="item-intro text-muted">For offline viewing, we maintain a container image serving
+                                    the SCONE technical documentation.</p>
                                 
                                     <p>  
                                     To serve the SCONE technical documentation running in a local container, first, ensure
                                     that you have Docker running. Second, you can view the documentation by executing the
                                     following commands:
 
-<pre><code class="codeblock">
-docker pull sconecuratedimages/sconedocu
+<pre><code class="codeblock">docker pull sconecuratedimages/sconedocu
 docker run -d -p 8080:80  sconecuratedimages/sconedocu
 open http://127.0.0.1:8080
 </code></pre>
