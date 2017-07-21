@@ -10,11 +10,11 @@ Build-Depends: debhelper (>= 9)
 Package-List:
  scone deb unknown optional arch=all
 Checksums-Sha1:
- 42427fc321a6c3f1ebc9ae238757e0e924aef5b2 17408 scone_0.13.orig.tar.xz
- 27db499ae23f63f2ce91a25418e70ef19059bc43 2524 scone_0.13-1.debian.tar.xz
+ 838c64dc97eb2e79962ac88514a177ae317b2da4 17388 scone_0.13.orig.tar.xz
+ 85957ed567760723550b23cf6d7b099f2eab8a71 2528 scone_0.13-1.debian.tar.xz
 Checksums-Sha256:
- c4199688e603f8c45b9dfb91e10e0a2bdbdb0e92a2647432e34b7c0663308b01 17408 scone_0.13.orig.tar.xz
- 3d83a1fb3911c34f6cdc921c48128014ac87e77f5e874c369b88f4423fd6e1d9 2524 scone_0.13-1.debian.tar.xz
+ fc31a1ed920ce84aae6ecb2463916f7e9585e99ef5c7951974a448d47e54638a 17388 scone_0.13.orig.tar.xz
+ 29b031dc88d28c3e8f15da02b98d20dfc70147b87de1e96e1f8a4e9183129c5a 2528 scone_0.13-1.debian.tar.xz
 Files:
- 22e2f1af2700b45c81680a507717b9de 17408 scone_0.13.orig.tar.xz
- fde4f7ff6dd5e2acc508c220455f2577 2524 scone_0.13-1.debian.tar.xz
+ 80ceadec0957a5987c8782f14ce02af1 17388 scone_0.13.orig.tar.xz
+ d780ed1cec16142071dc9cb4c29cbfc0 2528 scone_0.13-1.debian.tar.xz
