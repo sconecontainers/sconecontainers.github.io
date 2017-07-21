@@ -1,16 +1,33 @@
 Package: scone
 Architecture: all
+Version: 0.08-1
+Priority: optional
+Section: unknown
+Maintainer: scontain developer <scontains.ceo@gmail.com>
+Installed-Size: 106
+Filename: ./scone_0.08-1_all.deb
+Size: 19296
+MD5sum: 81a5266f53a28803fb7b4f76bcd3726c
+SHA1: 8fac46f88b01e5a1e0536600c71cbe090965dfc7
+SHA256: ab95a9454447077c05513f8923f44f571b55c6ce32281945d80c186cd413405e
+SHA512: f28aebdf4d9cb3198ca0fa5ad3e74032b41f3991f99b2d724bc36aa53aa0f46cf833fc7da6949ef2d5ccf825f1c3843fd318f95849c86faacd67959194408e4a
+Homepage: <insert the upstream URL, if relevant>
+Description: <insert up to 60 chars description>
+ <insert long description, indented with spaces>
+
+Package: scone
+Architecture: all
 Version: 0.07-1
 Priority: optional
 Section: unknown
 Maintainer: scontain developer <scontains.ceo@gmail.com>
 Installed-Size: 106
 Filename: ./scone_0.07-1_all.deb
-Size: 17952
-MD5sum: d51d4bddbf5ce7bafbf147877b06a8a7
-SHA1: 95c9a42e51d04b7596d5d758176335e146419398
-SHA256: d55a9726853820deb508c9f4b8e81b42afd4c55d4c38cbb7687c5f5b3951eb70
-SHA512: 8d9448cbdfd66235cb920387cfa1c0c3f13f2340eeb8ca7700c763acf8345303d625fe3f2dfdd29f31c9d31f389e1808ab3676ba0a9721269f77c54ce423e00f
+Size: 19294
+MD5sum: 5bf884386cc69bcaf58f5a485b4ad3e8
+SHA1: ea6f03f10abc261ea9a884107e8e22ac5ea60d4c
+SHA256: 999f5a4b8ab87eaaa7437265c28a6ddf2fa744968af790342f094bf2319d951e
+SHA512: 36ab30cdb3c2affb193f5f3dba4432ff22aa4950f4434475f7738a89055b5c1f1cd258d4b60e1333989aad0e65f0c3b91cd7bda79ef55f056350722d97e7eae6
 Homepage: <insert the upstream URL, if relevant>
 Description: <insert up to 60 chars description>
  <insert long description, indented with spaces>
