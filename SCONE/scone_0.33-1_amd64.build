@@ -1,21 +1,21 @@
  dpkg-buildpackage -rfakeroot -D -us -uc
 dpkg-buildpackage: warning: using a gain-root-command while being root
 dpkg-buildpackage: source package scone
-dpkg-buildpackage: source version 0.31-1
+dpkg-buildpackage: source version 0.33-1
 dpkg-buildpackage: source distribution unstable
 dpkg-buildpackage: source changed by scontain developer <scontains.ceo@gmail.com>
- dpkg-source --before-build scone-0.31
+ dpkg-source --before-build scone-0.33
 dpkg-buildpackage: host architecture amd64
  fakeroot debian/rules clean
 dh clean 
    dh_testdir
    dh_auto_clean
    dh_clean
- dpkg-source -b scone-0.31
+ dpkg-source -b scone-0.33
 dpkg-source: info: using source format '3.0 (quilt)'
-dpkg-source: info: building scone using existing ./scone_0.31.orig.tar.xz
-dpkg-source: info: building scone in scone_0.31-1.debian.tar.xz
-dpkg-source: info: building scone in scone_0.31-1.dsc
+dpkg-source: info: building scone using existing ./scone_0.33.orig.tar.xz
+dpkg-source: info: building scone in scone_0.33-1.debian.tar.xz
+dpkg-source: info: building scone in scone_0.33-1.dsc
  debian/rules build
 dh build 
    dh_testdir
@@ -40,10 +40,10 @@ dh binary
    dh_gencontrol
    dh_md5sums
    dh_builddeb
-dpkg-deb: building package 'scone' in '../scone_0.31-1_all.deb'.
- dpkg-genchanges  >../scone_0.31-1_amd64.changes
+dpkg-deb: building package 'scone' in '../scone_0.33-1_all.deb'.
+ dpkg-genchanges  >../scone_0.33-1_amd64.changes
 dpkg-genchanges: including full source code in upload
- dpkg-source --after-build scone-0.31
+ dpkg-source --after-build scone-0.33
 dpkg-buildpackage: full upload (original source is included)
 Now running lintian...
 warning: the authors of lintian do not recommend running it with root privileges!
@@ -66,7 +66,11 @@ W: scone: superfluous-clutter-in-homepage <insert the upstream URL, if relevant>
 W: scone: bad-homepage <insert the upstream URL, if relevant>
 E: scone: dir-or-file-in-opt opt/scone/
 E: scone: dir-or-file-in-opt opt/scone/bin/
+E: scone: dir-or-file-in-opt opt/scone/bin/alertmanager/
+E: scone: dir-or-file-in-opt opt/scone/bin/alertmanager/config.yml
+E: scone: dir-or-file-in-opt opt/scone/bin/cadvisor.yml
 E: scone: dir-or-file-in-opt opt/scone/bin/check_nodes.sh
+E: scone: dir-or-file-in-opt opt/scone/bin/config.monitoring
 E: scone: dir-or-file-in-opt opt/scone/bin/docker-swarm.service.template
 E: scone: dir-or-file-in-opt opt/scone/bin/gitversion.env
 E: scone: dir-or-file-in-opt opt/scone/bin/infinit-network.service.template
@@ -76,6 +80,12 @@ E: scone: dir-or-file-in-opt opt/scone/bin/install-infinit.sh
 E: scone: dir-or-file-in-opt opt/scone/bin/install-monitor.sh
 E: scone: dir-or-file-in-opt opt/scone/bin/install_instrumented_driver.sh
 E: scone: dir-or-file-in-opt opt/scone/bin/install_patched_docker.sh
+E: scone: dir-or-file-in-opt opt/scone/bin/monitoring-stack.yml
+E: scone: dir-or-file-in-opt opt/scone/bin/per-node-template.yml
+E: scone: dir-or-file-in-opt opt/scone/bin/prometheus/
+E: scone: dir-or-file-in-opt opt/scone/bin/prometheus/alert.rules
+E: scone: dir-or-file-in-opt opt/scone/bin/prometheus/prometheus-template.yml
+E: scone: dir-or-file-in-opt opt/scone/bin/prometheus/prometheus.yml
 E: scone: dir-or-file-in-opt opt/scone/bin/scone
 E: scone: dir-or-file-in-opt opt/scone/bin/scone-commons.sh
 E: scone: dir-or-file-in-opt opt/scone/bin/scone-start-scope.sh
@@ -89,7 +99,6 @@ E: scone: dir-or-file-in-opt opt/scone/bin/setup-monitoring.sh
 E: scone: dir-or-file-in-opt opt/scone/bin/stack.env
 E: scone: dir-or-file-in-opt opt/scone/bin/subcommands.env
 E: scone: dir-or-file-in-opt opt/scone/bin/version.env
-E: scone: shell-script-fails-syntax-check opt/scone/bin/install-monitor.sh
 W: scone: script-not-executable opt/scone/bin/scone-commons.sh
 W: scone: executable-not-elf-or-script opt/scone/bin/subcommands.env
 Finished running lintian.
