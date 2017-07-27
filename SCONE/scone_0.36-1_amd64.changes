@@ -1,0 +1,31 @@
+Format: 1.8
+Date: Thu, 27 Jul 2017 17:30:17 +0000
+Source: scone
+Binary: scone
+Architecture: source all
+Version: 0.36-1
+Distribution: unstable
+Urgency: medium
+Maintainer: scontain developer <scontains.ceo@gmail.com>
+Changed-By: scontain developer <scontains.ceo@gmail.com>
+Description:
+ scone      - <insert up to 60 chars description>
+Changes:
+ scone (0.36-1) unstable; urgency=medium
+ .
+   * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+Checksums-Sha1:
+ c3b45fec45b7767e97fde3e0a06b1003123342ea 804 scone_0.36-1.dsc
+ 64e0ca6e68bc5558097272cd727934c9a376bb33 23392 scone_0.36.orig.tar.xz
+ 461d85efbea290fac344bc573f385d9d1e807bdf 2600 scone_0.36-1.debian.tar.xz
+ b15ee3669bb01bc77078909e39daf1d83920ec39 24988 scone_0.36-1_all.deb
+Checksums-Sha256:
+ e7046478fea723fcd2b899f2ae936dfac70d4ddbdcb1ec9002934404eece7163 804 scone_0.36-1.dsc
+ b5400d2d7bb2650f766d45e721c0834557f136892a5f5a98d4f93fc923f0cb82 23392 scone_0.36.orig.tar.xz
+ 2fcfda8ace970737156eb8f9d6ab7c57d1031b6bcc7e78ab1894486f26bb758c 2600 scone_0.36-1.debian.tar.xz
+ 91645cd6a5e619c9f2c97207c57907762041b796ff1850f40486289bb2d9797e 24988 scone_0.36-1_all.deb
+Files:
+ 2d6adc5aa7b8ecfd2545030222f263a0 804 unknown optional scone_0.36-1.dsc
+ 11ab545dbf5f1b4ce696c135fba2b864 23392 unknown optional scone_0.36.orig.tar.xz
+ 63d4d72ac2c651d3f474b4d332bd7bb7 2600 unknown optional scone_0.36-1.debian.tar.xz
+ fdd9c6c6c7a2562a9c0a90b019c9d7c6 24988 unknown optional scone_0.36-1_all.deb
