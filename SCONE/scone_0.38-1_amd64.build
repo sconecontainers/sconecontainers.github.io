@@ -100,6 +100,5 @@ E: scone: dir-or-file-in-opt opt/scone/bin/stack.env
 E: scone: dir-or-file-in-opt opt/scone/bin/subcommands.env
 E: scone: dir-or-file-in-opt opt/scone/bin/version.env
 W: scone: script-not-executable opt/scone/bin/scone-commons.sh
-E: scone: shell-script-fails-syntax-check opt/scone/bin/scone_host.sh
 W: scone: executable-not-elf-or-script opt/scone/bin/subcommands.env
 Finished running lintian.
