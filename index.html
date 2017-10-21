@@ -53,7 +53,7 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">SCONE</a>
+                <a class="navbar-brand page-scroll" href="#page-top">SCONTAIN.COM</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -63,7 +63,10 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#portfolio">Overview</a>
+                        <a class="page-scroll" href="#nutshell">Overview</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portfolio">Details</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#documentation">Documentation</a>
@@ -85,20 +88,54 @@
     <header>
         <div class="container">
             <div class="intro-text">
-                <div class="intro-lead-in">Welcome To SCONE!</div>
-                <div class="intro-heading">A Docker-Compatible Secure Container Environment using Intel SGX</div>
+                <div class="intro-lead-in">Welcome To SCONTAIN.COM!</div>
+                <div class="intro-heading">We enable secure execution of containers and programs using Intel SGX</div>
                 <a href="#portfolio" class="page-scroll btn btn-xl">Tell Me More</a>
             </div>
         </div>
     </header>
 
     <!-- Tell me more  Section -->
+    <section id="nutshell">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">SCONE platform in a nutshell</h2>
+                    <h3 class="section-subheading text-muted">Overview of SCONE's unique features.</h3>
+
+                    <p>SCONE runs programs inside <b>secure enclaves</b> preventing even attackers with root access from stealing secrets from these programs.
+                    </p>
+
+                    <p>SCONE helps to <b>configure programs with secrets</b> that can neither be read nor modified by attackers - even if they would have already taken control of the operating system and/or the hypervisor. 
+                        
+                    </p>
+ 
+                    <p>SCONE can <b>transparently encrypt files and network traffic</b> and in this way, it protects data from unauthorized access via the operating system and the hypervisor.
+                    </p>
+ 
+                    <p>SCONE <b>transparently attests programs</b> to ensure that only the correct, unmodified programs are executing. This also prevents maleware to attach to programs.
+                    </p>
+
+                    <p>SCONE <b>is compatible with Docker</b> permitting to run scontained applications with the help of compose files on top of Docker Swarm.
+                    </p>
+
+                    <p>SCONE supports <b>secure compose files</b> to protect secrets that are visible in compose files. 
+                    </p>
+
+                    <p>SCONE supports <b>curated images</b> for many popular services like memcached, Apache, MySQL, etc. 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+        
+    <!-- Tell me more  Section -->
     <section id="portfolio">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">SCONE in a nutshell</h2>
-                    <h3 class="section-subheading text-muted">SCONE's unique features.</h3>
+                    <h2 class="section-heading">SCONE in more details</h2>
+                    <h3 class="section-subheading text-muted">SCONE's unique features explained.</h3>
                 </div>
             </div>
             <div class="row">
@@ -141,7 +178,7 @@
                     </a>
                     <div class="portfolio-caption">
                         <h4>Cross-Compiler support</h4>
-                        <p class="text-muted">SCONE support cross-compilers for C, C++, Rust, Go and an interpreter for Pyhton.</p>
+                        <p class="text-muted">SCONE support cross-compilers for C, C++, Rust, Go and an interpreter for Python.</p>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 portfolio-item">
@@ -169,7 +206,7 @@
                     </a>
                     <div class="portfolio-caption">
                         <h4>Shielding</h4>
-                        <p class="text-muted">Supports transparent encrpytion of files and network traffic.</p>
+                        <p class="text-muted">Supports transparent encryption of files and network traffic.</p>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 portfolio-item">
@@ -243,7 +280,7 @@
             </div>
             <div class="row text-center">
                 <div class="col-md-4">
-                  <a href="mailto:scone.containers@gmail.com"  class="page-scroll btn btn-default">
+                  <a href="mailto:scontain.ceo@gmail.com"  class="page-scroll btn btn-default">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
@@ -256,7 +293,7 @@
                     </p>
                 </div>
                 <div class="col-md-4">
-		          <a href="mailto:scone.containers@gmail.com" class="btn btn-default">
+		          <a href="mailto:scontain.ceo@gmail.com" class="btn btn-default">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
@@ -266,7 +303,7 @@
                   <p class="text-muted">Services run inside of enclaves - without the possibility of inspections. This includes business day support.</p>
                 </div>
                 <div class="col-md-4">
-		  <a href="mailto:scone.containers@gmail.com"  class="btn btn-default">
+		  <a href="mailto:scontain.ceo@gmail.com"  class="btn btn-default">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
@@ -274,7 +311,7 @@
 		  </a>
                     <h4 class="service-heading">SCONE Enterprise Edition</h4>
                     <p class="text-muted">
-                        Services run inside of enclaves - without the possibility of inspections. Access to all source code. This includes priority support.
+                        Services run inside of enclaves - without the possibility of inspections. Access to all source code. This includes priority support 24x7.
                     </p>
                 </div>
             </div>
@@ -287,7 +324,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Contact Us</h2>
-                    <h3 class="section-subheading text-muted">If you are interested in SCONE or if you want to work for us, please send email to <a href="mailto:scone.containers@gmail.com">Scone Containers</a>.</h3>
+                    <h3 class="section-subheading text-muted">If you are interested in the SCONE platform, SCONE curated images or if you want to work for us, please send email to <a href="mailto:scontain.ceo@gmail.com">Scone Containers</a>.</h3>
                 </div>
             </div>
         </div>
@@ -297,7 +334,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; Scone Containers 2017</span>
+                    <span class="copyright">Copyright &copy; Scontain.com October 2017</span>
                 </div>
                 <div class="col-md-4">
                     <ul class="list-inline social-buttons">
