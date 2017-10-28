@@ -6,11 +6,11 @@ Section: unknown
 Maintainer: scontain developer <scontains.ceo@gmail.com>
 Installed-Size: 162
 Filename: ./scone_0.50-1_all.deb
-Size: 29018
-MD5sum: bbc7c3df5f65bcab2d3030e07f570735
-SHA1: 540af6673b665033a4951584a1c4d3e328f28c9c
-SHA256: 1ae7c41618fb712ea0e2a830445b546370e3caa61bdb375ce6c8800a112b4b26
-SHA512: ef107974048496345cc78b1e1a238c495b4b72c6278c11086dce8751707c9a8f9ab9065f615a42a32bfe4e669a27a717f767f85afe561d43c2f3d0c893537f70
+Size: 29004
+MD5sum: 2ecc416e7929962f2317be8f3d03daf4
+SHA1: 2c103f5b695081bec8f7feb49693fd876b4da321
+SHA256: f7ad88811e24b07103527484aea6e1c29bc4f01dfc63222d8ab93339d889c33a
+SHA512: 4ed1c894e1aa0fddc9cf6f0b884517a17a9919b869279bd51b0d52e4e36213a7b4b6468aab4c797c77c75dfab809e4eff9738d6439754fa9d3a14c90b8ed67e9
 Homepage: <insert the upstream URL, if relevant>
 Description: <insert up to 60 chars description>
  <insert long description, indented with spaces>
