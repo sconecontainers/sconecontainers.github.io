@@ -10,7 +10,8 @@ KEYNAME="96B9BADB"
 REPO="deb https://sconecontainers.github.io/SCONE ./"
 
 sudo apt-get update
-sudo apt-get install -y linux-image-extra-$(uname -r) linux-image-extra-virtual
+sudo apt-get install -y linux-image-extra-$(uname -r) || echo "failed to install linux-image-extra-.. trying to continue anyhow!"
+sudo apt-get install -y linux-image-extra-virtual
 sudo apt-get install -y apt-utils
 
 sudo sudo apt-get install -y apt-transport-https ca-certificates
