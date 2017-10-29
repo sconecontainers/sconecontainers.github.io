@@ -13,6 +13,7 @@ sudo apt-get update
 #sudo apt-get install -y linux-image-extra-$(uname -r) || echo "failed to install linux-image-extra-.. trying to continue anyhow!"
 #sudo apt-get install -y linux-image-extra-virtual
 sudo apt-get install -y apt-utils
+sudo apt-get install -y dirmngr
 
 sudo sudo apt-get install -y apt-transport-https ca-certificates
 sudo apt-key adv \
