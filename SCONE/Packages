@@ -1,16 +1,16 @@
 Package: scone
 Architecture: all
-Version: 0.59-1
+Version: 0.60-1
 Priority: optional
 Section: unknown
 Maintainer: scontain developer <scontains.ceo@gmail.com>
-Installed-Size: 182
-Filename: ./scone_0.59-1_all.deb
-Size: 30794
-MD5sum: 6d844401affcbee3982ca89e946176e9
-SHA1: da90d395208249e63273844ff12b6f651fbe7a3b
-SHA256: 02c81c878f7ae31090438236474ac21f933bd99e8623c4c95f34d5e816a69bb8
-SHA512: 098f532573413c54cd2de323e0f8931cbd65b52bdeb0eac52d37bb5d9abb5851edfda6d872a1eb73dc0e4490db1affa18f9a8ee100cec0e0be5be151636abb23
+Installed-Size: 183
+Filename: ./scone_0.60-1_all.deb
+Size: 31118
+MD5sum: 2979e1b768dcfa40a72e70c19dcb6a9c
+SHA1: ef8d8250c351a3232ab34368eca8eaeef8fa00d8
+SHA256: 6577e86c8eb64033b918b47127a7d77061fb0b22cb895d738c7d57e22f28ffdd
+SHA512: bbf706d4b9d8f9a0fbae7b8b94bcd9e746a98070cc1884e977d92f1e32e751b88cf2486fd8b240eb119b379c8a38500c9d8dede3320fbd299e358724d2dae746
 Homepage: <insert the upstream URL, if relevant>
 Description: <insert up to 60 chars description>
  <insert long description, indented with spaces>
