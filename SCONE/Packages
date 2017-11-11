@@ -1,17 +1,23 @@
 Package: scone
 Architecture: all
-Version: 0.63-1
+Version: 0.64-1
 Priority: optional
 Section: unknown
 Maintainer: scontain developer <scontains.ceo@gmail.com>
-Installed-Size: 175
-Filename: ./scone_0.63-1_all.deb
-Size: 31240
-MD5sum: 9a71b7694509873800650dd38d3304e9
-SHA1: 9843bc1529d0c63f0683784b05e0c52d2db9ebe1
-SHA256: da5756179a154823c453c573fdff38fd149b9188ead7b9ef0eeb138591676ec6
-SHA512: 86c84545a0617c55e94051b6ebc1e3aea6aae36438d0b951383aa4077a25ac9f505150c726daaeaa3190ec81252989950a9aeb0c0045e3eb7d0c59c411006f6b
-Homepage: <insert the upstream URL, if relevant>
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Installed-Size: 174
+Depends: gettext-base
+Filename: ./scone_0.64-1_all.deb
+Size: 30658
+MD5sum: 7fabe049828938016b210d3795c13142
+SHA1: 014327c401ffe27a950925ca534ba95e30cdfd9a
+SHA256: 76c89d0805ce1866dbaf298794a34f6df53e992e48bcdf5c43825d3b3cf97928
+SHA512: 62630a44576fe09d4265b2dd279d2665409cfe18fff868582558843d1f6c62466a7a13721d85e8a33fb7e23dd357c3321342428d1c408ab3be6a613a24cecf2e
+Homepage: https://sconedocs.github.io/
+Description: Scone Platform CLI
+ Scone is a platform to run applications inside Intel SGX enclaves.
+ Scone encompasses several commands that
+ - help to install patched Intel SGX-drivers and Docker Engine
+ - help to statically compile programs to run inside of enclave
+ - help to dynamically compile programs to run inside of enclaves
+ - help to protect programs running inside of enclaves
 
