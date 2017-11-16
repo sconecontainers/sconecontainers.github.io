@@ -1,20 +1,20 @@
  dpkg-buildpackage -rfakeroot -D -us -uc
 dpkg-buildpackage: source package scone
-dpkg-buildpackage: source version 0.79-1
+dpkg-buildpackage: source version 0.81-1
 dpkg-buildpackage: source distribution unstable
 dpkg-buildpackage: source changed by scontain developer <scontains.ceo@gmail.com>
- dpkg-source --before-build scone-0.79
+ dpkg-source --before-build scone-0.81
 dpkg-buildpackage: host architecture amd64
  fakeroot debian/rules clean
 dh clean 
    dh_testdir
    dh_auto_clean
    dh_clean
- dpkg-source -b scone-0.79
+ dpkg-source -b scone-0.81
 dpkg-source: info: using source format '3.0 (quilt)'
-dpkg-source: info: building scone using existing ./scone_0.79.orig.tar.xz
-dpkg-source: info: building scone in scone_0.79-1.debian.tar.xz
-dpkg-source: info: building scone in scone_0.79-1.dsc
+dpkg-source: info: building scone using existing ./scone_0.81.orig.tar.xz
+dpkg-source: info: building scone in scone_0.81-1.debian.tar.xz
+dpkg-source: info: building scone in scone_0.81-1.dsc
  debian/rules build
 dh build 
    dh_testdir
@@ -40,8 +40,8 @@ dh binary
 dpkg-gencontrol: warning: File::FcntlLock not available; using flock which is not NFS-safe
    dh_md5sums
    dh_builddeb
-dpkg-deb: building package 'scone' in '../scone_0.79-1_all.deb'.
- dpkg-genchanges  >../scone_0.79-1_amd64.changes
+dpkg-deb: building package 'scone' in '../scone_0.81-1_all.deb'.
+ dpkg-genchanges  >../scone_0.81-1_amd64.changes
 dpkg-genchanges: including full source code in upload
- dpkg-source --after-build scone-0.79
+ dpkg-source --after-build scone-0.81
 dpkg-buildpackage: full upload (original source is included)
