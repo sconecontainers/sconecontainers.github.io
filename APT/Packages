@@ -1,61 +1,5 @@
 Package: docker-engine
 Architecture: amd64
-Version: 17.05.0~ce~git20170504.202503.0.89658be-0~ubuntu-trusty
-Priority: optional
-Section: admin
-Maintainer: Docker <support@docker.com>
-Installed-Size: 90224
-Depends: iptables, init-system-helpers (>= 1.13~), sysv-rc (>= 2.88dsf-24) | file-rc (>= 0.8.16), libapparmor1 (>= 2.6~devel), libc6 (>= 2.17), libdevmapper1.02.1 (>= 2:1.02.63), libltdl7 (>= 2.4.2), libsystemd-journal0 (>= 201)
-Recommends: aufs-tools, ca-certificates, cgroupfs-mount | cgroup-lite, git, xz-utils, apparmor
-Conflicts: docker (<< 1.5~), docker-engine-cs, docker.io, lxc-docker, lxc-docker-virtual-package
-Filename: ./docker-engine_17.05.0~ce~git20170504.202503.0.89658be-0~ubuntu-trusty_amd64.deb
-Size: 19309678
-MD5sum: deeaccb309fca99abc122c3e002c1021
-SHA1: fddd2b7cff303a589c9a54e11aa3698cd38c1657
-SHA256: 091a291ad215c4ff651123496de4bef7fa401b43a605560767b0adc5b018f785
-SHA512: 63678799760f4fb7b5a60b6d047f870f27c42377708602fcb2559030d9754d3db1a3f68f9f388aa9a9cd474b0d976e9d45d89d9826db2b63b72d440274a121d1
-Homepage: https://dockerproject.org
-Description: Docker: the open-source application container engine
- Docker is an open source project to build, ship and run any application as a
- lightweight container
- .
- Docker containers are both hardware-agnostic and platform-agnostic. This means
- they can run anywhere, from your laptop to the largest EC2 compute instance and
- everything in between - and they don't require you to use a particular
- language, framework or packaging system. That makes them great building blocks
- for deploying and scaling web apps, databases, and backend services without
- depending on a particular stack or provider.
-
-Package: docker-engine
-Architecture: amd64
-Version: 17.05.0~ce~git20170504.202503.0.89658be-0~debian-stretch
-Priority: optional
-Section: admin
-Maintainer: Docker <support@docker.com>
-Installed-Size: 107933
-Depends: iptables, init-system-helpers (>= 1.18~), libapparmor1 (>= 2.6~devel), libc6 (>= 2.17), libdevmapper1.02.1 (>= 2:1.02.97), libltdl7 (>= 2.4.6), libseccomp2 (>= 2.1.0), libsystemd0
-Recommends: aufs-tools, ca-certificates, cgroupfs-mount | cgroup-lite, git, xz-utils
-Conflicts: docker (<< 1.5~), docker-engine-cs, docker.io, lxc-docker, lxc-docker-virtual-package
-Filename: ./docker-engine_17.05.0~ce~git20170504.202503.0.89658be-0~debian-stretch_amd64.deb
-Size: 21656946
-MD5sum: 8f6b14c2c0f9de5b3cf9912781c2da91
-SHA1: ee9161ad99bde84f7419a6885a6b43add0ef1682
-SHA256: 071747bc0dd4fee006f66fa1f89b563fb2bd2a417457a3935064e8e935265a33
-SHA512: 6861c4b7ac1915690bd2cf343aafc7aa2bbf1ce9f7c3e2c58c412ecd2e68639b1ccb4334365ed9d46ea953c319c18b8393f3bcc7dfdd5be94a356a19bfa13668
-Homepage: https://dockerproject.org
-Description: Docker: the open-source application container engine
- Docker is an open source project to build, ship and run any application as a
- lightweight container
- .
- Docker containers are both hardware-agnostic and platform-agnostic. This means
- they can run anywhere, from your laptop to the largest EC2 compute instance and
- everything in between - and they don't require you to use a particular
- language, framework or packaging system. That makes them great building blocks
- for deploying and scaling web apps, databases, and backend services without
- depending on a particular stack or provider.
-
-Package: docker-engine
-Architecture: amd64
 Version: 17.03.2~ce~git20170601.211448.0.f5ec1e2-0~ubuntu-precise
 Priority: optional
 Section: admin
@@ -65,11 +9,11 @@ Depends: iptables, upstart-job, libapparmor1 (>= 2.6~devel), libc6 (>= 2.14), li
 Recommends: aufs-tools, ca-certificates, cgroupfs-mount | cgroup-lite, git, xz-utils, apparmor
 Conflicts: docker (<< 1.5~), docker-engine-cs, docker.io, lxc-docker, lxc-docker-virtual-package
 Filename: ./docker-engine_17.03.2~ce~git20170601.211448.0.f5ec1e2-0~ubuntu-precise_amd64.deb
-Size: 27054362
-MD5sum: 4d233cebb2b586a62416c647d7a4dcce
-SHA1: ab95df7cda5ab2f79e269b6a019d485ecf265f82
-SHA256: 6e18caa4f247f37be176043d521fb20fdbb060c035038dc34c91a851ba11eafb
-SHA512: be749a82a8d22d08342804d136e85a93aee89f2cbfcb58a702b211ca218b374755d951bf290f19d71ce81a6ae9225a428eea18ab04ef965dea13e48f09143f68
+Size: 27055800
+MD5sum: 3bb940434f81bfaa37ebef053e7ab57e
+SHA1: 71b658b809939c2ae7f5849806cfe17a6bf42ec3
+SHA256: ceea172113e52dd7b1a0a7a23e7399d9388cc3572d1b9011a5b9597c57395ec6
+SHA512: df0d2a47dfc53c09fee8924582045c3236c03b1bd3d10f6b0054aa39a415d1aa884177dedd204c5b1ca606569bfcc39d0d0e127f3a2730e1a565c80bb960dd30
 Homepage: https://dockerproject.org
 Description: Docker: the open-source application container engine
  Docker is an open source project to build, ship and run any application as a
@@ -93,11 +37,11 @@ Depends: iptables, init-system-helpers (>= 1.18~), libapparmor1 (>= 2.6~devel), 
 Recommends: aufs-tools, ca-certificates, cgroupfs-mount | cgroup-lite, git, xz-utils, apparmor
 Conflicts: docker (<< 1.5~), docker-engine-cs, docker.io, lxc-docker, lxc-docker-virtual-package
 Filename: ./docker-engine_17.03.2~ce~git20170601.211448.0.f5ec1e2-0~ubuntu-yakkety_amd64.deb
-Size: 20944234
-MD5sum: a9c7732e656fff09f1ba7e07047abfe8
-SHA1: 330d77106ddee4080aaec26a880f873b97d1b170
-SHA256: ace2dad908f70adbda37ba6cec9e563d7c576481966f32cfa0c0e9c5fb1e2442
-SHA512: 7115df3ad4d6909ca26c3bfe7f3a63be5c5d100971b689f1bbf54f5800460a51f91fa81d24f2e07bf919bca885426c20b0be312cecb0d3188deddbe1cfd851ce
+Size: 20945672
+MD5sum: 987a63255e0aa85fb0ce4d7cc34485ba
+SHA1: 6f82c9ca41ed91c47ac602f16216bf6d96375230
+SHA256: cb97481f2994022afd3e706719ec46ce60578986d898321969c70d71a248be3f
+SHA512: 774a0c2b09263208fc7432dad83ec619e6fdb3417acc8baf94dd59252aa9e94ffb85593ed2ec0bbb5212682da04e3f5819ab78ffab66be48c7965a2e9da17214
 Homepage: https://dockerproject.org
 Description: Docker: the open-source application container engine
  Docker is an open source project to build, ship and run any application as a
@@ -121,95 +65,11 @@ Depends: iptables, init-system-helpers (>= 1.18~), libapparmor1 (>= 2.6~devel), 
 Recommends: aufs-tools, ca-certificates, cgroupfs-mount | cgroup-lite, git, xz-utils
 Conflicts: docker (<< 1.5~), docker-engine-cs, docker.io, lxc-docker, lxc-docker-virtual-package
 Filename: ./docker-engine_17.03.2~ce~git20170601.211448.0.f5ec1e2-0~debian-wheezy_amd64.deb
-Size: 27289916
-MD5sum: dcaa00dcbdd91556f1adf1d2c49896cb
-SHA1: 93f3a50c81c7c92e06058617e668fa1ec241a604
-SHA256: ae1249f5dca60a3db8ec1b88082b47d9a0937ed6f748d8a2dfb4fca256473ae8
-SHA512: c9bfb27e5521291188d1195e7cd0e4112268566981f76550da6cb50693d0d4b79f3054e1bf2892d5942a4eb3688cd43b95427fd50e2ddacbc7d99d4ca71c1666
-Homepage: https://dockerproject.org
-Description: Docker: the open-source application container engine
- Docker is an open source project to build, ship and run any application as a
- lightweight container
- .
- Docker containers are both hardware-agnostic and platform-agnostic. This means
- they can run anywhere, from your laptop to the largest EC2 compute instance and
- everything in between - and they don't require you to use a particular
- language, framework or packaging system. That makes them great building blocks
- for deploying and scaling web apps, databases, and backend services without
- depending on a particular stack or provider.
-
-Package: docker-engine
-Architecture: amd64
-Version: 17.05.0~ce~git20170504.202503.0.89658be-0~debian-jessie
-Priority: optional
-Section: admin
-Maintainer: Docker <support@docker.com>
-Installed-Size: 90232
-Depends: iptables, init-system-helpers (>= 1.18~), libapparmor1 (>= 2.6~devel), libc6 (>= 2.17), libdevmapper1.02.1 (>= 2:1.02.90), libltdl7 (>= 2.4.2), libsystemd0
-Recommends: aufs-tools, ca-certificates, cgroupfs-mount | cgroup-lite, git, xz-utils
-Conflicts: docker (<< 1.5~), docker-engine-cs, docker.io, lxc-docker, lxc-docker-virtual-package
-Filename: ./docker-engine_17.05.0~ce~git20170504.202503.0.89658be-0~debian-jessie_amd64.deb
-Size: 19356430
-MD5sum: c409e0373aab523c65d877ef7a822bdc
-SHA1: 0f42eedc32651031acff4c5cc5feb10ec1e249fa
-SHA256: b6f8b0cf9056c463babec1d00ecef4f9e275c235ee8fc10c137ff84befc31c46
-SHA512: b954fa343b334ad8ae508ad31e38cd901f5ec2ce7aaaadfe1eaca28625ea9d7a22566c84a2c0f0c1b2ec82f9f84e48cfbfc38bc900240095d918fbd53522c26f
-Homepage: https://dockerproject.org
-Description: Docker: the open-source application container engine
- Docker is an open source project to build, ship and run any application as a
- lightweight container
- .
- Docker containers are both hardware-agnostic and platform-agnostic. This means
- they can run anywhere, from your laptop to the largest EC2 compute instance and
- everything in between - and they don't require you to use a particular
- language, framework or packaging system. That makes them great building blocks
- for deploying and scaling web apps, databases, and backend services without
- depending on a particular stack or provider.
-
-Package: docker-engine
-Architecture: amd64
-Version: 17.05.0~ce~git20170504.202503.0.89658be-0~ubuntu-yakkety
-Priority: optional
-Section: admin
-Maintainer: Docker <support@docker.com>
-Installed-Size: 108013
-Depends: iptables, init-system-helpers (>= 1.18~), libapparmor1 (>= 2.6~devel), libc6 (>= 2.17), libdevmapper1.02.1 (>= 2:1.02.97), libltdl7 (>= 2.4.6), libseccomp2 (>= 2.1.0), libsystemd0
-Recommends: aufs-tools, ca-certificates, cgroupfs-mount | cgroup-lite, git, xz-utils, apparmor
-Conflicts: docker (<< 1.5~), docker-engine-cs, docker.io, lxc-docker, lxc-docker-virtual-package
-Filename: ./docker-engine_17.05.0~ce~git20170504.202503.0.89658be-0~ubuntu-yakkety_amd64.deb
-Size: 21078658
-MD5sum: 5ce0c0932b0df578c783e7f5a8bce0c5
-SHA1: 3374b01ade046a4cc3a8d68b17b9aae93151e95e
-SHA256: 3bd2d568998f091047e7dbbda00f77a60c3c6f9ceaefd6766b025d2b6e7f6028
-SHA512: 50a3b1b1e22bdcee3b5cd1af33117590580ac269578ce2da2e1fb45d39cf6776f7b686011a86d555b97920dabc76be2631b4b338a3dc9d0591cfc554caa28219
-Homepage: https://dockerproject.org
-Description: Docker: the open-source application container engine
- Docker is an open source project to build, ship and run any application as a
- lightweight container
- .
- Docker containers are both hardware-agnostic and platform-agnostic. This means
- they can run anywhere, from your laptop to the largest EC2 compute instance and
- everything in between - and they don't require you to use a particular
- language, framework or packaging system. That makes them great building blocks
- for deploying and scaling web apps, databases, and backend services without
- depending on a particular stack or provider.
-
-Package: docker-engine
-Architecture: amd64
-Version: 17.05.0~ce~git20170504.202503.0.89658be-0~ubuntu-zesty
-Priority: optional
-Section: admin
-Maintainer: Docker <support@docker.com>
-Installed-Size: 108013
-Depends: iptables, init-system-helpers (>= 1.18~), libapparmor1 (>= 2.6~devel), libc6 (>= 2.17), libdevmapper1.02.1 (>= 2:1.02.97), libltdl7 (>= 2.4.6), libseccomp2 (>= 2.1.0), libsystemd0
-Recommends: aufs-tools, ca-certificates, cgroupfs-mount | cgroup-lite, git, xz-utils, apparmor
-Conflicts: docker (<< 1.5~), docker-engine-cs, docker.io, lxc-docker, lxc-docker-virtual-package
-Filename: ./docker-engine_17.05.0~ce~git20170504.202503.0.89658be-0~ubuntu-zesty_amd64.deb
-Size: 21636774
-MD5sum: bbab60e60da34e2415e03f2747a09d9e
-SHA1: af978ff8195a9bb26414bad53336ae01fcf08d13
-SHA256: 11b96edc6eb55393a293c375cb862792f08f3d13bb4c92fb3b17dd07c3912912
-SHA512: 739429e6153917d06ae1f9683dd514c2673753660d21a73c2dba8e63d4289e6586c07bcfd14e187f8aeb06427a9410756082e9bc70f1cf3582427c57291da128
+Size: 27291354
+MD5sum: 286723023dc1788b8205c56d4b5e5f43
+SHA1: be33a758122048a6da4aa1c6292aa947bef705c8
+SHA256: 1e816c7b641da5c5d5a2bcce21a97da5a88f72f9a9b76989ca593aade1958afd
+SHA512: 8512b2f895294cbc41e2cef9227e04a329b86355fc5048fe2812991b4e43f6baba64d625b9e3f881c5299ec11422902d63ec16ff06494fb5ea41186a655ffcfb
 Homepage: https://dockerproject.org
 Description: Docker: the open-source application container engine
  Docker is an open source project to build, ship and run any application as a
@@ -233,11 +93,11 @@ Depends: iptables, init-system-helpers (>= 1.18~), lsb-base (>= 4.1+Debian11ubun
 Recommends: aufs-tools, ca-certificates, cgroupfs-mount | cgroup-lite, git, xz-utils, apparmor
 Conflicts: docker (<< 1.5~), docker-engine-cs, docker.io, lxc-docker, lxc-docker-virtual-package
 Filename: ./docker-engine_17.03.2~ce~git20170601.211448.0.f5ec1e2-0~ubuntu-xenial_amd64.deb
-Size: 19321072
-MD5sum: b70a178df3f37f5c07f4378ee07272fb
-SHA1: e0936fb930885417bf32fee5b58e750d34177ad4
-SHA256: 253a0b6a0037d40fff009029704c3a5dae8fda08eb3e661a3e9f1ab3755cb5c2
-SHA512: d130d68a7253320c07a25652207146576ed70613528377b2c1cb09807cb4c9ae95a3fa1917ebfd4cb0ed10edb805a36ead6422090203a32b49540325bde98fd0
+Size: 19322510
+MD5sum: 3db76d413cec57dcafbeaca2db6f4380
+SHA1: 16ad99d3faef1271aa792017b49c407e3504e2c8
+SHA256: d04ae8d52764907d4d25b93b5c5ff7a7dc55cd1fa796936ee5a243cccdcaf695
+SHA512: 75e69a474476f4ad630c13c070e5874c103c8a99e68e1ee61ae75c496ca9355f2208165f00c4bdf662e8af31135659e5384b0ba79c2d7044415cb96a4b8e8c70
 Homepage: https://dockerproject.org
 Description: Docker: the open-source application container engine
  Docker is an open source project to build, ship and run any application as a
@@ -261,39 +121,11 @@ Depends: iptables, init-system-helpers (>= 1.18~), libapparmor1 (>= 2.6~devel), 
 Recommends: aufs-tools, ca-certificates, cgroupfs-mount | cgroup-lite, git, xz-utils
 Conflicts: docker (<< 1.5~), docker-engine-cs, docker.io, lxc-docker, lxc-docker-virtual-package
 Filename: ./docker-engine_17.03.2~ce~git20170601.211448.0.f5ec1e2-0~debian-stretch_amd64.deb
-Size: 21306348
-MD5sum: 3a23aa5f3e14f18d8c7bc01ed24428cd
-SHA1: d0b849b6c44ddbd436c8d8e832b97593ead79539
-SHA256: 20fb19a41cf02dff3f082cfb1726fbc7314b054a358dc8c93243076be537d626
-SHA512: 4fd499fd930b69eeaf359afc287222fd9644883f8fd3a2db771c63badecc422eb3c636e17e190b0fbcecc188a7e6f3d9b8df06226adb28b5fb25c78c23a0a1f4
-Homepage: https://dockerproject.org
-Description: Docker: the open-source application container engine
- Docker is an open source project to build, ship and run any application as a
- lightweight container
- .
- Docker containers are both hardware-agnostic and platform-agnostic. This means
- they can run anywhere, from your laptop to the largest EC2 compute instance and
- everything in between - and they don't require you to use a particular
- language, framework or packaging system. That makes them great building blocks
- for deploying and scaling web apps, databases, and backend services without
- depending on a particular stack or provider.
-
-Package: docker-engine
-Architecture: amd64
-Version: 17.05.0~ce~git20170504.202503.0.89658be-0~ubuntu-xenial
-Priority: optional
-Section: admin
-Maintainer: Docker <support@docker.com>
-Installed-Size: 90534
-Depends: iptables, init-system-helpers (>= 1.18~), lsb-base (>= 4.1+Debian11ubuntu7), libapparmor1 (>= 2.6~devel), libc6 (>= 2.17), libdevmapper1.02.1 (>= 2:1.02.97), libltdl7 (>= 2.4.6), libseccomp2 (>= 2.1.0), libsystemd0
-Recommends: aufs-tools, ca-certificates, cgroupfs-mount | cgroup-lite, git, xz-utils, apparmor
-Conflicts: docker (<< 1.5~), docker-engine-cs, docker.io, lxc-docker, lxc-docker-virtual-package
-Filename: ./docker-engine_17.05.0~ce~git20170504.202503.0.89658be-0~ubuntu-xenial_amd64.deb
-Size: 19401676
-MD5sum: aedfed6c75e65e070d4922b21ba6f8c7
-SHA1: bc4a12ba172b97924883cc0858e5b63b84167aa4
-SHA256: aafbaa5b3fa049d340115fcec5712ab41fe954ca17e22508f267df15c40a8cf6
-SHA512: 6f8fb2f1a0ef51bceecd44e2a9bf50140919815827fd30c957b9ae7c921be7aa2da90a9e64cc827cbc06374947f53caf7a4cf5783a9fe10d7999a5716e7f56e9
+Size: 21307786
+MD5sum: 87009117a08856e87648d4cf9be47230
+SHA1: 9b006eec0d58e938e0768d18ac48fc44026bfe46
+SHA256: cf3ae1760342b1e6e44934ad505d5b562c36b0837c8abf674538984422662ee3
+SHA512: 23316f9c25df8231201b221aff1269771ff7ab79c9f386e8fba47cf04940d3142925a895bc3b3b897db5cbc731ca49eeb5c37d8f445c5729099882b641263066
 Homepage: https://dockerproject.org
 Description: Docker: the open-source application container engine
  Docker is an open source project to build, ship and run any application as a
@@ -317,11 +149,11 @@ Depends: iptables, init-system-helpers (>= 1.13~), sysv-rc (>= 2.88dsf-24) | fil
 Recommends: aufs-tools, ca-certificates, cgroupfs-mount | cgroup-lite, git, xz-utils, apparmor
 Conflicts: docker (<< 1.5~), docker-engine-cs, docker.io, lxc-docker, lxc-docker-virtual-package
 Filename: ./docker-engine_17.03.2~ce~git20170601.211448.0.f5ec1e2-0~ubuntu-trusty_amd64.deb
-Size: 19201386
-MD5sum: c3cb55ace9cd6092dac37219f90efd45
-SHA1: 9665f63ee6cc35e51ff747c7bebf2cb81d99bf8c
-SHA256: 7183021133b798521ff1f9fd7306ba7d6706e7f93cf9eb3f6d8c64246cb801d0
-SHA512: dab2a98c13c799b04d072145274811123872eb7916559bb2a253f41a79dee16ff007f2e4c37fc41603a8d49c0096da9fc279a81da6f1969a40a04490d81e89c4
+Size: 19202824
+MD5sum: b98d50273784ce247b1dbfe66b8c9936
+SHA1: b6948ba69ebefabe06110d2630ffd2fd228f6a93
+SHA256: bb79c238e71253603f91755ff69f9d74b7f44401e5d428b2b36c048b1ca82a20
+SHA512: 6262e5caeb84e4d8482bd1ccc98533a6384947583c96b788bf8e928662c312563f1d082293b118f3c3c37a5af7a36d15cce710b14a913c7632954d7a87e7dfd6
 Homepage: https://dockerproject.org
 Description: Docker: the open-source application container engine
  Docker is an open source project to build, ship and run any application as a
@@ -345,39 +177,11 @@ Depends: iptables, init-system-helpers (>= 1.18~), libapparmor1 (>= 2.6~devel), 
 Recommends: aufs-tools, ca-certificates, cgroupfs-mount | cgroup-lite, git, xz-utils
 Conflicts: docker (<< 1.5~), docker-engine-cs, docker.io, lxc-docker, lxc-docker-virtual-package
 Filename: ./docker-engine_17.03.2~ce~git20170601.211448.0.f5ec1e2-0~debian-jessie_amd64.deb
-Size: 19092006
-MD5sum: 07c72a08220b3fb29787800e6ca78387
-SHA1: f037bde172ce69816b23797478a14cfa95b63a81
-SHA256: 9d813d4560b572dd5ea1211052f3217631b3ad4a23e24bd03052541f4772798d
-SHA512: 84a56842b6a6a2cf757d88887a1bd5f11a7a78286a2fec80737d702f508b6f33347cd1abb462a940bad13eb87b89b10506a24a1a9603ffe074f426b0077f1ab3
-Homepage: https://dockerproject.org
-Description: Docker: the open-source application container engine
- Docker is an open source project to build, ship and run any application as a
- lightweight container
- .
- Docker containers are both hardware-agnostic and platform-agnostic. This means
- they can run anywhere, from your laptop to the largest EC2 compute instance and
- everything in between - and they don't require you to use a particular
- language, framework or packaging system. That makes them great building blocks
- for deploying and scaling web apps, databases, and backend services without
- depending on a particular stack or provider.
-
-Package: docker-engine
-Architecture: amd64
-Version: 17.05.0~ce~git20170504.202503.0.89658be-0~debian-wheezy
-Priority: optional
-Section: admin
-Maintainer: Docker <support@docker.com>
-Installed-Size: 90091
-Depends: iptables, init-system-helpers (>= 1.18~), libapparmor1 (>= 2.6~devel), libc6 (>= 2.9), libdevmapper1.02.1 (>= 2:1.02.63), libltdl7 (>= 2.4.2)
-Recommends: aufs-tools, ca-certificates, cgroupfs-mount | cgroup-lite, git, xz-utils
-Conflicts: docker (<< 1.5~), docker-engine-cs, docker.io, lxc-docker, lxc-docker-virtual-package
-Filename: ./docker-engine_17.05.0~ce~git20170504.202503.0.89658be-0~debian-wheezy_amd64.deb
-Size: 27771324
-MD5sum: f491682617d346f322e99443c558c183
-SHA1: 69319f8bdb9a1400d3a95dcb5dab763fefc6302f
-SHA256: f3e318ab8b54c2ffc1e78fca8c6c394d8dfbf74e1e68599d0385fc15ad70cfe2
-SHA512: e1e797931e2bc0361481963eeb70563d0cb4c1f3923a352a5075dbd0b73def1438f977fece381dace85f3e76bfae908add830156eb51885664943aec25f20cb7
+Size: 19093444
+MD5sum: a5961d5390f0ee0c1557ab7f9e5addd9
+SHA1: e3429c7b80eaed530144a41fe34ee27069278128
+SHA256: afadff3fdddf27d04d41213ad025174f579fc1d802a28b762fcdf97637c076d6
+SHA512: b4717cace7cd51d8d6522a5a1d8833023648f2135cdc82b934a4d4c7605c328ccece164326eda9ca0e4ef12cfb78950126f7f5ef4719cf261fe7831a698491a1
 Homepage: https://dockerproject.org
 Description: Docker: the open-source application container engine
  Docker is an open source project to build, ship and run any application as a
