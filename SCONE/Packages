@@ -1,17 +1,17 @@
 Package: scone
 Architecture: all
-Version: 0.93-1
+Version: 0.94-1
 Priority: optional
 Section: unknown
 Maintainer: scontain developer <scontains.ceo@gmail.com>
 Installed-Size: 201
 Depends: gettext-base
-Filename: ./scone_0.93-1_all.deb
-Size: 34282
-MD5sum: 0c8fdbc1877ea8c82f823f9911b0311e
-SHA1: 8d3fb5ff624b39c32e18c8d346655bb37cc258ab
-SHA256: 0ed5aa310e13333b3d78be25109e890ed5a205cebeb71e33a0b3f6fb7c7308a1
-SHA512: 618d8f7d36d36e6500074b032024ae216ec6b6a8def0a85808fc1e4ee48f5dfbcd3dc2d9295c8d58fb4174ae769445a0d3717e5b8ba8c54c152707ea1b40a4e9
+Filename: ./scone_0.94-1_all.deb
+Size: 34274
+MD5sum: 67fe61038762601fafb6ec54c53767a2
+SHA1: d66755de3f2d09782aba01d59bf32c606901a8f6
+SHA256: f670f004c73949ab0b23d085f9a342d23bccbe740bc453ffb2ee55484c30ffeb
+SHA512: d9a3b78196837f3eb8aaea844e3847759e81f982891c5dd66b739101e5ea029d9fa4ace6d358eaa1583c961651e6d5975450f4e1b86f8deffec2f41b3078680a
 Homepage: https://sconedocs.github.io/
 Description: Scone Platform CLI
  Scone is a platform to run applications inside Intel SGX enclaves.
