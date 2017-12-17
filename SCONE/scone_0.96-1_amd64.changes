@@ -1,5 +1,5 @@
 Format: 1.8
-Date: Sun, 17 Dec 2017 21:28:18 +0100
+Date: Sun, 17 Dec 2017 21:28:42 +0100
 Source: scone
 Binary: scone
 Architecture: source all
@@ -15,17 +15,17 @@ Changes:
  .
    * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
 Checksums-Sha1:
- 24b4b5b166f9928ec16f2cf012cdd465b82419e4 794 scone_0.96-1.dsc
- 9a765e39173f06d511a32e126876897cabf1a2a8 32708 scone_0.96.orig.tar.xz
- 2dfd66a677236eba16eb1c8359b6be356d113f9d 2044 scone_0.96-1.debian.tar.xz
- 3ed9a898d3da7d846d2286beef6ce918173f322f 34992 scone_0.96-1_all.deb
+ 651298867aa1d27a33feee6d74fd6e6a59de2b09 794 scone_0.96-1.dsc
+ 06cdea023a073ee74f62a80ab37e6d76ad0ef0f4 32692 scone_0.96.orig.tar.xz
+ 67bcbe2bfb613ade2c0bf40e752980d04ab4797c 2040 scone_0.96-1.debian.tar.xz
+ 18bc4ad1bdab1b98e362769642f904214849945a 35016 scone_0.96-1_all.deb
 Checksums-Sha256:
- 8f4c5f29f8a189c6f3ed0b1babad313c319e880b407de85ac09ef4dab75b9ab6 794 scone_0.96-1.dsc
- 075d4f5b6f03affd1ad6fd2c1d28549c9687f3cfa4fea48a09b0a4e1cddccdf4 32708 scone_0.96.orig.tar.xz
- 73eddb795b01145f5a20be0a80d7dbd4549b717f886e00dda2b4c12e558edfad 2044 scone_0.96-1.debian.tar.xz
- ea878a444cd5c09e6e805bf14d38793b7e4852fc1e804f094622c06f48f0127d 34992 scone_0.96-1_all.deb
+ 43b6f2dd8e98e5b3659ff2384ff4566d988c65d38fef2455b6d1d6f16e4e2405 794 scone_0.96-1.dsc
+ ef8cb29a8a62a1458c7eaceb2d61267602e933fad7b5a88eb624082b3ec0b6a6 32692 scone_0.96.orig.tar.xz
+ a1a329718f2926123246fe822c9be7c15ac6f47bfbcad0bf303caacfb8e5213b 2040 scone_0.96-1.debian.tar.xz
+ b1ac2350e876c4a9dff2c963bd04266e514d343002574290a397c167a1a2cf8e 35016 scone_0.96-1_all.deb
 Files:
- ffb49e972efe1cdcf649d05430a3a52c 794 unknown optional scone_0.96-1.dsc
- 32130748767167cb418d1b033381648f 32708 unknown optional scone_0.96.orig.tar.xz
- b13810424ca437e62db5a1a1bc8a22cf 2044 unknown optional scone_0.96-1.debian.tar.xz
- 2a59891a2aedd2eb54be6826e37a055d 34992 unknown optional scone_0.96-1_all.deb
+ 2447b777431c8d83100714a9d8ee233c 794 unknown optional scone_0.96-1.dsc
+ fc821aa6c2b229d4122083de94a4a8c4 32692 unknown optional scone_0.96.orig.tar.xz
+ 394345f1c9c3ff17a9e8ac7ad34c834c 2040 unknown optional scone_0.96-1.debian.tar.xz
+ 36673eca30886aaef8ce88e249dcb2fa 35016 unknown optional scone_0.96-1_all.deb
