@@ -10,11 +10,11 @@ Build-Depends: debhelper (>= 9)
 Package-List:
  scone deb unknown optional arch=all
 Checksums-Sha1:
- c368c37ce850d49a236614e63319cac15f1d015f 33020 scone_0.96.orig.tar.xz
- ca0b17319fb390415e2d588da50553e50240f6b9 2064 scone_0.96-1.debian.tar.xz
+ 426f51be62ebfde9c09f33ebc20d6075a10eada5 33036 scone_0.96.orig.tar.xz
+ a0ec30b30f12681f37abd33a156bf1bc2c3e31d2 2056 scone_0.96-1.debian.tar.xz
 Checksums-Sha256:
- 3f172085b9adf941fd3ad54ce41333004c2e322a42567552994bce6356b71f97 33020 scone_0.96.orig.tar.xz
- a1465e2af41a171120fdd7e3bc993c7aa2d5bc0b786c9db4529c25da964c4460 2064 scone_0.96-1.debian.tar.xz
+ 1c2eadaf4480a59d54e6dc6ed96edcf34f78645a4a128c5a585431f985b4e78f 33036 scone_0.96.orig.tar.xz
+ eec974859e65f819aaa7bf2778a74bd8578c724f9befb19b726b363680e3b1eb 2056 scone_0.96-1.debian.tar.xz
 Files:
- eb4b7ddb773be09bf768e4a9972f0735 33020 scone_0.96.orig.tar.xz
- 642408430a746e661075c364022df4b6 2064 scone_0.96-1.debian.tar.xz
+ 59c15a5f56da3d21b55a192270856bc3 33036 scone_0.96.orig.tar.xz
+ 34baf29b235f0a46d8f2bbfc9a81c331 2056 scone_0.96-1.debian.tar.xz
