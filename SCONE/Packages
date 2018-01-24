@@ -7,11 +7,11 @@ Maintainer: scontain developer <scontains.ceo@gmail.com>
 Installed-Size: 223
 Depends: gettext-base
 Filename: ./scone_0.98-1_all.deb
-Size: 36708
-MD5sum: 7b1cf36e94b371ae5015ee07d1fb733b
-SHA1: a778d7e157b14c89ff1e24dc7e54c01ea2cbfb9d
-SHA256: f6916ac057c99e45bc0d26b604afcc4eb51c8da756939e14eb3843a6c83d44f3
-SHA512: eeb8793e0a5361b2d729db0d8a03cc9296961ca1ce7bf4ee60e3e3c2d7cc91eb1b5a7f29bd117bbf737d3fd9ee635edf7b0c02b85ebc90e332c1270d39a0b352
+Size: 36796
+MD5sum: ad51f00d5d37145d76793b9965ee5f20
+SHA1: ccac92e76842849997e57c3f4555d24ec746b469
+SHA256: 8d6cfd7133802a7e7de107da4939daf41407b130554d805115aa544ad76a2d2b
+SHA512: 73d8d92f1ee001eb0947eceab68650d441086b90b1253ef81b87e47649d4455abe76ff58a57d7324f165c66d2f6850a17df09d5b1195afbe858a4ed0c19e0317
 Homepage: https://sconedocs.github.io/
 Description: Scone Platform CLI
  Scone is a platform to run applications inside Intel SGX enclaves.
