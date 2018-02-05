@@ -29,8 +29,8 @@ gulp.task('less', function() {
 });
 
 // Minify compiled CSS
-gulp.task('minify-css', ['less'], function() {
-    return gulp.src('css/agency.css')
+gulp.task('minify-css', ['sass'], function() {
+    return gulp.src('./css/agency.css')
         .pipe(cleanCSS({ compatibility: 'ie8' }))
         .pipe(rename({ suffix: '.min' }))
         .pipe(gulp.dest('css'))
@@ -60,15 +60,15 @@ gulp.task('copy', function() {
         .pipe(gulp.dest('vendor/jquery'))
 
     gulp.src([
-            'node_modules/font-awesome/**',
-            '!node_modules/font-awesome/**/*.map',
-            '!node_modules/font-awesome/.npmignore',
-            '!node_modules/font-awesome/*.txt',
-            '!node_modules/font-awesome/*.md',
-            '!node_modules/font-awesome/*.json'
-        ])
+        'node_modules/font-awesome/**',
+        '!node_modules/font-awesome/**/*.map',
+        '!node_modules/font-awesome/.npmignore',
+        '!node_modules/font-awesome/*.txt',
+        '!node_modules/font-awesome/*.md',
+        '!node_modules/font-awesome/*.json'
+    ])
         .pipe(gulp.dest('vendor/font-awesome'))
-})
+});
 
 // Run everything
 gulp.task('default', ['less', 'minify-css', 'minify-js', 'copy']);
@@ -77,25 +77,15 @@ gulp.task('default', ['less', 'minify-css', 'minify-js', 'copy']);
 gulp.task('browserSync', function() {
     browserSync.init({
         server: {
-            baseDir: ''
-        },
+            baseDir: './'
+        }
     })
-})
-
-// Dev task with browserSync
-gulp.task('dev', ['browserSync', 'less', 'minify-css', 'minify-js'], function() {
-    gulp.watch('less/*.less', ['less']);
-    gulp.watch('css/*.css', ['minify-css']);
-    gulp.watch('js/*.js', ['minify-js']);
-    // Reloads the browser whenever HTML or JS files change
-    gulp.watch('*.html', browserSync.reload);
-    gulp.watch('js/**/*.js', browserSync.reload);
 });
 
 // Compiles SCSS files from /scss into /css
 // NOTE: This theme uses LESS by default. To swtich to SCSS you will need to update this gulpfile by changing the 'less' tasks to run 'sass'!
 gulp.task('sass', function() {
-    return gulp.src('scss/agency.scss')
+    return gulp.src('./scss/agency.scss')
         .pipe(sass())
         .pipe(header(banner, { pkg: pkg }))
         .pipe(gulp.dest('css'))
@@ -103,3 +93,16 @@ gulp.task('sass', function() {
             stream: true
         }))
 });
+
+// Dev task with browserSync
+gulp.task('dev', ['browserSync', 'sass', 'minify-css', 'minify-js'], function() {
+    //gulp.watch('less/*.less', ['less']);
+    gulp.watch('scss/*.scss', ['sass']);
+    gulp.watch('css/*.css', ['minify-css']);
+    gulp.watch('js/*.js', ['minify-js']);
+    // Reloads the browser whenever HTML or JS files change
+    gulp.watch('*.html', browserSync.reload);
+    gulp.watch('js/**/*.js', browserSync.reload);
+});
+
+
