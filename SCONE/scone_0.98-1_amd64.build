@@ -1,0 +1,105 @@
+ dpkg-buildpackage -rfakeroot -D -us -uc
+dpkg-buildpackage: warning: using a gain-root-command while being root
+dpkg-buildpackage: source package scone
+dpkg-buildpackage: source version 0.98-1
+dpkg-buildpackage: source distribution unstable
+dpkg-buildpackage: source changed by scontain developer <info@scontain.com>
+ dpkg-source --before-build scone-0.98
+dpkg-buildpackage: host architecture amd64
+ fakeroot debian/rules clean
+dh clean 
+   dh_testdir
+   dh_auto_clean
+   dh_clean
+ dpkg-source -b scone-0.98
+dpkg-source: info: using source format '3.0 (quilt)'
+dpkg-source: info: building scone using existing ./scone_0.98.orig.tar.xz
+dpkg-source: info: building scone in scone_0.98-1.debian.tar.xz
+dpkg-source: info: building scone in scone_0.98-1.dsc
+ debian/rules build
+dh build 
+   dh_testdir
+   dh_update_autotools_config
+   dh_auto_configure
+   dh_auto_build
+   dh_auto_test
+ fakeroot debian/rules binary
+dh binary 
+   dh_testroot
+   dh_prep
+   dh_auto_install
+   dh_install
+   dh_installdocs
+   dh_installchangelogs
+   dh_perl
+   dh_link
+   dh_strip_nondeterminism
+   dh_compress
+   dh_fixperms
+   dh_installdeb
+   dh_gencontrol
+   dh_md5sums
+   dh_builddeb
+dpkg-deb: building package 'scone' in '../scone_0.98-1_all.deb'.
+ dpkg-genchanges  >../scone_0.98-1_amd64.changes
+dpkg-genchanges: including full source code in upload
+ dpkg-source --after-build scone-0.98
+dpkg-buildpackage: full upload (original source is included)
+Now running lintian...
+warning: the authors of lintian do not recommend running it with root privileges!
+E: scone changes: bad-distribution-in-changes-file unstable
+W: scone source: debhelper-but-no-misc-depends scone
+W: scone source: dh-make-template-in-source debian/scone.doc-base.EX
+W: scone source: out-of-date-standards-version 3.9.6 (current is 3.9.7)
+W: scone: wrong-bug-number-in-closes l3:#nnnn
+W: scone: new-package-should-close-itp-bug
+E: scone: changelog-is-dh_make-template
+W: scone: copyright-without-copyright-notice
+W: scone: readme-debian-contains-debmake-template
+E: scone: description-starts-with-package-name
+W: scone: possible-unindented-list-in-extended-description
+E: scone: section-is-dh_make-template
+W: scone: package-installs-into-obsolete-dir etc/bash_completion.d/ : ^etc/bash_completion.d/ -> usr/share/bash-completion/completions (see also https://bugs.debian.org/776954)
+W: scone: package-installs-into-obsolete-dir etc/bash_completion.d/scone : ^etc/bash_completion.d/ -> usr/share/bash-completion/completions (see also https://bugs.debian.org/776954)
+E: scone: dir-or-file-in-opt opt/scone/
+E: scone: dir-or-file-in-opt opt/scone/bin/
+E: scone: dir-or-file-in-opt opt/scone/bin/alertmanager/
+E: scone: dir-or-file-in-opt opt/scone/bin/alertmanager/config.yml
+E: scone: dir-or-file-in-opt opt/scone/bin/cadvisor.yml
+E: scone: dir-or-file-in-opt opt/scone/bin/check_nodes.sh
+E: scone: dir-or-file-in-opt opt/scone/bin/config.monitoring
+E: scone: dir-or-file-in-opt opt/scone/bin/docker-swarm.service.template
+E: scone: dir-or-file-in-opt opt/scone/bin/gitversion.env
+E: scone: dir-or-file-in-opt opt/scone/bin/infinit-network.service.template
+E: scone: dir-or-file-in-opt opt/scone/bin/infinit-volume.service.template
+E: scone: dir-or-file-in-opt opt/scone/bin/infinit.service.template
+E: scone: dir-or-file-in-opt opt/scone/bin/install-infinit.sh
+E: scone: dir-or-file-in-opt opt/scone/bin/install-monitor.sh
+E: scone: dir-or-file-in-opt opt/scone/bin/install_instrumented_driver.sh
+E: scone: dir-or-file-in-opt opt/scone/bin/install_patched_docker.sh
+E: scone: dir-or-file-in-opt opt/scone/bin/monitoring-stack.yml
+E: scone: dir-or-file-in-opt opt/scone/bin/per-node-template.yml
+E: scone: dir-or-file-in-opt opt/scone/bin/prometheus/
+E: scone: dir-or-file-in-opt opt/scone/bin/prometheus/alert.rules
+E: scone: dir-or-file-in-opt opt/scone/bin/prometheus/prometheus-template.yml
+E: scone: dir-or-file-in-opt opt/scone/bin/scone
+E: scone: dir-or-file-in-opt opt/scone/bin/scone-bash-completion.sh
+E: scone: dir-or-file-in-opt opt/scone/bin/scone-commons.sh
+E: scone: dir-or-file-in-opt opt/scone/bin/scone-start-scope.sh
+E: scone: dir-or-file-in-opt opt/scone/bin/scone-start-sentry.sh
+E: scone: dir-or-file-in-opt opt/scone/bin/scone_host.sh
+E: scone: dir-or-file-in-opt opt/scone/bin/scone_service.sh
+E: scone: dir-or-file-in-opt opt/scone/bin/scone_stack.sh
+E: scone: dir-or-file-in-opt opt/scone/bin/scone_swarm.sh
+E: scone: dir-or-file-in-opt opt/scone/bin/scope-stack.yml
+E: scone: dir-or-file-in-opt opt/scone/bin/scope-template.yml
+E: scone: dir-or-file-in-opt opt/scone/bin/sentry-db.yml
+E: scone: dir-or-file-in-opt opt/scone/bin/sentry-stack.yml
+E: scone: dir-or-file-in-opt opt/scone/bin/setup-monitoring.sh
+E: scone: dir-or-file-in-opt opt/scone/bin/stack.env
+E: scone: dir-or-file-in-opt opt/scone/bin/subcommands.env
+E: scone: dir-or-file-in-opt opt/scone/bin/version.env
+W: scone: script-not-executable opt/scone/bin/scone-bash-completion.sh
+W: scone: script-not-executable opt/scone/bin/scone-commons.sh
+W: scone: executable-not-elf-or-script opt/scone/bin/subcommands.env
+Finished running lintian.

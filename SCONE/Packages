@@ -1,0 +1,23 @@
+Package: scone
+Architecture: all
+Version: 0.98-1
+Priority: optional
+Section: unknown
+Maintainer: scontain developer <scontains.ceo@gmail.com>
+Installed-Size: 223
+Depends: gettext-base
+Filename: ./scone_0.98-1_all.deb
+Size: 36802
+MD5sum: f97a0963e52f2d291653de3adca0cee8
+SHA1: 27e727277462e2fdeb3f401fcb300cb391707141
+SHA256: 1bd8fc534ac8f57f94f1b018f8bc89ffe828b2649c6f25df3e4ed535e3c5c76f
+SHA512: 245ea4e1bc45b1314574db4d76432adf63774039ea0c2bfa60262d02ec565ad25f4d9997cbfd77ae1c73a87baebfd369b0f2103bb41de8e6f78e93dea6786796
+Homepage: https://sconedocs.github.io/
+Description: Scone Platform CLI
+ Scone is a platform to run applications inside Intel SGX enclaves.
+ Scone encompasses several commands that
+ - help to install patched Intel SGX-drivers and Docker Engine
+ - help to statically compile programs to run inside of enclave
+ - help to dynamically compile programs to run inside of enclaves
+ - help to protect programs running inside of enclaves
+

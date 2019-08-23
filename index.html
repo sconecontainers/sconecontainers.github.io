@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!--<meta property="og:url"                content="https://mauris.info/project/movie_expert/" />-->
+    <meta property="og:type"               content="article" />
+    <meta property="og:title"              content="We enable secure execution of containers and programs using Intel SGX" />
+    <meta property="og:description"        content="We enable secure execution of containers and programs using Intel SGX" />
+    <meta property="og:image"              content="https://mauris.info/project/testTemplate/img/banner.png" />
+    <!--<meta property="og:author"             content="https://www.facebook.com/mauris.info" />-->
+
+    <title>SCONE - A Secure Container Environment</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Theme CSS -->
+    <link href="css/agency.css" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="img/favicon.ico"/>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script>
+     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+     })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    //ga('create', 'UA-103149717-1', 'auto');
+    //ga('send', 'pageview');
+    </script>
+
+</head>
+
+<body id="page-top" class="index">
+<!-- Navigation -->
+<nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container">
+
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+            </button>
+            <a class="page-scroll" href="#page-top">
+                <img class="navbar-brand page-scroll" src="img/logo-vector-white-text.svg"/>
+            </a>
+            <!--<a class="navbar-brand page-scroll" href="#page-top">SCONTAIN.COM</a>-->
+            <!--<img class="navbar-brand page-scroll" src="img/logo-vector-white-text.svg"/>-->
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="hidden">
+                    <a href="#page-top"></a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#nutshell">Overview</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#portfolio">Details</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#documentation">Documentation</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#services">Services</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+
+
+
+
+<!-- Header -->
+<header class="masthead">
+
+
+        <div class="container-header">
+
+            <div class="row">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-8">
+                    <div class="intro-text">
+                        <div class="intro-lead-in">Give hackers no chance</div>
+                        <div class="intro-heading">work with</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-4">
+                    <img class="title-logo" src="img/logo-vector-white-text.svg"/></img>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-5">
+                    <div class="intro-text">
+                        <div class="intro-sentence">We enable secure execution of containers and programs using Intel&nbsp;SGX.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-8">
+                    <div class="intro-text">
+                        <a class="btn btn-link  text-uppercase js-scroll-trigger" free-version href="#services">Try our free version > </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+                <!-- scripts -->
+                <script src="js/lib/particles.min.js"></script>
+                <script src="js/app.js"></script>
+                            <!-- particles.js container -->
+                <div id="particles-js"></div>
+                            <!-- scripts -->
+                            <script src="../particles.js"></script>
+                            <script src="js/app.js"></script>
+    <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" tell-more href="#nutshell">Tell Me More</a>
+  </header>
+
+
+
+
+<!-- Tell me more  Section -->
+  <!-- Nutshell -->
+  <section class="page-section" id="nutshell">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">SCONE in a nutshell</h2>
+          <h3 class="section-subheading text-muted">Overview of SCONE's unique features</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <ul class="timeline">
+            <li>
+              <div class="timeline-image">
+                <img class="rounded-circle svg-fluid" src="img/transparent-encryption-icon.svg" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                    <h4>Transparent</h4>
+                    <h4>encryption</h4>
+                    <h4>&mdash;</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted">SCONE can transparently encrypt files and network traffic and in this way, it protects data from unauthorized access via the operating system and the hypervisor.</p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-inverted">
+              <div class="timeline-image">
+                <img class="rounded-circle svg-fluid" src="img/transparent-attest-icon.svg" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                    <h4>Transparent</h4>
+                    <h4>attestation of programs</h4>
+                    <h4>&mdash;</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted">SCONE transparently attests programs to ensure that only the correct, unmodified programs are executing. This also prevents maleware to attach to programs.</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-image">
+                <img class="rounded-circle svg-fluid" src="img/curated-images-icon.svg" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                    <h4>Curated</h4>
+                    <h4>images</h4>
+                    <h4>&mdash;</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted">SCONE supports curated images for many popular services like memcached, Apache, MySQL, etc. </p>
+                </div>
+              </div>
+            </li>
+            
+            <li class="timeline-inverted">
+              <div class="timeline-image">
+                <img class="rounded-circle svg-fluid" src="img/configuration-with-secrets-icon.svg" alt="">
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                    <h4>Secure</h4>
+                    <h4>compose files</h4>
+                    <h4>&mdash;</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted">SCONE supports secure compose files to protect secrets that are visible in compose files. </p>
+                </div>
+              </div>
+            </li>
+            <li>
+                <div class="timeline-image">
+                  <img class="rounded-circle svg-fluid" src="img/secure-enclaves-icon.svg" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                      <h4>Usage of</h4>
+                      <h4>secure enclaves</h4>
+                      <h4>&mdash;</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">SCONE runs programs inside secure enclaves preventing even attackers with root access from stealing secrets from these programs. </p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-image">
+                  <img class="rounded-circle svg-fluid" src="img/compose-file-icon.svg" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                      <h4>Configuration</h4>
+                      <h4>with secrets</h4>
+                      <h4>&mdash;</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">SCONE helps to configure programs with secrets that can neither be read nor modified by attackers - even if they would have already taken control of the operating system and/or the hypervisor.</p>
+                  </div>
+                </div>
+              </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Tell me more  Section -->
+<section id="portfolio" class="bg-light-gray">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">SCONE features</h2>
+                <!--<h2 class="section-heading">SCONE in more details</h2>-->
+                <h3 class="section-subheading text-muted">SCONE's unique features explained</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                <a href="#usp1" class="portfolio-link" data-toggle="modal">
+                    <!--<div class="portfolio-hover">-->
+                        <!--<div class="portfolio-hover-content">-->
+                            <!--<i class="fa fa-plus fa-3x"></i>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <img src="img/icon-7.svg" class="img-responsive scheme-img" alt="application-oriented security">
+                </a>
+                <div class="portfolio-caption">
+                    <h4>Application-Oriented Security</h4>
+                    <p class="text-muted">Ensure application security even in untrusted environments</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                <a href="#usp2" class="portfolio-link" data-toggle="modal">
+                    <!--<div class="portfolio-hover">-->
+                        <!--<div class="portfolio-hover-content">-->
+                            <!--<i class="fa fa-plus fa-3x"></i>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <img src="img/icon-8.svg" class="img-responsive scheme-img" alt="SGX encrypts main memory">
+                </a>
+                <div class="portfolio-caption">
+                    <h4>Intel SGX Support</h4>
+                    <p class="text-muted">Encrypted main memory with Intel SGX ensures confidentialitiy and integrity</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                <a href="#usp3" class="portfolio-link" data-toggle="modal">
+                    <!--<div class="portfolio-hover">-->
+                        <!--<div class="portfolio-hover-content">-->
+                            <!--<i class="fa fa-plus fa-3x"></i>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <img src="img/icon-9.svg" class="img-responsive scheme-img" alt="Scone Language Support">
+                </a>
+                <div class="portfolio-caption">
+                    <h4>Cross-Compiler support</h4>
+                    <p class="text-muted">SCONE support cross-compilers for C, C++, Rust, Go and an interpreter for Python</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                <a href="#usp4" class="portfolio-link" data-toggle="modal">
+                    <!--<div class="portfolio-hover">-->
+                        <!--<div class="portfolio-hover-content">-->
+                            <!--<i class="fa fa-plus fa-3x"></i>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <img src="img/icon-10.svg" class="img-responsive scheme-img" alt="Supporting Docker Compose and Stack">
+                </a>
+                <div class="portfolio-caption">
+                    <h4>Docker Integration</h4>
+                    <p class="text-muted">Support of Stack and Compose files to deploy an application</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                <a href="#usp5" class="portfolio-link" data-toggle="modal">
+                    <!--<div class="portfolio-hover">-->
+                        <!--<div class="portfolio-hover-content">-->
+                            <!--<i class="fa fa-plus fa-3x"></i>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <img src="img/icon-11.svg" class="img-responsive scheme-img" alt="Scone-based shielding">
+                </a>
+                <div class="portfolio-caption">
+                    <h4>Shielding</h4>
+                    <p class="text-muted">Supports transparent encryption of files and network traffic</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                <a href="#usp6" class="portfolio-link" data-toggle="modal">
+                    <!--<div class="portfolio-hover">-->
+                        <!--<div class="portfolio-hover-content">-->
+                            <!--<i class="fa fa-plus fa-3x"></i>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <img src="img/icon-12.svg" class="img-responsive scheme-img" alt="Scone Curated images">
+                </a>
+                <div class="portfolio-caption">
+                    <h4>Curated SCONE Container Images</h4>
+                    <p class="text-muted">SCONE supports a set of standard services like nginx, etc</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Team Section -->
+<section id="documentation">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Technical Documentation</h2>
+                <h3 class="section-subheading text-muted">We provide developer-/operations-oriented documentation as well as scientific papers</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="team-member">
+                    <a href="https://sconedocs.github.io/" target="_blank">
+                        <img  src="img/icon-1.svg" class="img-responsive doc-image img-circle" alt="https://sconedocs.github.io/">
+                    </a>
+                    <h4>Technical Documentation</h4>
+                    <p class="text-muted">Tutorial and technical details</p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="team-member">
+                    <!--<a href="#techdoc1" class="portfolio-link"  data-toggle="modal">-->
+                    <a href="https://sconedocs.github.io/" target="_blank">
+                        <img src="img/icon-2.svg" class="img-responsive doc-image img-circle" alt="Docker-based Scone Documentation">
+                    </a>
+                    <h4>Offline Documentation</h4>
+                    <p class="text-muted">We provide Docker container image of the SCONE documentation</p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="team-member">
+                    <a href="#techdoc2" class="portfolio-link"  data-toggle="modal">
+                        <img src="img/icon-3.svg" class="img-responsive doc-image img-circle" alt="Publications">
+                    </a>
+                    <h4>Scientific Publications</h4>
+                    <p class="text-muted">We published several papers related to SCONE. A good starting point
+                        to read is our OSDI 2016 paper
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Services/pricing Section     -->
+                
+<section class="pricing py-5" >
+    <div class="container">
+      <div class="row">
+          <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Services</h2>
+                <h3 class="section-subheading text-muted">We offer our customers different service levels</h3>
+
+            </div>
+
+        <div class="col-lg-4">
+          <div class="card mb-5 mb-lg-0">
+            <div class="card-body">
+                <div>
+                    <img class="img-responsive services-img" src="img/free-version-icon.svg" alt="">
+                </div>
+              <h5 class="card-title text-muted text-uppercase text-center">Free</h5>
+              <h6 class="card-price text-center">$0<span class="period">/month</span></h6>
+              <hr>
+              <ul class="fa-ul">
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Single User</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>5GB Storage</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited Public Projects</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Community Access</li>
+                <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Unlimited Private Projects</li>
+                <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Dedicated Phone Support</li>
+                <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Free Subdomain</li>
+                <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Monthly Status Reports</li>
+              </ul>
+              <a href="#" class="btn btn-primary text-uppercase">Button</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="card mb-5 mb-lg-0">
+            <div class="card-body">
+                    <div>
+                            <img class="img-responsive services-img" src="img/standard-version-icon.svg" alt="">
+                        </div>
+              <h5 class="card-title text-muted text-uppercase text-center">Plus</h5>
+              <h6 class="card-price text-center">$9<span class="period">/month</span></h6>
+              <hr>
+              <ul class="fa-ul">
+                <li><span class="fa-li"><i class="fas fa-check"></i></span><strong>5 Users</strong></li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>50GB Storage</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited Public Projects</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Community Access</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited Private Projects</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Dedicated Phone Support</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Free Subdomain</li>
+                <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Monthly Status Reports</li>
+              </ul>
+              <a href="#" class="btn  btn-primary text-uppercase">Button</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="card-body">
+                    <div>
+                            <img class="img-responsive services-img" src="img/enterprise-version-icon.svg" alt="">
+                        </div>
+              <h5 class="card-title text-muted text-uppercase text-center">Pro</h5>
+              <h6 class="card-price text-center">$49<span class="period">/month</span></h6>
+              <hr>
+              <ul class="fa-ul">
+                <li><span class="fa-li"><i class="fas fa-check"></i></span><strong>Unlimited Users</strong></li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>150GB Storage</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited Public Projects</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Community Access</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited Private Projects</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Dedicated Phone Support</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span><strong>Unlimited</strong> Free Subdomains</li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span>Monthly Status Reports</li>
+              </ul>
+              <a href="#" class="btn btn-primary text-uppercase">Button</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Team -->
+  <section class="bg-light page-section" id="team">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">The Scone Team</h2>
+          <h3 class="section-subheading text-muted">Meet the makers: we have assembled an unprecedented level of hands-on talent under the roof.</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="team-member">
+            <img class="mx-auto rounded-circle" src="img/team/profile-christof.svg" alt="">
+            <h4>Christof Fetzer</h4>
+            <a class=team-email href="mailto:info@scontain.com">christof@scontain.com</a>
+            <p class="text-muted">CEO</p>
+          </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle team" src="img/team/profile-karin.svg" alt="">
+              <h4>Karin Fetzer</h4>
+              <a class=team-email href="mailto:info@scontain.com">karin@scontain.com</a>
+              <p class="text-muted">CEO</p>
+            </div>
+          </div>
+        <div class="col-sm-3">
+          <div class="team-member">
+            <img class="mx-auto rounded-circle" src="img/team/profile-do.svg" alt="">
+            <h4>Do Le Quoc</h4>
+            <a class=team-email href="mailto:info@scontain.com">do@scontain.com</a>
+            <p class="text-muted">Lead Developer</p>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="team-member">
+            <img class="mx-auto rounded-circle team" src="img/team/profile-franz.svg" alt="">
+            <h4>Franz Gregor</h4>
+            <a class=team-email href="mailto:info@scontain.com">franz@scontain.com</a>
+            <p class="text-muted">Lead Developer</p>
+          </div>
+        </div>
+      </div>
+
+   <div class="row">
+      <div class="col-sm-3">
+        <div class="team-member">
+          <img class="mx-auto rounded-circle" src="img/team/profile-oleh.svg" alt="">
+          <h4>Oleh Bodunov</h4>
+          <a class=team-email href="mailto:info@scontain.com">oleh@scontain.com</a>
+          <p class="text-muted">Lead Developer</p>
+        </div>
+      </div>
+ 
+    <div class="col-sm-3">
+        <div class="team-member">
+          <img class="mx-auto rounded-circle" src="img/team/profile-sergey.svg" alt="">
+          <h4>Sergey Arnautov</h4>
+          <a class=team-email href="mailto:info@scontain.com">sergey@scontain.com</a>
+          <p class="text-muted">Developer</p>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="team-member">
+          <img class="mx-auto rounded-circle" src="img/team/profile-janine.svg" alt="">
+          <h4>Janine Kasper</h4>
+          <a class=team-email href="mailto:info@scontain.com">christof@scontain.com</a>
+          <p class="text-muted">Design & UX</p>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="team-member">
+          <img class="mx-auto rounded-circle" src="img/team/profile-wanted.svg" alt="">
+          <h4>Wanted!</h4>
+          <a class="team-email"">youremail@scontain.com</a>
+          <p class="text-muted">Want to with us? Click <a class="team-email" href="mailto:info@scontain.com"">here</a>.</p>
+        </div>
+      </div>
+  </section>
+
+
+<!-- Contact Section -->
+<section id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Contact Us</h2>
+                <h3 class="section-subheading text-muted contact-us-text">If you are interested in the SCONE platform, SCONE curated images or if you want to work for us, please send email to <a href="mailto:info@scontain.com">scontain.com</a></h3>
+            </div>
+        </div>
+
+
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="row footer-container">
+            <div class="col-md-4">
+                <div class="footer-logo-block">
+                    <span class="copyright">Copyright &copy; Scontain.com</span>
+                    <!--<a class="page-scroll" href="#page-top">-->
+                        <img class="footer-logo" src="img/scontain.svg"/>
+                    <!--</a>-->
+                </div>
+            </div>
+            <div class="col-md-4">
+                <ul class="list-inline social-buttons">
+                    <li><a href="#"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li><a href="#"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <ul class="list-inline quicklinks">
+                    <li><a href="#" class="privacy-policy-and-term">Privacy Policy</a>
+                    </li>
+                    <li><a href="#" class="privacy-policy-and-term">Terms of Use</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Portfolio Modals -->
+<!-- Use the modals below to showcase details about your portfolio projects! -->
+
+<!-- Portfolio Modal USP1 -->
+<div class="portfolio-modal modal fade" id="usp1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Application-Oriented Security</h2>
+                            <p class="item-intro text-muted">SCONE provides application-oriented security, i.e.,
+                                confidentiality as well as integrity of the application can be ensured even if executing in untrusted environments.
+                                In untrusted environments, we have to protect against adversaries that have gained root access and can use this to read or even
+                                modify our application's data.</p>
+                            <img class="img-responsive img-centered" src="img/scheme/2.jpg" alt="application-oriented security">
+
+                            <p><strong>SCONE</strong> supports naturally modern cloud-native applications that are composed of a set of microservices.
+                                Our general recommendation is that each microservice runs inside of an
+                                <a href="#usp2" class="portfolio-link" data-toggle="modal">Intel SGX enclave</a>.
+                                SCONE helps to protect an application from attacks via the operating system, other applications as well as internal
+                                APIs of the applications. In many cases, microservices only need to be recompiled with our
+                                <a href="#usp3" class="portfolio-link"  data-toggle="modal">SCONE crosscompilers</a>.
+                            </p>
+
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Portfolio USP 2 -->
+<div class="portfolio-modal modal fade" id="usp2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Intel SGX Enclaves</h2>
+                            <p class="item-intro text-muted">SCONE uses Intel SGX Enclaves to protect application components.</p>
+                            <img class="img-responsive img-centered" src="img/scheme/1.jpg" alt="Intel SGX">
+                            <p>SCONE helps developers to run their applications inside of SGX enclaves. An Intel SGX enclave
+                                facilitates an application to protect its data from accesses by all other software - even the operating system.
+                                In particular, an application can protect all its data against adversaries with root access.
+                                A root user cannot dump the main memory of an application to get access to all its keys. Often, configuration
+                                files of applications are only protected by the filesystem. Again, a user with root access can read
+                                these configuration files and all secrets that they might contain.
+                                SCONE uses SGX to help to encrypt configuration files to protect these again.
+                            </p>
+
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Portfolio USP 3 -->
+<div class="portfolio-modal modal fade" id="usp3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>SCONE crosscompiler support</h2>
+                            <p class="item-intro text-muted">SCONE support cross-compilers for C, C++, Rust, Go and Fortran.</p>
+                            <img class="img-responsive img-centered" src="img/scheme/3.jpg" alt="Scone Cross Compilers">
+                            <p>
+                                <strong>SCONE</strong> supports different programming languages. We provide different base container
+                                images that can be pulled from DockerHub. These images permit to create new container images with the help of Dockerfiles.
+                                For more difficult builds, one would probably use makefiles.
+                                We provide some examples in our <A href="https://sconedocs.github.io/">SCONE tutorial</A>.
+                            </p>
+
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Portfolio USP 4 -->
+<div class="portfolio-modal modal fade" id="usp4" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>SCONE Docker Integration</h2>
+                            <p class="item-intro text-muted">SCONE supports the Docker workflow of creating applications.</p>
+                            <img class="img-responsive img-centered" src="img/scheme/4.jpg" alt="Scone Docker Integration">
+                            <p>
+                                <strong>SCONE</strong> supports the development and operations of applications similar to that
+                                of Docker. However, SCONE will run the microservices of an application inside of containers.
+                                A developer can build custom microservices and combine these with standard secure container images
+                                (i.e., curated images) that can be downloaded from DockerHub.
+
+                                We provide some examples in our <A href="https://sconedocs.github.io/">SCONE tutorial</A>.
+                            </p>
+
+                            <img class="img-responsive img-centered" src="img/scheme/7.jpg" alt="Confidentiallity and Integrity">
+
+                            <p>
+                                <strong>SCONE</strong> helps to ensure the confidentiality and integrity of an application.
+                                The availability is ensured by the container cluster - currently, this is Docker Swarm.
+                                The Docker Engines of the swarm are not trusted - in this way, we can decouple the security of an
+                                application from the security of the Docker Swarm. The Docker Swarm might run on physical hosts (MaaS)
+                                or on top of virtual machines (IaaS).
+                            </p>
+
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Portfolio USP 5 -->
+<div class="portfolio-modal modal fade" id="usp5" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>SCONE Shielding</h2>
+                            <p class="item-intro text-muted">SCONE supports transparent encryption of files, network traffic and stdin/stdout.</p>
+                            <img class="img-responsive img-centered" src="img/scheme/5.jpg" alt="Scone shielding">
+
+                            <p>
+                                Legacy services like memcached, were designed for operating in a trusted environment.
+                                Hence, they do not support TLS yet. <strong>SCONE</strong> supports the transparent encryption
+                                of the network traffic. To do so, one can enable the network shield as part of the stack/compose file.
+                            </p>
+
+                            <p>
+                                While some applications (like MySQL) can encrypt some of their files, most applications do not provide file
+                                encryption. Hence, we provide a mechanism in SCONE to transparently encrypt files. This mechanism is switched on
+                                via the stack/compose file of an application.
+                            </p>
+
+                            <p>
+                                We also provide a mechanism to transparently encrypt <strong>stdin, stdout</strong> and <strong>stderr</strong>.  Again,
+                                this can be switched on in    the stack/compose file of an application.
+                            </p>
+
+                            <p>
+                                Some applications will get their secrets via environment variables or command line arguments. SCONE supports
+                                the secure transfer of the environment variables and command line arguments via the SCONE configuration and
+                                attestation service.
+                            </p>
+
+                            <p>
+                                We provide some examples in our <A href="https://sconedocs.github.io/">SCONE tutorial</A>.
+                            </p>
+
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Portfolio USP 6 -->
+<div class="portfolio-modal modal fade" id="usp6" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>SCONE Curated Images</h2>
+                            <p class="item-intro text-muted">SCONE support a set of curated container images.</p>
+                            <img class="img-responsive img-centered" src="img/scheme/6.jpg" alt="Scone Curated Images">
+
+                            <p>
+                                <strong>SCONE</strong> supports a set of curated images to simplify the task
+                                of application developer. For most of the standard services, we will provide
+                                a SCONE image that runs inside of an SGX enclave. The application developer
+                                can customize the image via a Docker compose / stack file.
+                            </p>
+
+                            <p>
+
+                                We provide some examples in our <A href="https://sconedocs.github.io/">SCONE tutorial</A>.
+                            </p>
+
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Portfolio USP 6 -->
+<div class="portfolio-modal modal fade" id="techdoc1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>SCONE Documentation Docker Container</h2>
+                            <p class="item-intro text-muted">For offline viewing, we maintain a container image serving
+                                the SCONE technical documentation.</p>
+
+                            <p>
+                                To serve the SCONE technical documentation running in a local container, first, ensure
+                                that you have Docker running. Second, you can view the documentation by executing the
+                                following commands:
+                            </p>
+
+                            <pre><code class="codeblock">docker pull sconecuratedimages/sconedocu
+                                    docker run -d -p 8080:80  sconecuratedimages/sconedocu
+                                    open http://127.0.0.1:8080
+                                    </code></pre>
+
+
+
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Portfolio USP 6 -->
+<div class="portfolio-modal modal fade" id="techdoc2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>SCONE-Related Papers</h2>
+                            <p class="item-intro text-muted">The following papers describe some of the technical aspects of SCONE.</p>
+
+                            <h3><strong>SCONE: Secure Linux Containers with Intel SGX, USENIX, OSDI 2016</strong></h3>
+                            <p>This paper describes how we support unmodified applications inside of enclaves. The focus is on our asynchronous system
+                                call interface.</p>
+
+
+                            <p><strong>Authors</strong>:  Sergei Arnautov, Bohdan Trach, Franz Gregor, Thomas Knauth, André Martin, Christian Priebe, Joshua Lind, Divya Muthukumaran, Daniel O'Keeffe, Mark L Stillwell, David Goltzsche, Dave Eyers, Rüdiger Kapitza, Peter Pietzuch, Christof Fetzer</p>
+
+                            <p><strong>Media</strong>: <a href="https://www.usenix.org/system/files/conference/osdi16/osdi16-arnautov.pdf">pdf</a>, <a href="https://www.usenix.org/sites/default/files/conference/protected-files/osdi16_slides_knauth.pdf">slides</a>
+                                <a href="https://www.usenix.org/conference/osdi16/technical-sessions/presentation/arnautov">audio</a></p>
+
+                            <p><strong>Abstract</strong>:  In multi-tenant environments, Linux containers managed by Docker or Kubernetes have a lower resource footprint, faster startup times, and higher I/O performance compared to virtual machines (VMs) on hypervisors. Yet their weaker isolation guarantees, enforced through software kernel mechanisms, make it easier for attackers to compromise the confidentiality and integrity of application data within containers.
+                                We describe SCONE, a secure container mechanism for Docker that uses the SGX trusted execution support of Intel CPUs to protect container processes from outside attacks. The design of SCONE leads to (i) a small trusted computing base (TCB) and (ii) a low performance overhead: SCONE offers a secure C standard library interface that transparently encrypts/decrypts I/O data; to reduce the performance impact of thread synchronization and system calls within SGX enclaves, SCONE supports user-level threading and asynchronous system calls. Our evaluation shows that it protects unmodified applications with SGX, achieving 0.6x–1.2x of native throughput.</p>
+
+
+                            <h3><strong> SGXBounds: Memory Safety for Shielded Execution, EuroSys 2017</strong></h3>
+                            <p>To protect the code running inside of an enclave, we implemented a novel bounds checker for enclaves. While we had expected
+                                to just be able to use MPX, we had to realized that MPX does not perform that well inside of enclaves. For details regarding
+                                the overheads,  please see this paper. <strong>This won the best paper award of EuroSys 2017.</strong></p>
+
+                            <p><strong>Authors</strong>: D. Kuvaiskii, O. Oleksenko, S. Arnautov, B. Trach, P. Bhatotia, P. Felber, C. Fetzer </p>
+
+
+                            <p><strong>Media</strong>: <a href="http://se.inf.tu-dresden.de/pubs/papers/sgxbounds2017.pdf">pdf</a> </p>
+
+
+                            <p><strong>Abstract</strong>: Shielded execution based on Intel SGX provides strong security guarantees for legacy applications running on untrusted platforms. However, memory safety attacks such as Heartbleed can render the confidentiality and integrity properties of shielded execution completely ineffective. To prevent these attacks, the state-of-the-art memory-safety approaches can be used in the context of shielded execution. In this work, we first showcase that two prominent software- and hardware-based defenses, AddressSanitizer and Intel MPX respectively, are impractical for shielded execution due to high performance and memory overheads. This motivated our design of SGXBounds -- an efficient memory-safety approach for shielded execution exploiting the architectural features of Intel SGX. Our design is based on a simple combination of tagged pointers and compact memory layout. We implemented SGXBounds based on the LLVM compiler framework targeting unmodified multithreaded applications. Our evaluation using Phoenix, PARSEC, and RIPE benchmark suites shows that SGXBounds has performance and memory overheads of 18% and 0.1% respectively, while providing security guarantees similar to AddressSanitizer and Intel MPX. We have obtained similar results with four real-world case studies: SQLite, Memcached, Apache, and Nginx.</p>
+
+                            <h3><strong> FFQ: A Fast Single-Producer/Multiple-Consumer Concurrent FIFO Queue, IPDPS 2017</strong></h3>
+                            <p>This paper describes our new lock-free queue for our asynchronous system calls.</p>
+
+
+                            <p><strong>Authors</strong>: Sergei Arnautov, Pascal Felber, Christof Fetzer and Bohdan Trach</p>
+
+
+                            <p><strong>Media</strong>: <a href="http://se.inf.tu-dresden.de/pubs/papers/ffq2017.pdf">pdf</a> </p>
+
+                            <p><strong>Abstract</strong>:  With the spreading of multi-core architectures, operating systems and applications are becoming increasingly more concurrent and their scalability is often limited by the primitives used to synchronize the different hardware threads. In this paper, we address the problem of how to optimize the throughput of a system with multiple producer and consumer threads. Such applications typically synchronize their threads via multi- producer/multi-consumer FIFO queues, but existing solutions have poor scalability, as we could observe when designing a secure application framework that requires high-throughput communication between many concurrent threads. In our target system, however, the items enqueued by different producers do not necessarily need to be FIFO ordered. Hence, we propose a fast FIFO queue, FFQ, that aims at maximizing throughput by specializing the algorithm for single-producer/multiple-consumer settings: each producer has its own queue from which multiple consumers can concurrently dequeue. Furthermore, while we pro- vide a wait-free interface for producers, we limit ourselves to lock-free consumers to eliminate the need for helping. We also propose a multi-producer variant to show which synchronization operations we were able to remove by focusing on a single producer variant. Our evaluation analyses the performance using micro- benchmarks and compares our results with other state-of-the-art solutions: FFQ exhibits excellent performance and scalability.</p>
+
+
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- jQuery -->
+<script src="vendor/jquery/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+<!-- Contact Form JavaScript -->
+<script src="js/jqBootstrapValidation.js"></script>
+<script src="js/contact_me.js"></script>
+
+<!-- Theme JavaScript -->
+<script src="js/agency.min.js"></script>
+
+</body>
+
+</html>
