@@ -10,12 +10,17 @@ $(function() {
         submitSuccess: function($form, event) {
             event.preventDefault(); // prevent default submit behaviour
             // get values from FORM
-            var name = $("input#name").val()console.log(name);
-            var email = $("input#email").val()console.log(email);
-            var phone = $("input#phone").val()console.log(phone);
-            var message = $("textarea#message").val()console.log(message);
+            var name = $("input#name").val();
+            var email = $("input#email").val();
+            var phone = $("input#phone").val();
+            var message = $("textarea#message").val();
             var firstName = name; // For Success/Failure Message
             // Check for white space in name for Success/Fail message
+            console.log(name);
+            console.log(email);
+            console.log(phone);
+            console.log(message);
+
             if (firstName.indexOf(' ') >= 0) {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
