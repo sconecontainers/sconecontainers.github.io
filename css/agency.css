@@ -57,7 +57,11 @@ h1, h2, h3, h4, h5, h6 {
   border-color: #fed136;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
-  font-weight: 700; }
+  font-weight: 700; 
+  display: block;
+  max-width: 300px; 
+  margin: auto;
+}
   .btn-primary:focus, .btn-primary.focus {
     color: white;
     background-color: #fec503;
@@ -216,12 +220,14 @@ header {
       font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
       color: #ffcc00;
       text-transform: uppercase;
-          padding-top: 120px;
           padding-bottom: 0px;
       font-size: 30px;
       font-weight: 700;
       line-height: 35px;
-      margin-bottom: 0px; }
+      margin-bottom: 0px; 
+      position: absolute;
+      top: 30vh !important;
+    }
     header .intro-text .intro-heading {
       font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-weight: 400;
@@ -229,7 +235,8 @@ header {
           padding-bottom: 0px;
       font-size: 18px;
       line-height: 40px !important;
-      margin-bottom: 0px; }
+      margin-bottom: 0px; 
+      position: relative;}
     header .intro-text .intro-sentence {
       font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-weight: 400;
@@ -237,7 +244,8 @@ header {
           padding-bottom: 0px;
       font-size: 17px;
       line-height: 23px;
-      margin-bottom: 0px; }
+      margin-bottom: 0px; 
+      position: relative;}
     header .intro-text .intro-link {
       font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
       text-decoration: underline; 
@@ -247,7 +255,8 @@ header {
           padding-bottom: 40px;
       font-size: 15px;
       line-height: 20px;
-      margin-bottom: 0px; }
+      margin-bottom: 0px;
+      position: relative; }
 
       
 @media (min-width: 768px) {
@@ -260,7 +269,9 @@ header {
           padding-bottom: 0px; 
       font-size: 50px;
       line-height: 60px;
-      margin-bottom: 0px; }
+      margin-bottom: 0px; 
+      position: absolute;
+      top: 30vh !important;}
     header .intro-text .intro-heading {
       font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
           padding-top: 10px;
@@ -268,7 +279,8 @@ header {
       font-weight: 400;
       font-size: 20px;
       line-height: 25px;
-      margin-bottom: 0px; } 
+      margin-bottom: 0px; 
+      position: relative;} 
       header .intro-text .intro-sentence {
         font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
             padding-top: 20px;
@@ -276,7 +288,8 @@ header {
         font-weight: 400;
         font-size: 20px;
         line-height: 25px;
-        margin-bottom: 0px; } 
+        margin-bottom: 0px; 
+        position: relative;} 
       header .intro-text .intro-link {
         font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
             padding-top: 20px;
@@ -286,7 +299,8 @@ header {
         font-weight: 400;
         font-size: 30px;
         line-height: 35px;
-        margin-bottom: 0px; }  }
+        margin-bottom: 0px;
+        position: relative;}  }
           
 
 
@@ -520,14 +534,13 @@ section {
   .team-member h4 {
     margin-top: 25px;
     margin-bottom: 0;
-    text-transform: none; }
+    text-transform: uppercase; }
   .team-member p {
     font-family: 'PT Sans','Helvetica Neue',Helvetica,Arial,sans-serif !important;
-    line-height: 1.75;
+    line-height: 1.25;
     font-weight: 400;
-    font-size: 16px;
     color: #383434;
-    margin-top: 0; }
+    margin-top: 15px; }
 
 aside.clients img {
   margin: 50px auto; }
@@ -810,11 +823,11 @@ body {
 .services-img {
   width: 120px;
   margin: 0 auto;
-  padding-top: 20px;
   padding-bottom: 20px;
   position: relative;
   top: 0;
   transition: top ease .6s; }
+
 
 .btn-services {
   border: none !important; }
@@ -1032,24 +1045,24 @@ height: 100%;  }
 }
 
 .team-member img {
-  margin: 40px;
-  border-radius: 8px;
+
+  margin: 40px auto 20px;
   border: 7px solid rgba(0, 0, 0, 0.1);
 }
 
 .team-member h4 {
-  margin-top: 25px;
-  margin-bottom: 0;
-  text-transform: none;
+  margin-top: 0px;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
 }
 
 .team-member p {
-  margin-top: 0;
+  margin-top: 0px;
 }
 
 a.team-email {
-  font-size: 20px;
-  line-height: 15px;
+  font-size: 17px;
+  line-height: 30px;
   text-decoration: underline;
   color: #3399ff;
 }
@@ -1063,12 +1076,14 @@ section.pricing {
   border: 7px solid #eee;
   border-radius: 1rem;
   transition: all 0.2s;
+
 }
 
 .card-body {
 background: #fff;
 border-radius: 10px;
-
+padding: 20px;
+position: relative;
 }
 .pricing-image {
   left: 0;
@@ -1117,15 +1132,14 @@ border-radius: 10px;
 
 .pricing .btn {
   font-size: 80%;
-  border-radius: 1rem;
+  border-radius: 0.6rem;
   letter-spacing: .1rem;
   font-weight: bold;
   padding: 1rem;
   opacity: 0.7;
   transition: all 0.4s;
-  width: 300px;
-margin: 20px 20px 20px;
-
+  max-width: none;
+  margin-top: 25px;
 }
 
 /* Hover Effects on Card */
@@ -1141,66 +1155,87 @@ margin: 20px 20px 20px;
   }
 }
 
+
+
+.btn-standard {
+  color: white;
+  background-color: #990066;
+  border-color: #990066;}
+
+  .btn-standard:focus, .btn-standard.focus {
+    color: white;
+    background-color: #990066;
+    border-color: #990066; }
+  .btn-standard:hover {
+    color: white;
+    background-color: #7a1153;
+    border-color: #7a1153; 
+}
+  .btn-standard:active, .btn-standard.active,
+  .open > .btn-standard.dropdown-toggle {
+    color: white;
+    background-color: #990066;
+    border-color: #990066; }
+    .btn-standard:active:hover, .btn-standard:active:focus, .btn-standard:active.focus, .btn-standard.active:hover, .btn-standard.active:focus, .btn-standard.active.focus,
+    .open > .btn-standard.dropdown-toggle:hover,
+    .open > .btn-standard.dropdown-toggle:focus,
+    .open > .btn-standard.dropdown-toggle.focus {
+      color: white;
+      background-color: #7a1153;
+      border-color: #7a1153; }
+  .btn-standard:active, .btn-standard.active,
+  .open > .btn-standard.dropdown-toggle {
+    background-image: none; }
+  .btn-standard.disabled:hover, .btn-standard.disabled:focus, .btn-standard.disabled.focus, .btn-standard[disabled]:hover, .btn-standard[disabled]:focus, .btn-standard[disabled].focus,
+  fieldset[disabled] .btn-standard:hover,
+  fieldset[disabled] .btn-standard:focus,
+  fieldset[disabled] .btn-standard.focus {
+    background-color: #990066;
+    border-color: #990066; }
+  .btn-standard .badge {
+    color: #990066;
+    background-color:  #990066; }
+
+
 .btn-enterprise {
+  color: white;
   background-color: #3399ff;
   border-color: #3399ff;
 }
 
-.btn-enterprise:hover {
-  background-color: #3366cc;
-  border-color: #3366cc;
-}
-
-.btn-standard {
-  background-color: #990066;
-  border-color: #7a1153;
-}
-
-.btn-standard:hover {
-  background-color: #990066;
-  border-color: #7a1153;
-}
- /*
-.btn-primary {
-  color: white;
-  background-color: #fed136;
-  border-color: #fed136;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-  font-weight: 700; }
-  .btn-primary:focus, .btn-primary.focus {
+  .btn-enterprise:focus, .btn-enterprise.focus {
     color: white;
-    background-color: #fec503;
-    border-color: #fec503; }
-  .btn-primary:hover {
+    background-color: #3399ff;
+    border-color: #3399ff; }
+  .btn-enterprise:hover {
     color: white;
-    background-color: #fec503;
-    border-color: #fec503; }
-  .btn-primary:active, .btn-primary.active,
-  .open > .btn-primary.dropdown-toggle {
+    background-color: #3366cc;
+    border-color: #3366cc; }
+  .btn-enterprise:active, .btn-enterprise.active,
+  .open > .btn-enterprise.dropdown-toggle {
     color: white;
-    background-color: #fec503;
-    border-color: #f6bf01; }
-    .btn-primary:active:hover, .btn-primary:active:focus, .btn-primary:active.focus, .btn-primary.active:hover, .btn-primary.active:focus, .btn-primary.active.focus,
-    .open > .btn-primary.dropdown-toggle:hover,
-    .open > .btn-primary.dropdown-toggle:focus,
-    .open > .btn-primary.dropdown-toggle.focus {
+    background-color: #3399ff;
+    border-color: #3399ff; }
+    .btn-enterprise:active:hover, .btn-enterprise:active:focus, .btn-enterprise:active.focus, .btn-enterprise.active:hover, .btn-enterprise.active:focus, .btn-enterprise.active.focus,
+    .open > .btn-enterprise.dropdown-toggle:hover,
+    .open > .btn-enterprise.dropdown-toggle:focus,
+    .open > .btn-enterprise.dropdown-toggle.focus {
       color: white;
-      background-color: #dcab01;
-      border-color: #b48b01; }
-  .btn-primary:active, .btn-primary.active,
-  .open > .btn-primary.dropdown-toggle {
+      background-color: #3366cc;
+      border-color: #3366cc; }
+  .btn-enterprise:active, .btn-enterprise.active,
+  .open > .btn-enterprise.dropdown-toggle {
     background-image: none; }
-  .btn-primary.disabled:hover, .btn-primary.disabled:focus, .btn-primary.disabled.focus, .btn-primary[disabled]:hover, .btn-primary[disabled]:focus, .btn-primary[disabled].focus,
-  fieldset[disabled] .btn-primary:hover,
-  fieldset[disabled] .btn-primary:focus,
-  fieldset[disabled] .btn-primary.focus {
-    background-color: #fed136;
-    border-color: #fed136; }
-  .btn-primary .badge {
-    color: #fed136;
+  .btn-enterprise.disabled:hover, .btn-enterprise.disabled:focus, .btn-enterprise.disabled.focus, .btn-enterprise[disabled]:hover, .btn-enterprise[disabled]:focus, .btn-enterprise[disabled].focus,
+  fieldset[disabled] .btn-enterprise:hover,
+  fieldset[disabled] .btn-enterprise:focus,
+  fieldset[disabled] .btn-enterprise.focus {
+    background-color: #3399ff;
+    border-color: #3399ff; }
+  .btn-enterprise .badge {
+    color: #3399ff;
     background-color: white; }
-    */
+ 
 
     .fa-ul {
       padding-left: 20px;
