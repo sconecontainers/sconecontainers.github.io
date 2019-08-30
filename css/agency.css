@@ -280,7 +280,6 @@ h1, h2, h3, h4, h5, h6 {
       header .intro-text .intro-link {
         font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
             padding-top: 20px;
-            padding-bottom: 0px;
         text-decoration: underline; 
         color: #3399ff;
         font-weight: 400;
@@ -461,7 +460,7 @@ section {
   .timeline:before {
     left: 50%; }
   .timeline > li {
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     min-height: 100px; }
     .timeline > li .timeline-panel {
       width: 41%;
@@ -766,13 +765,13 @@ body {
 */
 
 .tell-more {
- position: relative;
   top: 30vh; 
   left: 0;
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  width: 250px; }
+  width: 250px; 
+}
 
 
 
@@ -780,13 +779,13 @@ body {
   color: #3399ff;
   text-decoration: underline;
   text-transform: none;
-  padding-bottom: 50px; 
+  padding-bottom: 250px; 
   padding-left: 0px;  }
 
 .btn-link hover {
   color: #3366cc;
   text-decoration: underline;
-  padding-bottom: 100px; }
+ }
 
 
 .scheme-img {
@@ -911,6 +910,8 @@ body {
 
 @media screen and (max-width: 767px) {
   header {
+    padding-left: 5vh !important;
+    padding-right: 5vh !important;
     text-align: center;
     background-position: right !important;
 }
@@ -1011,16 +1012,18 @@ header.masthead {
    /*  top: 0;
       left: 0; */
       width: 100%;
-      padding-left: 10vh;
-      padding-right: 10vh;
       padding-top: 20vh;
       padding-bottom: 50px;
+      z-index: 1;
     }
 
 
  #particles-js {
+  position: absolute;
   width: 100%;
-height: 100%;  }
+  height: 100vh;
+  z-index: 2;
+ }
 
 
 /*Change img for Team Section */
@@ -1227,4 +1230,8 @@ margin: auto;
 
     .fa-ul {
       padding-left: 20px;
+    }
+
+    .title-logo {
+      max-width: 300px;
     }
