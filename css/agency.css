@@ -198,35 +198,22 @@ h1, h2, h3, h4, h5, h6 {
     .navbar-custom.affix .navbar-brand {
       font-size: 1.5em; } }
 
-header {
 
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-  text-align: center;
-  color: white; 
-  line-height: 0;
- }
 
 
   header .intro-text {
-    padding-top: 10px;
+    padding-top:0;
     padding-bottom: 0px; }
     header .intro-text .intro-lead-in {
       font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
       color: #ffcc00;
       text-transform: uppercase;
           padding-bottom: 0px;
-      font-size: 30px;
+      font-size: 40px;
       font-weight: 700;
-      line-height: 35px;
+      line-height: 45px;
       margin-bottom: 0px; 
-      position: absolute;
-      top: 30vh !important;
+
     }
     header .intro-text .intro-heading {
       font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -305,10 +292,10 @@ header {
 
 
 section {
-  padding: 100px 0; }
+  padding: 50px 0; }
   section h2.section-heading {
     font-size: 40px;
-    margin-top: 0;
+    margin-top: 00px;
     margin-bottom: 15px; }
   section h3.section-subheading {
     font-size: 20px;
@@ -321,7 +308,7 @@ section {
 
 @media (min-width: 768px) {
   section {
-    padding: 100px 0; } }
+    padding: 80px 0; } }
 
 .service-heading {
   margin: 15px 0;
@@ -779,8 +766,8 @@ body {
 */
 
 .tell-more {
-/*  position: absolute;
-  top: 65vh !important; */
+ position: relative;
+  top: 30vh; 
   left: 0;
   right: 0;
   margin-left: auto;
@@ -793,7 +780,7 @@ body {
   color: #3399ff;
   text-decoration: underline;
   text-transform: none;
-  padding-bottom: 100px; 
+  padding-bottom: 50px; 
   padding-left: 0px;  }
 
 .btn-link hover {
@@ -920,7 +907,7 @@ body {
     font-size: 15px;  }
   .tell-more {
     padding: 10px 20px;
-    top: 16%; } }
+    top: 5%; } }
 
 @media screen and (max-width: 767px) {
   header {
@@ -929,7 +916,7 @@ body {
 }
   .tell-more {
     padding: 10px 20px;
-    top: 2%; }
+  }
   .intro-heading {
     padding-top: 0px !important;
     font-weight: 700;
@@ -978,12 +965,9 @@ body {
     line-height: 40px !important;
     padding: 0 10px !important; }
   .tell-more {
-    top: 68vh !important;
-    left: 0;
-    right: 0;
     margin-left: auto;
     margin-right: auto;
-    width: 160px; }
+    width: 200px; }
   section h2.section-heading {
     font-size: 28px; } }
 
@@ -1010,26 +994,27 @@ header.masthead {
   text-align: left;
   color: #eee;
   background-image: url(../img/header-bg.jpg);
+
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: right;
+
   background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
-  -moz-background-size: cover;
-  line-height: 0;
-  position: relative;
-   padding-left: 30px;
-    padding-right: 30px;  }
+  -moz-background-size: cover; 
+}
 
     .container-header {
       position: relative;
-      top: 0;
-      left: 0;
+      vertical-align: middle;
+   /*  top: 0;
+      left: 0; */
       width: 100%;
-      height: 100%;
-      padding-left: 0px;
-      padding-right: 0px;
+      padding-left: 10vh;
+      padding-right: 10vh;
+      padding-top: 20vh;
+      padding-bottom: 50px;
     }
 
 
@@ -1048,6 +1033,7 @@ height: 100%;  }
 
   margin: 40px auto 20px;
   border: 7px solid rgba(0, 0, 0, 0.1);
+  max-width: 200px;
 }
 
 .team-member h4 {
@@ -1084,6 +1070,8 @@ background: #fff;
 border-radius: 10px;
 padding: 20px;
 position: relative;
+max-width: 400px;
+margin: auto;
 }
 .pricing-image {
   left: 0;
