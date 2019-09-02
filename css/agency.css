@@ -314,7 +314,6 @@ section {
   text-transform: none; }
 
 #portfolio .portfolio-item {
-  margin: 0 0 15px;
   right: 0; }
   #portfolio .portfolio-item .portfolio-link {
     display: block;
@@ -373,8 +372,8 @@ section {
   #portfolio .portfolio-item {
     background: #fff;
     border-radius: 8px;
-    padding: 30px 0px;
-    margin-right:10px;
+    padding: 20px 0px;
+    margin-right: 0px;
  } }
 
 .timeline {
@@ -422,10 +421,8 @@ section {
       height: 80px;
       position: absolute;
       z-index: 100;
-      background-color: #fed136;
       color: white;
       border-radius: 100%;
-      border: 7px solid #f1f1f1;
       text-align: center; }
       .timeline > li .timeline-image h4 {
         font-size: 10px;
@@ -609,7 +606,7 @@ ul.social-buttons {
     -moz-transition: all 0.3s;
     transition: all 0.3s; }
     ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li a:active {
-      background-color: #fed136; }
+      background-color: #990066; }
 
 .btn:focus,
 .btn:active,
@@ -798,7 +795,6 @@ body {
   opacity: 0.8; }
 
 .doc-image {
-  max-width: 150px !important;
   top: 0;
   position: relative;
   transition: top ease .6s; }
@@ -1035,7 +1031,14 @@ header.masthead {
 .team-member img {
 
   margin: 40px auto 20px;
+  border-radius: 8px;
+  max-width: 200px;
+}
+
+.documentation img {
+  margin: 40px auto 20px;
   border: 7px solid rgba(0, 0, 0, 0.1);
+  border-radius: none !important;
   max-width: 200px;
 }
 
@@ -1064,13 +1067,14 @@ section.pricing {
 .pricing .card {
   border: 7px solid #eee;
   border-radius: 1rem;
-  transition: all 0.2s;
+  transition: all 0.6s;
 
 }
 
 .card-body {
 background: #fff;
-border-radius: 10px;
+border: 14px solid #eee;
+border-radius: 15px;
 padding: 20px;
 position: relative;
 max-width: 400px;
@@ -1115,10 +1119,36 @@ margin: auto;
 
 .pricing ul li {
   margin-bottom: 1rem;
+  padding-right: 30px;
+}
+
+
+li {
+  display: block;
+}
+
+li.feature:before {
+  content: "\e013";
+  font-family: 'Glyphicons Halflings';
+  font-size: 9px;
+  float: left;
+  margin-top: 4px;
+  margin-left: -17px;
+  color: #33cc99;
+}
+
+li.not:before {
+  content: "\e014";
+  font-family: 'Glyphicons Halflings';
+  font-size: 9px;
+  float: left;
+  margin-top: 4px;
+  margin-left: -17px;
+  color: #CCCCCC;
 }
 
 .pricing .text-muted {
-  opacity: 0.7;
+  opacity: 0.6;
 }
 
 .pricing .btn {
@@ -1137,8 +1167,8 @@ margin: auto;
 
 @media (min-width: 992px) {
   .pricing .card:hover {
-    margin-top: -.25rem;
-    margin-bottom: .25rem;
+    margin-top: -.8rem;
+    margin-bottom: .8rem;
 /*       box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);*/
   }
   .pricing .card:hover .btn {
