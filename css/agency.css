@@ -5,10 +5,20 @@
  */
 body {
   overflow-x: hidden;
-  font-family: 'PT Sans', "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-family: 'PT Sans', "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif; 
+  color: black; }
 
 .text-muted {
-  color: #777777; }
+  color: #330066; 
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.text-muted-contact {
+  color: #eee; 
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
 
 .text-primary {
   color: #fed136; }
@@ -38,9 +48,11 @@ a.active {
   color: #fec503; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
-  font-weight: 700; }
+  letter-spacing: .02em;
+  font-weight: 700; 
+  line-height: 1.2;}
 
 .img-centered {
   margin: 0 auto; }
@@ -55,7 +67,7 @@ h1, h2, h3, h4, h5, h6 {
   color: white;
   background-color: #fed136;
   border-color: #fed136;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700; 
   display: block;
@@ -64,24 +76,24 @@ h1, h2, h3, h4, h5, h6 {
 }
   .btn-primary:focus, .btn-primary.focus {
     color: white;
-    background-color: #fec503;
-    border-color: #fec503; }
+    background-color: #3399ff;
+    border-color: #3399ff; }
   .btn-primary:hover {
     color: white;
-    background-color: #fec503;
-    border-color: #fec503; }
+    background-color: #3399ff;
+    border-color: #3399ff; }
   .btn-primary:active, .btn-primary.active,
   .open > .btn-primary.dropdown-toggle {
     color: white;
-    background-color: #fec503;
-    border-color: #f6bf01; }
+    background-color: #3399ff;
+    border-color: #3399ff; }
     .btn-primary:active:hover, .btn-primary:active:focus, .btn-primary:active.focus, .btn-primary.active:hover, .btn-primary.active:focus, .btn-primary.active.focus,
     .open > .btn-primary.dropdown-toggle:hover,
     .open > .btn-primary.dropdown-toggle:focus,
     .open > .btn-primary.dropdown-toggle.focus {
       color: white;
-      background-color: #dcab01;
-      border-color: #b48b01; }
+      background-color: #0089ee;
+      border-color: #0089ee; }
   .btn-primary:active, .btn-primary.active,
   .open > .btn-primary.dropdown-toggle {
     background-image: none; }
@@ -89,17 +101,17 @@ h1, h2, h3, h4, h5, h6 {
   fieldset[disabled] .btn-primary:hover,
   fieldset[disabled] .btn-primary:focus,
   fieldset[disabled] .btn-primary.focus {
-    background-color: #fed136;
-    border-color: #fed136; }
+    background-color: #86c2eb;
+    border-color: #86c2eb; }
   .btn-primary .badge {
-    color: #fed136;
+    color: #3399ff;
     background-color: white; }
 
 .btn-xl {
   color: white;
-  background-color: #fed136;
-  border-color: #fed136;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #3399ff;
+  border-color: #3399ff;
+  font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   border-radius: 3px;
@@ -107,24 +119,24 @@ h1, h2, h3, h4, h5, h6 {
   padding: 20px 40px; }
   .btn-xl:focus, .btn-xl.focus {
     color: white;
-    background-color: #fec503;
-    border-color: #b48b01; }
+    background-color: #3399ff;
+    border-color: #3399ff; }
   .btn-xl:hover {
     color: white;
-    background-color: #fec503;
-    border-color: #f6bf01; }
+    background-color: #0089ee;
+    border-color: #0089ee; }
   .btn-xl:active, .btn-xl.active,
   .open > .btn-xl.dropdown-toggle {
     color: white;
-    background-color: #fec503;
-    border-color: #f6bf01; }
+    background-color: #3399ff;
+    border-color: #3399ff; }
     .btn-xl:active:hover, .btn-xl:active:focus, .btn-xl:active.focus, .btn-xl.active:hover, .btn-xl.active:focus, .btn-xl.active.focus,
     .open > .btn-xl.dropdown-toggle:hover,
     .open > .btn-xl.dropdown-toggle:focus,
     .open > .btn-xl.dropdown-toggle.focus {
       color: white;
-      background-color: #dcab01;
-      border-color: #b48b01; }
+      background-color: #3399ff;
+      border-color: #0089ee; }
   .btn-xl:active, .btn-xl.active,
   .open > .btn-xl.dropdown-toggle {
     background-image: none; }
@@ -132,53 +144,54 @@ h1, h2, h3, h4, h5, h6 {
   fieldset[disabled] .btn-xl:hover,
   fieldset[disabled] .btn-xl:focus,
   fieldset[disabled] .btn-xl.focus {
-    background-color: #fed136;
-    border-color: #fed136; }
+    background-color: #86c2eb;
+    border-color: #86c2eb; }
   .btn-xl .badge {
-    color: #fed136;
+    color: #3399ff;
     background-color: white; }
 
 .navbar-custom {
-  background-color: #222222;
+  background-color: #fff;
   border-color: transparent; }
   .navbar-custom .navbar-brand {
     color: #fed136;
-    font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive; }
+    font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, cursive; }
     .navbar-custom .navbar-brand:hover, .navbar-custom .navbar-brand:focus, .navbar-custom .navbar-brand:active, .navbar-custom .navbar-brand.active {
-      color: #fec503; }
+      color: #990066; }
   .navbar-custom .navbar-collapse {
     border-color: rgba(255, 255, 255, 0.98); }
   .navbar-custom .navbar-toggle {
     background-color: #fed136;
     border-color: #fed136;
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     color: white;
     font-size: 12px; }
     .navbar-custom .navbar-toggle:hover, .navbar-custom .navbar-toggle:focus {
       background-color: #fed136; }
   .navbar-custom .nav li a {
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
-    font-weight: 400;
-    letter-spacing: 1px;
-    color: white; }
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: #330066; }
     .navbar-custom .nav li a:hover, .navbar-custom .nav li a:focus {
-      color: #fed136;
+      color:#990066;
       outline: none; }
   .navbar-custom .navbar-nav > .active > a {
     border-radius: 0;
-    color: white;
-    background-color: #fed136; }
+    color: #330066;
+    background-color: #990066; }
   .navbar-custom .navbar-nav > .active > a:hover,
   .navbar-custom .navbar-nav > .active > a:focus {
     color: white;
-    background-color: #fec503; }
+    background-color: #990066; }
+    
 
 @media (min-width: 768px) {
   .navbar-custom {
-    background-color: transparent;
-    padding: 25px 0;
+    color: #fff;
+    padding: 12px 0;
     -webkit-transition: padding 0.3s;
     -moz-transition: padding 0.3s;
     transition: padding 0.3s;
@@ -193,8 +206,10 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (min-width: 768px) {
   .navbar-custom.affix {
-    background-color: #222222;
-    padding: 19px 0; }
+    background-color: #fff;
+    padding: 8px 0;
+  box-shadow: 0 0.5rem .5rem 0 rgba(0, 0, 0, 0.2);
+  }
     .navbar-custom.affix .navbar-brand {
       font-size: 1.5em; } }
 
@@ -216,7 +231,7 @@ h1, h2, h3, h4, h5, h6 {
 
     }
     header .intro-text .intro-heading {
-      font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-weight: 400;
           padding-top: 15px;
           padding-bottom: 0px;
@@ -225,7 +240,7 @@ h1, h2, h3, h4, h5, h6 {
       margin-bottom: 0px; 
       position: relative;}
     header .intro-text .intro-sentence {
-      font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-weight: 400;
           padding-top: 20px;
           padding-bottom: 0px;
@@ -234,7 +249,7 @@ h1, h2, h3, h4, h5, h6 {
       margin-bottom: 0px; 
       position: relative;}
     header .intro-text .intro-link {
-      font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
       text-decoration: underline; 
       color: #3399ff;
       font-weight: 400;
@@ -260,7 +275,7 @@ h1, h2, h3, h4, h5, h6 {
       position: absolute;
       top: 30vh !important;}
     header .intro-text .intro-heading {
-      font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
           padding-top: 10px;
           padding-bottom: 0px;
       font-weight: 400;
@@ -269,8 +284,8 @@ h1, h2, h3, h4, h5, h6 {
       margin-bottom: 0px; 
       position: relative;} 
       header .intro-text .intro-sentence {
-        font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-            padding-top: 20px;
+        font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            padding-top: 40px;
             padding-bottom: 0px;
         font-weight: 400;
         font-size: 20px;
@@ -278,7 +293,7 @@ h1, h2, h3, h4, h5, h6 {
         margin-bottom: 0px; 
         position: relative;} 
       header .intro-text .intro-link {
-        font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
             padding-top: 20px;
         text-decoration: underline; 
         color: #3399ff;
@@ -293,16 +308,17 @@ h1, h2, h3, h4, h5, h6 {
 section {
   padding: 50px 0; }
   section h2.section-heading {
+    font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #990066;
     font-size: 40px;
     margin-top: 00px;
-    margin-bottom: 15px; }
+    margin-bottom: 10px; }
   section h3.section-subheading {
-    font-size: 20px;
-    line-height: 21px;
-    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: none;
-    font-style: italic;
-    font-weight: 400;
+    font-weight: 500;
     margin-bottom: 40px; }
 
 @media (min-width: 768px) {
@@ -365,14 +381,16 @@ section {
     text-align: center;
     padding: 10px; }
     #portfolio .portfolio-item .portfolio-caption h4 {
-      text-transform: none;
+      text-transform: uppercase;
+      font-size: 18px;
       margin: 0; }
     #portfolio .portfolio-item .portfolio-caption p {
       font-family: 'PT Sans','Helvetica Neue',Helvetica,Arial,sans-serif !important;
       line-height: 1.25;
       font-weight: 400;
-      font-size: 16px;
-      color: #383434;
+      font-size: 14px;
+      color: #330066;
+      opacity: .8;
       margin: 0; 
       padding-top: 10px; }
 
@@ -456,13 +474,17 @@ section {
     .timeline > li:last-child {
       margin-bottom: 0; }
   .timeline .timeline-heading h4 {
+    font-family: "Roboto Slab";
     margin-top: 0;
+    line-height: 1.2;
+    margin-bottom: 0px;
     color: inherit; }
     .timeline .timeline-heading h4.subheading {
       text-transform: none; }
   .timeline .timeline-body > p,
   .timeline .timeline-body > ul {
-    margin-bottom: 0; }
+    margin-bottom: 0; 
+    margin-top: 0px; }
 
 @media (min-width: 768px) {
   .timeline:before {
@@ -476,8 +498,8 @@ section {
       padding: 0 20px 20px 30px;
       text-align: right; }
     .timeline > li .timeline-image {
-      width: 100px;
-      height: 100px;
+      width: 130px;
+      height: 130px;
       left: 50%;
       margin-left: -50px; }
       .timeline > li .timeline-image h4 {
@@ -491,12 +513,12 @@ section {
 
 @media (min-width: 992px) {
   .timeline > li {
-    min-height: 150px; }
+    min-height: 130px; }
     .timeline > li .timeline-panel {
       padding: 0 20px 20px; }
     .timeline > li .timeline-image {
-      width: 150px;
-      height: 150px;
+      width: 130px;
+      height: 130px;
       margin-left: -75px; }
       .timeline > li .timeline-image h4 {
         font-size: 18px;
@@ -521,10 +543,10 @@ section {
 
 .team-member {
   text-align: center;
-  margin-bottom: 50px; }
+  margin-bottom: 40px; }
   .team-member img {
     margin: 0 auto;
-    border: 7px solid white; }
+    border: none; }
   .team-member h4 {
     margin-top: 25px;
     margin-bottom: 0;
@@ -533,7 +555,7 @@ section {
     font-family: 'PT Sans','Helvetica Neue',Helvetica,Arial,sans-serif !important;
     line-height: 1.25;
     font-weight: 400;
-    color: #383434;
+    color: #330066;
     margin-top: 15px; }
 
 aside.clients img {
@@ -562,24 +584,24 @@ section#contact {
     border-color: #fed136;
     box-shadow: none; }
   section#contact ::-webkit-input-placeholder {
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     font-weight: 700;
     color: #eeeeee; }
   section#contact :-moz-placeholder {
     /* Firefox 18- */
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     font-weight: 700;
     color: #eeeeee; }
   section#contact ::-moz-placeholder {
     /* Firefox 19+ */
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     font-weight: 700;
     color: #eeeeee; }
   section#contact :-ms-input-placeholder {
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     font-weight: 700;
     color: #eeeeee; }
@@ -591,13 +613,13 @@ footer {
   text-align: center; }
   footer span.copyright {
     line-height: 40px;
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     text-transform: none; }
   footer ul.quicklinks {
     margin-bottom: 0;
     line-height: 40px;
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     text-transform: none; }
 
@@ -646,7 +668,7 @@ ul.social-buttons {
     margin-bottom: 30px; }
   .portfolio-modal .modal-content p.item-intro {
     margin: 20px 0 30px;
-    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-style: italic;
     font-size: 16px; }
   .portfolio-modal .modal-content ul.list-inline {
@@ -710,7 +732,7 @@ body {
   webkit-tap-highlight-color: #fed136; }
 
 .navbar-brand {
-  padding: 11px 15px; }
+  padding: 15px 15px; }
 
   /*
 .video-background {
@@ -757,7 +779,7 @@ body {
   text-align: center;
   color: white; }
   .video-background .intro-text .intro-heading {
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     font-family: 'PT Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
     font-weight: 700;
@@ -773,7 +795,7 @@ body {
 */
 
 .tell-more {
-  top: 30vh; 
+  top: 25vh; 
   left: 0;
   right: 0;
   margin-left: auto;
@@ -787,11 +809,12 @@ body {
   color: #3399ff;
   text-decoration: underline;
   text-transform: none;
+  padding-top: 15px;
   padding-bottom: 250px; 
   padding-left: 0px;  }
 
 .btn-link hover {
-  color: #3366cc;
+  color: #0089ee;
   text-decoration: underline;
  }
 
@@ -848,10 +871,13 @@ body {
 
 #nutshell p {
   font-family: 'PT Sans','Helvetica Neue',Helvetica,Arial,sans-serif !important;
-  line-height: 1.75;
-  font-weight: 400;
-  font-size: 16px;
-  color: #383434; }
+  line-height: 1.3;
+  font-weight: 500;
+  font-size: 14px;
+  color: #330066; 
+  opacity: .8;}
+
+
 
 #services p {
   font-family: 'PT Sans','Helvetica Neue',Helvetica,Arial,sans-serif !important;
@@ -1016,7 +1042,7 @@ header.masthead {
    /*  top: 0;
       left: 0; */
       width: 100%;
-      padding-top: 20vh;
+      padding-top: 25vh;
       padding-bottom: 50px;
       z-index: 1;
     }
@@ -1037,10 +1063,9 @@ header.masthead {
 }
 
 .team-member img {
-
-  margin: 40px auto 20px;
+  margin: px auto 10px;
   border-radius: 8px;
-  max-width: 200px;
+  max-width: 170px;
 }
 
 .documentation img {
@@ -1051,8 +1076,8 @@ header.masthead {
 }
 
 .team-member h4 {
-  margin-top: 0px;
-  margin-bottom: 1rem;
+  margin-top: 10px;
+  margin-bottom: .5rem;
   text-transform: uppercase;
 }
 
@@ -1061,12 +1086,11 @@ header.masthead {
 }
 
 a.team-email {
-  font-size: 17px;
-  line-height: 30px;
+  font-size: 14px;
+  line-height: 15px;
   text-decoration: underline;
   color: #3399ff;
 }
-
 
 
 section.pricing {
@@ -1076,7 +1100,6 @@ section.pricing {
   border: 7px solid #eee;
   border-radius: 1rem;
   transition: all 0.6s;
-
 }
 
 .card-body {
@@ -1110,6 +1133,7 @@ margin: auto;
 }
 
 .pricing .card-title {
+  font-family: "PT Sans";
   margin: 0.5rem 0;
   font-size: 0.9rem;
   letter-spacing: .1rem;
@@ -1126,6 +1150,7 @@ margin: auto;
 }
 
 .pricing ul li {
+  color: #330066;
   margin-bottom: 1rem;
   padding-right: 30px;
 }
@@ -1184,6 +1209,47 @@ li.not:before {
   }
 }
 
+/* PRICING BTN */
+
+.btn-community {
+  color: white;
+  background-color: #ffcc00;
+  border-color: #ffcc00;}
+
+  .btn-community:focus, .btn-community.focus {
+    color: white;
+    background-color: #ffcc00;
+    border-color: #ffcc00; }
+  .btn-community:hover {
+    color: white;
+    background-color: #;
+    border-color: #841153; 
+}
+  .btn-community:active, .btn-community.active,
+  .open > .btn-community.dropdown-toggle {
+    color: white;
+    background-color: #ffcc00;
+    border-color: #ffcc00; }
+    .btn-community:active:hover, .btn-community:active:focus, .btn-community:active.focus, .btn-community.active:hover, .btn-community.active:focus, .btn-community.active.focus,
+    .open > .btn-community.dropdown-toggle:hover,
+    .open > .btn-community.dropdown-toggle:focus,
+    .open > .btn-community.dropdown-toggle.focus {
+      color: white;
+      background-color: #841153;
+      border-color: #841153; }
+  .btn-community:active, .btn-community.active,
+  .open > .btn-community.dropdown-toggle {
+    background-image: none; }
+  .btn-community.disabled:hover, .btn-community.disabled:focus, .btn-community.disabled.focus, .btn-community[disabled]:hover, .btn-community[disabled]:focus, .btn-community[disabled].focus,
+  fieldset[disabled] .btn-community:hover,
+  fieldset[disabled] .btn-community:focus,
+  fieldset[disabled] .btn-community.focus {
+    background-color: #990066;
+    border-color: #990066; }
+  .btn-community .badge {
+    color: #990066;
+    background-color:  #990066; }
+
 
 
 .btn-standard {
@@ -1197,8 +1263,8 @@ li.not:before {
     border-color: #990066; }
   .btn-standard:hover {
     color: white;
-    background-color: #7a1153;
-    border-color: #7a1153; 
+    background-color: #841153;
+    border-color: #841153; 
 }
   .btn-standard:active, .btn-standard.active,
   .open > .btn-standard.dropdown-toggle {
@@ -1210,8 +1276,8 @@ li.not:before {
     .open > .btn-standard.dropdown-toggle:focus,
     .open > .btn-standard.dropdown-toggle.focus {
       color: white;
-      background-color: #7a1153;
-      border-color: #7a1153; }
+      background-color: #841153;
+      border-color: #841153; }
   .btn-standard:active, .btn-standard.active,
   .open > .btn-standard.dropdown-toggle {
     background-image: none; }
@@ -1229,17 +1295,15 @@ li.not:before {
 .btn-enterprise {
   color: white;
   background-color: #3399ff;
-  border-color: #3399ff;
-}
-
+  border-color: #3399ff }
   .btn-enterprise:focus, .btn-enterprise.focus {
     color: white;
     background-color: #3399ff;
     border-color: #3399ff; }
   .btn-enterprise:hover {
     color: white;
-    background-color: #3366cc;
-    border-color: #3366cc; }
+    background-color: #0089ee;
+    border-color: #0089ee; }
   .btn-enterprise:active, .btn-enterprise.active,
   .open > .btn-enterprise.dropdown-toggle {
     color: white;
@@ -1250,8 +1314,8 @@ li.not:before {
     .open > .btn-enterprise.dropdown-toggle:focus,
     .open > .btn-enterprise.dropdown-toggle.focus {
       color: white;
-      background-color: #3366cc;
-      border-color: #3366cc; }
+      background-color: #0089ee;
+      border-color: #0089ee; }
   .btn-enterprise:active, .btn-enterprise.active,
   .open > .btn-enterprise.dropdown-toggle {
     background-image: none; }
@@ -1273,3 +1337,68 @@ li.not:before {
     .title-logo {
       max-width: 300px;
     }
+
+    navbar-custom.affix {
+      background-color: #fff !important;
+      box-shadow: 0 0.5rem .5rem 0 rgba(0, 0, 0, 0.1);
+    }
+
+.triangle {
+      color: #3399ff;
+      margin-top: 3px;
+      font-size: 20px;
+      text-align: center;
+      display: block; }
+
+section#nutshell {
+  background-image: url("../img/polygon-bg.svg");
+  background-attachment: fixed; 
+  background-position: center;
+  background-repeat: no-repeat; 
+  background-size: cover;
+}
+
+section#documentation {
+  background-color: #fff;
+  background-image: url("../img/polygon-bg-inverted.svg");
+  background-attachment: fixed; 
+  background-position: center;
+  background-repeat: no-repeat; 
+  background-size: cover;
+}
+
+section#team {
+  background-color: #fff;
+  background-image: url("../img/polygon-bg.svg");
+  background-attachment: fixed; 
+  background-position: center;
+  background-repeat: no-repeat; 
+  background-size: cover;
+}
+
+
+
+/*Change img for Documentation Section */
+.documentation {
+  margin-bottom: 50px;
+  display: block;
+  text-align: center;
+}
+
+.documentation img {
+  margin: 40px auto 20px;
+  border: none;
+  border-radius: none !important;
+  max-width: 200px;
+}
+
+.documentation h4 {
+  margin-top: 0px;
+  margin-bottom: .5rem;
+  text-transform: uppercase;
+}
+
+.documentation p {
+  margin-top: 10px;
+  line-height: 1.3;
+}
