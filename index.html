@@ -181,7 +181,7 @@
                     <h4>&mdash;</h4>
                 </div>
                 <div class="timeline-body">
-                  <p class="text-muted">SCONE can transparently encrypt files and network traffic and in this way, it protects data from unauthorized access via the operating system and the hypervisor.</p>
+                  <p class="text-muted">SCONE can transparently encrypt files and network traffic and in this way, it protects data from unauthorized access via the operating system, the hypervisor or any software.</p>
                 </div>
               </div>
             </li>
@@ -196,7 +196,7 @@
                     <h4>&mdash;</h4>
                 </div>
                 <div class="timeline-body">
-                  <p class="text-muted">SCONE transparently attests programs to ensure that only the correct, unmodified programs are executing. This also prevents maleware to attach to programs.</p>
+                  <p class="text-muted">SCONE transparently attests programs to ensure that only the correct, unmodified programs are executing in a genuine SGX enclave. This also prevents malware to attach to programs.</p>
                 </div>
               </div>
             </li>
@@ -211,7 +211,7 @@
                     <h4>&mdash;</h4>
                 </div>
                 <div class="timeline-body">
-                  <p class="text-muted">SCONE supports curated images for many popular services like memcached, Apache, MySQL, etc. </p>
+                  <p class="text-muted">SCONE supports curated images for many popular services like Vault, memcached, Apache, MySQL, etc. </p>
                 </div>
               </div>
             </li>
@@ -227,7 +227,7 @@
                     <h4>&mdash;</h4>
                 </div>
                 <div class="timeline-body">
-                  <p class="text-muted">SCONE supports secure compose files to protect secrets that are visible in compose files. </p>
+                  <p class="text-muted">SCONE supports secure compose files to protect secrets that are visible in Docker compose and stack files as well as Kubernetes metadata files. </p>
                 </div>
               </div>
             </li>
@@ -237,12 +237,12 @@
                 </div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
-                      <h4>Usage of</h4>
-                      <h4>secure enclaves</h4>
+                      <h4>Simplifying the use</h4>
+                      <h4>of secure enclaves</h4>
                       <h4>&mdash;</h4>
                   </div>
                   <div class="timeline-body">
-                    <p class="text-muted">SCONE runs programs inside secure enclaves preventing even attackers with root access from stealing secrets from these programs. </p>
+                    <p class="text-muted">SCONE executes programs inside secure enclaves - without requiring source code changes. We recommend to recompile applications but we support executing native Alpine applications inside containers. In this way, we are preventing even attackers with root access from stealing secrets from these programs. </p>
                   </div>
                 </div>
               </li>
@@ -252,12 +252,12 @@
                 </div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
-                      <h4>Configuration</h4>
+                      <h4>Transparent configuration</h4>
                       <h4>with secrets</h4>
                       <h4>&mdash;</h4>
                   </div>
                   <div class="timeline-body">
-                    <p class="text-muted">SCONE helps to configure programs with secrets that can neither be read nor modified by attackers - even if they would have already taken control of the operating system and/or the hypervisor.</p>
+                    <p class="text-muted">SCONE helps to configure programs with secrets that can neither be read nor modified by attackers - even if they would have already taken control of the operating system and/or the hypervisor. This is transparent to the application, i.e., does not require any source code changes.</p>
                   </div>
                 </div>
               </li>
@@ -334,8 +334,8 @@
                     <img src="img/icon-10.svg" class="img-responsive scheme-img" alt="Supporting Docker Compose and Stack">
                 </a>
                 <div class="portfolio-caption">
-                    <h4>Docker Integration</h4>
-                    <p class="text-muted">Support of Stack and Compose files to deploy an application</p>
+                    <h4>Docker and Kubernetes</h4>
+                    <p class="text-muted">Support of Stack and Compose files to deploy an application and provide with secrets</p>
                 </div>
             </div>
 
@@ -460,9 +460,9 @@
               <hr>
               <ul>
                 <li class="feature"><strong>Services run inside of enclaves - without the possibility of inspections</strong></li>
-                <li class="feature">Business day support</li>
-                <li class="not text-muted">Access to all source code </li>
-                <li class="not text-muted">Consulting </li>
+                <li class="feature"><strong>Business day support</strong></li>
+                <li class="feature"><strong>Consulting</strong></li>
+                <li class="not text-muted"> <strong>Priority support 24x7</strong></li>
               </ul>
               <a href="mailto:info@scontain.com" class="btn  btn-primary btn-standard text-uppercase">Get standard now</a>
             </div>
@@ -480,9 +480,9 @@
               <hr>
               <ul class="fa-ul">
                 <li class="feature"> <strong>Services run inside of enclaves - without the possibility of inspections</strong></li>
+                <li class="feature"><strong>Business day support</strong></li>
+                <li class="feature"><strong>Consulting</strong></li>
                 <li class="feature"> <strong>Priority support 24x7</strong></li>
-                <li class="feature"> Access to all source code</li>
-                <li class="feature"> Consulting</li>
               </ul>
               <a href="mailto:info@scontain.com" class="btn btn-primary btn-enterprise text-uppercase">Get enterprise now</a>
             </div>
@@ -508,9 +508,9 @@
         <div class="col-sm-3">
           <div class="team-member">
             <img class="mx-auto rounded-circle" src="img/team/profile-christof.svg" alt="">
-            <h4>Christof Fetzer</h4>
-            <a class=team-email href="mailto:info@scontain.com">christoffetzer@scontain</a>
-            <p class="text-muted">Co Founder & COO, Dependable Systems Guru</p>
+            <h4>Prof. Dr. Christof Fetzer</h4>
+            <a class=team-email href="mailto:christof.fetzer@scontain.com">christof.fetzer@scontain.com</a>
+            <p class="text-muted">Co-Founder & COO, Trustworthy Systems Guru</p>
           </div>
         </div>
 
@@ -518,7 +518,7 @@
             <div class="team-member">
               <img class="mx-auto rounded-circle" src="img/team/profile-franz.svg" alt="">
               <h4>Franz Gregor</h4>
-              <a class=team-email href="mailto:info@scontain.com">franz@scontain</a>
+              <a class=team-email href="mailto:info@scontain.com">info@scontain.com</a>
               <p class="text-muted">Co-Founder & CTO, Shield Execution Expert</p>
             </div>
           </div>
@@ -527,17 +527,17 @@
             <div class="team-member">
               <img class="mx-auto rounded-circle" src="img/team/profile-sergei.svg" alt="">
               <h4>Sergei Arnautov</h4>
-              <a class=team-email href="mailto:info@scontain.com">sergei@scontain</a>
-              <p class="text-muted">Lead Developer</p>
+              <a class=team-email href="mailto:info@scontain.com">info@scontain.comn</a>
+              <p class="text-muted">Co-Founder, Lead Runtime Developer</p>
             </div>
           </div>
 
         <div class="col-sm-3">
           <div class="team-member">
             <img class="mx-auto rounded-circle" src="img/team/profile-do.svg" alt="">
-            <h4>Do Le Quoc</h4>
-            <a class=team-email href="mailto:info@scontain.com">do@scontain</a>
-            <p class="text-muted">Application, Frameworks, Blockchain</p>
+            <h4>Dr. Do Le Quoc</h4>
+            <a class=team-email href="mailto:info@scontain.com">info@scontain.com</a>
+            <p class="text-muted">Co-Founder, Application, Frameworks, Blockchain</p>
           </div>
         </div>
 
@@ -548,7 +548,7 @@
         <div class="team-member">
           <img class="mx-auto rounded-circle" src="img/team/profile-oleh.svg" alt="">
           <h4>Oleh Bodunov</h4>
-          <a class=team-email href="mailto:info@scontain.com">oleh@scontain</a>
+          <a class=team-email href="mailto:info@scontain.com">info@scontain.com</a>
           <p class="text-muted">Developer</p>
         </div>
       </div>
@@ -556,8 +556,8 @@
       <div class="col-sm-3">
         <div class="team-member">
           <img class="mx-auto rounded-circle team" src="img/team/profile-karin.svg" alt="">
-          <h4>Karin Fetzer</h4>
-          <a class=team-email href="mailto:info@scontain.com">karinfetzer@scontain</a>
+          <h4>Dr. Karin Fetzer</h4>
+          <a class=team-email href="mailto:info@scontain.com">info@scontain.com</a>
           <p class="text-muted">Co-Founder & interim CEO, Software Developer</p>
         </div>
       </div>
@@ -566,7 +566,7 @@
         <div class="team-member">
           <img class="mx-auto rounded-circle" src="img/team/profile-janine.svg" alt="">
           <h4>Janine Kasper</h4>
-          <a class=team-email href="mailto:info@scontain.com">janine@scontain</a>
+          <a class=team-email href="mailto:info@scontain.com">info@scontain.com</a>
           <p class="text-muted">Design & UX</p>
         </div>
       </div>
@@ -1063,7 +1063,7 @@
 
                          <h3>Contact Information</h3>
                          <p>Telephone: 0351/xxxxx <br>
-                            E-mail: karinfetzer@scontain.com <br>
+                            E-mail: karin.fetzer@scontain.com <br>
                             Internet adress: https://sconecontainers.github.io/<br>
                           </p>
 
@@ -1179,7 +1179,7 @@
                             Königsbrücker Straße 96 <br>
                             01099 Dresden <br>
                             Germany <br>
-                            Email: christoffetzer@scontain.com <br> Website: https://sconecontainers.github.io/</p>
+                            Email: christof.fetzer@scontain.com <br> Website: https://sconecontainers.github.io/</p>
                             
                             <h4>3. Collection of general data and information</h4>
                             <p>The website of the company name collects a series of general data and information when a data subject or automated system calls up the website. This general data and information are stored in the server log files. Collected may be (1) the browser types and versions used, (2) the operating system used by the accessing system, (3) the website from which an accessing system reaches our website (so-called referrers), (4) the sub-websites, (5) the date and time of access to the Internet site, (6) an Internet protocol address (IP address), (7) the Internet service provider of the accessing system, and (8) any other similar data and information that may be used in the event of attacks on our information technology systems.</p>
