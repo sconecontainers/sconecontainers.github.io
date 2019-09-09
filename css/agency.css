@@ -152,7 +152,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar-custom {
   background-color: #fff;
-  border-color: transparent; }
+  border-color: transparent; 
+  box-shadow: 0 0.5rem .5rem 0 rgba(0, 0, 0, 0.2);
+  }
   .navbar-custom .navbar-brand {
     color: #fed136;
     font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, cursive; }
@@ -233,9 +235,9 @@ padding: 5px 5px;
       color: #ffcc00;
       text-transform: uppercase;
           padding-bottom: 0px;
-      font-size: 40px;
+      font-size: 50px;
       font-weight: 700;
-      line-height: 45px;
+      line-height: 55px;
       margin-bottom: 0px; 
 
     }
@@ -285,11 +287,11 @@ padding: 5px 5px;
       top: 30vh !important;}
     header .intro-text .intro-heading {
       font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-          padding-top: 10px;
+          padding-top: 15px;
           padding-bottom: 0px;
       font-weight: 400;
-      font-size: 20px;
-      line-height: 25px;
+      font-size: 25px;
+      line-height: 30px;
       margin-bottom: 0px; 
       position: relative;} 
       header .intro-text .intro-sentence {
@@ -297,8 +299,8 @@ padding: 5px 5px;
             padding-top: 40px;
             padding-bottom: 0px;
         font-weight: 400;
-        font-size: 20px;
-        line-height: 25px;
+        font-size: 25px;
+        line-height: 30px;
         margin-bottom: 0px; 
         position: relative;} 
       header .intro-text .intro-link {
@@ -741,7 +743,8 @@ body {
   webkit-tap-highlight-color: #fed136; }
 
 .navbar-brand {
-  padding: 15px 15px; }
+  padding: 17px 15px 10px 15px;
+ }
 
   /*
 .video-background {
@@ -819,7 +822,7 @@ body {
   text-decoration: underline;
   text-transform: none;
   padding-top: 15px;
-  padding-bottom: 250px; 
+  margin-bottom: 15%; 
   padding-left: 0px;  }
 
 .btn-link hover {
@@ -1051,9 +1054,9 @@ header.masthead {
    /*  top: 0;
       left: 0; */
       width: 100%;
-      padding-top: 25vh;
+      padding-top: 32vh;
       padding-bottom: 50px;
-      z-index: 1;
+      z-index: 2;
     }
 
 
@@ -1061,7 +1064,7 @@ header.masthead {
   position: absolute;
   width: 100%;
   height: 100vh;
-  z-index: 2;
+  z-index: 1;
  }
 
 
