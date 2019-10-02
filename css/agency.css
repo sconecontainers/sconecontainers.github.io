@@ -1236,7 +1236,7 @@ li.not:before {
   .btn-community:hover {
     color: white;
     background-color: #;
-    border-color: #841153; 
+    border-color: none; 
 }
   .btn-community:active, .btn-community.active,
   .open > .btn-community.dropdown-toggle {
