@@ -27,11 +27,18 @@
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 
     <!-- Theme CSS -->
     <link href="css/agency.css" rel="stylesheet">
-
     <link rel="shortcut icon" type="image/png" href="img/favicon.ico"/>
+
+    <!-- Add Animation Library animate / wow -->
+    <link rel="stylesheet" href="css/animate.css">
+    <script src="js/wow.min.js"></script>
+              <script> new WOW().init(); </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -79,9 +86,6 @@
                     <a class="page-scroll" href="#nutshell">Overview</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#portfolio">Details</a>
-                </li>
-                <li>
                     <a class="page-scroll" href="#documentation">Documentation</a>
                 </li>
                 <li>
@@ -106,75 +110,76 @@
 <!-- Header -->
 <header class="masthead">
 
-        <div id="particles-js"></div>
-        <script src="js/lib/particles.min.js"></script>
-        <script src="js/app.js"></script> 
-        
-        <div class="container container-header">
-           
-            <div class="row">
-             
-                <div class="col-sm-1"></div>
-                <div class="col-sm-10">
-                    <div class="intro-text">
-                        <div class="intro-lead-in">Give hackers no chance&nbsp;&ndash;</div>
-                        <div class="intro-heading">work with</div>
-                    </div>
+    <div id="particles-js"></div>
+    <script src="js/lib/particles.min.js"></script>
+    <script src="js/app.js"></script> 
+    
+    <div class="container container-header">
+       
+        <div class="row">
+         
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10">
+                <div class="intro-text">
+                    <div class="intro-lead-in animated fadeInDown">Give hackers no chance</div>
+                    <div class="intro-heading animated fadeInUp">work with</div>
                 </div>
             </div>
-
-            <div class="row">
-                <div class="col-sm-1"></div>
-                <div class="col-sm-4">
-                    <img class="title-logo" src="img/logo-vector-white-text.svg"/></img>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-sm-1"></div>
-                <div class="col-sm-6">
-                    <div class="intro-text">
-                        <div class="intro-sentence">We enable secure execution of containers and programs using Intel&nbsp;SGX.</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-sm-1"></div>
-                <div class="col-sm-8">
-                    <div class="intro-text">
-                        <a class="btn btn-link text-uppercase js-scroll-trigger free-version" href="#services">Try our free version > </a>
-                    </div>
-                </div>
-            </div>
-            <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger tell-more" href="#nutshell">Tell Me More</a>
-           <a> <span class="glyphicon glyphicon-triangle-bottom text-center triangle" aria-hidden="true"></span></a>
-
         </div>
-  </header>
 
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-4">
+                <img class="title-logo animated fadeInUp" src="img/logo-vector-white-text.svg"/></img>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-6">
+                <div class="intro-text">
+                    <div class="intro-sentence animated fadeInUp">We enable secure execution of containers and programs using Intel&nbsp;SGX.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-8">
+                <div class="intro-text">
+                    <a class="btn btn-link text-uppercase js-scroll-trigger free-version animated fadeInUp" href="#services">Try our free version > </a>
+                </div>
+            </div>
+        </div>
+        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger tell-more animated fadeInUp page-scroll" href="#nutshell">Tell Me More</a>
+       <a> <span class="glyphicon glyphicon-triangle-bottom text-center triangle" aria-hidden="true"></span></a>
+
+    </div>
+</header>
 
 
 
 <!-- Tell me more  Section -->
   <!-- Nutshell -->
   <section class="page-section" id="nutshell">
-      <div class="nutshell"> </div>
+
     <div class="container nutshell">
       <div class="row">
-        <div class="col-lg-12 text-center">
+        <div class="col-lg-12 text-center plus-pad">
           <h2 class="section-heading text-uppercase">SCONE in a nutshell</h2>
           <h3 class="section-subheading text-muted">Overview of SCONE's unique features</h3>
         </div>
       </div>
+
       <div class="row">
         <div class="col-lg-12">
           <ul class="timeline">
-            <li>
-              <div class="timeline-image">
+
+            <li class="pointer" href="#usp5" data-toggle="modal">
+              <div class="timeline-image wow fadeInRight animated hoverlift">
                 <img class="rounded-circle svg-fluid" src="img/transparent-encryption-icon.svg" alt="transparent encryption icon">
               </div>
-              <div class="timeline-panel">
+              <div class="timeline-panel wow fadeInLeft animated">
                 <div class="timeline-heading">
                     <h4>Transparent</h4>
                     <h4>encryption</h4>
@@ -182,14 +187,16 @@
                 </div>
                 <div class="timeline-body">
                   <p class="text-muted">SCONE can transparently encrypt files and network traffic and in this way, it protects data from unauthorized access via the operating system, the hypervisor or any software.</p>
+                  <a class="btn btn-primary btn-sm text-uppercase more-details animated fadeInLeft" href="#usp5">Learn more</a>
                 </div>
               </div>
             </li>
+
             <li class="timeline-inverted">
-              <div class="timeline-image">
+              <div class="timeline-image wow fadeInLeft animated">
                 <img class="rounded-circle svg-fluid" src="img/transparent-attest-icon.svg" alt="transparent attestation">
               </div>
-              <div class="timeline-panel">
+              <div class="timeline-panel wow fadeInRight animated">
                 <div class="timeline-heading">
                     <h4>Transparent</h4>
                     <h4>attestation of programs</h4>
@@ -200,27 +207,114 @@
                 </div>
               </div>
             </li>
+
             <li>
-              <div class="timeline-image">
+              <div class="timeline-image wow fadeInRight animated">
                 <img class="rounded-circle svg-fluid" src="img/curated-images-icon.svg" alt="curated images icon">
               </div>
-              <div class="timeline-panel">
+              <div class="timeline-panel wow fadeInLeft animated">
                 <div class="timeline-heading">
                     <h4>Curated</h4>
                     <h4>images</h4>
                     <h4>&mdash;</h4>
                 </div>
                 <div class="timeline-body">
-                  <p class="text-muted">SCONE supports curated images for many popular services like Vault, memcached, Apache, MySQL, etc. </p>
+                  <p class="text-muted"><p>
+                        <strong>SCONE</strong> supports a set of curated images to simplify the task
+                        of application developer. For most of the standard services, we will provide
+                        a SCONE image that runs inside of an SGX enclave. The application developer
+                        can customize the image via a Docker compose / stack file. We provide some examples in our <A href="https://sconedocs.github.io/">SCONE&nbsp;tutorial</A>. </p>
                 </div>
-              </div>
+            </div>
+        </li>
+    </ul>
+</div>
+</div>
+
+
+<!--carousel-->   
+<section class="carousel-section" id="carousel">
+<div id="example" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <ul class="row item active">
+            <li class="col-xs-4 col-md-2 col-">
+              <img src="img/carousel/Mariadb-01.svg" class="img-carousel">
             </li>
-            
-            <li class="timeline-inverted">
-              <div class="timeline-image">
-                <img class="rounded-circle svg-fluid" src="img/compose-file-icon.svg" alt="compose file icon">
+            <li class="col-xs-4 col-md-2">
+              <img src="img/carousel/nginx.svg" class="img-carousel">
+            </li>
+            <li class="col-xs-4 col-md-2">
+              <img src="img/carousel/apache.png" class="img-carousel">
+            </li>
+            <li class="col-xs-4 col-md-2">
+                <img src="img/carousel/memcached.svg" class="img-carousel">
+             <li class="col-xs-4 col-md-2">
+                <img src="img/carousel/SQLite.svg" class="img-carousel">
+            </li>
+             <li class="col-xs-4 col-md-2">
+                <img src="img/carousel/Go.svg" class="img-carousel">
+            </li>               
+            </li>
+
+          </ul>
+          <ul class="row item">
+            <li class="col-xs-4 col-md-2">
+              <img src="img/carousel/Redis.svg" class="img-carousel">
+            </li>
+            <li class="col-xs-4 col-md-2">
+               <img src="img/carousel/rust.svg" class="img-carousel">
+            </li>
+            <li class="col-xs-4 col-md-2">
+              <img src="img/carousel/c.svg" class="img-carousel">
+            </li>
+            <li class="col-xs-4 col-md-2">
+                <img src="img/carousel/cpp.svg" class="img-carousel">
+            </li>
+            <li class="col-xs-4 col-md-2">
+                <img src="img/carousel/Fortran.png" class="img-carousel">
+            </li>
+            <li class="col-xs-4 col-md-2">
+                <img src="img/carousel/Java.svg" class="img-carousel">
+            </li>
+          </ul>
+  
+        </ul>
+        <ul class="row item">
+          <li class="col-xs-4 col-md-2">
+            <img src="img/carousel/Lua.svg" class="img-carousel">
+          </li>
+          <li class="col-xs-4 col-md-2">
+            <img src="img/carousel/Python.svg" class="img-carousel">
+          </li>
+          <li class="col-xs-4 col-md-2">
+            <img src="img/carousel/MongoDB.svg" class="img-carousel">
+          </li>
+          <li class="col-xs-4 col-md-2">
+            <img src="img/carousel/SQLite.svg" class="img-carousel">
+        </li>
+        <li class="col-xs-4 col-md-2">
+            <img src="img/carousel/Redis.svg" class="img-carousel">
+          </li>
+          <li class="col-xs-4 col-md-2">
+            <img src="img/carousel/nginx.svg" class="img-carousel">
+          </li>
+        </ul>
+        </div>
+      
+        <a class="carousel-control left" href="#example" data-slide="prev"></a>
+        <a class="carousel-control right" href="#example" data-slide="next"></a> 
+</div>
+</section>   
+
+<div class="row">
+        <div class="col-lg-12">
+          <ul class="timeline">
+
+            <li class="timeline-inverted pointer" href="#usp4" data-toggle="modal">
+              <div class="timeline-image wow fadeInLeft animated">
+                <img class="rounded-circle svg-fluid" src="img/compose-file-icon.svg">
               </div>
-              <div class="timeline-panel">
+              <div class="timeline-panel wow fadeInRight animated">
                 <div class="timeline-heading">
                     <h4>Secure</h4>
                     <h4>compose files</h4>
@@ -228,14 +322,17 @@
                 </div>
                 <div class="timeline-body">
                   <p class="text-muted">SCONE supports secure compose files to protect secrets that are visible in Docker compose and stack files as well as Kubernetes metadata files. </p>
+                  <a class="btn btn-primary btn-sm text-uppercase more-details animated fadeInLeft" href="#usp4">Learn more</a>
                 </div>
               </div>
             </li>
-            <li>
-                <div class="timeline-image">
-                  <img class="rounded-circle svg-fluid" src="img/secure-enclaves-icon.svg" alt="secure enclaves icon">
+
+
+<li class="pointer" href="#usp2" data-toggle="modal">
+                <div class="timeline-image wow fadeInRight animated hoverlift">
+                    <img class="rounded-circle svg-fluid" src="img/secure-enclaves-icon.svg" alt="secure enclaves">
                 </div>
-                <div class="timeline-panel">
+                <div class="timeline-panel wow fadeInLeft animated">
                   <div class="timeline-heading">
                       <h4>Simplifying the use</h4>
                       <h4>of secure enclaves</h4>
@@ -243,14 +340,17 @@
                   </div>
                   <div class="timeline-body">
                     <p class="text-muted">SCONE executes programs inside secure enclaves - without requiring source code changes. We recommend to recompile applications but we support executing native Alpine applications inside containers. In this way, we are preventing even attackers with root access from stealing secrets from these programs. </p>
-                  </div>
+                    <a class="btn btn-primary btn-sm text-uppercase more-details animated fadeInLeft" href="#usp2">Learn more</a>
+                </div>
                 </div>
               </li>
-              <li class="timeline-inverted">
-                <div class="timeline-image">
-                  <img class="rounded-circle svg-fluid" src="img/configuration-with-secrets-icon.svg" alt="configuration with secrets icon">
-                </div>
-                <div class="timeline-panel">
+          
+
+            <li class="timeline-inverted">
+              <div class="timeline-image wow fadeInRight animated">
+                <img class="rounded-circle svg-fluid" src="img/configuration-with-secrets-icon.svg" alt="transparent configuration">
+              </div>
+                <div class="timeline-panel wow fadeInRight animated">
                   <div class="timeline-heading">
                       <h4>Transparent configuration</h4>
                       <h4>with secrets</h4>
@@ -261,119 +361,49 @@
                   </div>
                 </div>
               </li>
+
+              <li class="pointer" href="#usp1" data-toggle="modal">
+                <div class="timeline-image wow fadeInRight animated hoverlift">
+                  <img class="rounded-circle svg-fluid" src="img/application-oriented security.svg" alt="application-oriented security">
+                </div>
+                <div class="timeline-panel wow fadeInLeft animated">
+                  <div class="timeline-heading">
+                      <h4>Application-oriented</h4>
+                      <h4>security</h4>
+                      <h4>&mdash;</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">Ensure application security even in untrusted environments. </p>
+                    <a class="btn btn-primary btn-sm text-uppercase more-details animated fadeInLeft" href="#usp1">Learn more</a>
+                </div>
+                </div>
+              </li>
+
+              <li class="timeline-inverted pointer" href="#usp3" data-toggle="modal">
+                <div class="timeline-image wow fadeInLeft animated hoverlift">
+                  <img class="rounded-circle svg-fluid" src="img/cross-compiler-support.svg" alt="cross-compiler-support">
+                </div>
+                <div class="timeline-panel wow fadeInRight animated">
+                  <div class="timeline-heading">
+                      <h4>Cross-compiler</h4>
+                      <h4>support</h4>
+                      <h4>&mdash;</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">SCONE support cross-compilers for C, C++, Rust, Go and an interpreter for Python.</p>
+                    <a class="btn btn-primary btn-sm text-uppercase more-details animated fadeInLeft" href="#usp3">Learn more</a>
+                  </div>
+                </div>
+              </li>
           </ul>
         </div>
       </div>
     </div>
-  </section>
-
-<!-- Tell me more  Section -->
-<section id="portfolio" class="bg-light-gray">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2 class="section-heading">SCONE features</h2>
-                <!--<h2 class="section-heading">SCONE in more details</h2>-->
-                <h3 class="section-subheading text-muted">SCONE's unique features explained</h3>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-4 col-sm-6 portfolio-item card-body" href="#usp1" data-toggle="modal">
-                <a class="portfolio-link">
-                    <!--<div class="portfolio-hover">-->
-                        <!--<div class="portfolio-hover-content">-->
-                            <!--<i class="fa fa-plus fa-3x"></i>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                    <img src="img/icon-7.svg" class="img-responsive scheme-img" alt="application-oriented security">
-                </a>
-                <div class="portfolio-caption">
-                    <h4>Application-Oriented Security</h4>
-                    <p class="text-muted">Ensure application security even in untrusted environments</p>
-                </div>
-            </div>
-
-            <div class="col-md-4 col-sm-6 portfolio-item card-body" href="#usp2"  data-toggle="modal">
-                <a class="portfolio-link">
-                    <!--<div class="portfolio-hover">-->
-                        <!--<div class="portfolio-hover-content">-->
-                            <!--<i class="fa fa-plus fa-3x"></i>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                    <img src="img/icon-8.svg" class="img-responsive scheme-img" alt="SGX encrypts main memory">
-                </a>
-                <div class="portfolio-caption">
-                    <h4>Intel SGX Support</h4>
-                    <p class="text-muted">Encrypted main memory with Intel SGX ensures confidentialitiy and integrity</p>
-                </div>
-            </div>
-
-            <div class="col-md-4 col-sm-6 portfolio-item card-body" href="#usp3"  data-toggle="modal">
-                <a class="portfolio-link">
-                    <!--<div class="portfolio-hover">-->
-                        <!--<div class="portfolio-hover-content">-->
-                            <!--<i class="fa fa-plus fa-3x"></i>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                    <img src="img/icon-9.svg" class="img-responsive scheme-img" alt="Scone Language Support">
-                </a>
-                <div class="portfolio-caption">
-                    <h4>Cross-Compiler support</h4>
-                    <p class="text-muted">SCONE support cross-compilers for C, C++, Rust, Go and an interpreter for Python</p>
-                </div>
-            </div>
-
-            <div class="col-md-4 col-sm-6 portfolio-item card-body" href="#usp4"  data-toggle="modal">
-                <a class="portfolio-link">
-                    <!--<div class="portfolio-hover">-->
-                        <!--<div class="portfolio-hover-content">-->
-                            <!--<i class="fa fa-plus fa-3x"></i>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                    <img src="img/icon-10.svg" class="img-responsive scheme-img" alt="Supporting Docker Compose and Stack">
-                </a>
-                <div class="portfolio-caption">
-                    <h4>Docker and Kubernetes</h4>
-                    <p class="text-muted">Support of Stack and Compose files to deploy an application and provide with secrets</p>
-                </div>
-            </div>
-
-            <div class="col-md-4 col-sm-6 portfolio-item card-body" href="#usp5" data-toggle="modal">
-                <a class="portfolio-link">
-                    <!--<div class="portfolio-hover">-->
-                        <!--<div class="portfolio-hover-content">-->
-                            <!--<i class="fa fa-plus fa-3x"></i>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                    <img src="img/icon-11.svg" class="img-responsive scheme-img" alt="Scone-based shielding">
-                </a>
-                <div class="portfolio-caption">
-                    <h4>Shielding</h4>
-                    <p class="text-muted">Supports transparent encryption of files and network traffic</p>
-                </div>
-            </div>
-
-            <div class="col-md-4 col-sm-6 portfolio-item card-body" href="#usp6"  data-toggle="modal">
-                <a class="portfolio-link">
-                    <!--<div class="portfolio-hover">-->
-                        <!--<div class="portfolio-hover-content">-->
-                            <!--<i class="fa fa-plus fa-3x"></i>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                    <img src="img/icon-12.svg" class="img-responsive scheme-img" alt="Scone Curated images">
-                </a>
-                <div class="portfolio-caption">
-                    <h4>Curated Container Images</h4>
-                    <p class="text-muted">SCONE supports a set of standard services like nginx, etc</p>
-                </div>
-            </div>
-        </div>
-    </div>
 </section>
 
+
 <!-- Documentation -->
-<section id="documentation">
+<section id="documentation" class="bg-light-gray">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
@@ -382,7 +412,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-4">
+            <div class="col-sm-4 animated fadeInUp wow">
                 <div class="documentation">
                     <a href="https://sconedocs.github.io/" target="_blank">
                         <img  src="img/icon-1.svg" class="img-responsive doc-image img-circle" alt="https://sconedocs.github.io/">
@@ -391,7 +421,7 @@
                     <p class="text-muted">Tutorial and technical details</p>
                 </div>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-4 animated fadeInUp wow" data-wow-delay=".5s">
                 <div class="documentation">
                     <!--<a href="#techdoc1" class="portfolio-link"  data-toggle="modal">-->
                     <a href="https://sconedocs.github.io/" target="_blank">
@@ -401,7 +431,7 @@
                     <p class="text-muted">We provide Docker container image of the SCONE documentation</p>
                 </div>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-4 animated fadeInUp wow" data-wow-delay="1s">
                 <div class="documentation">
                     <a href="#techdoc2" class="portfolio-link"  data-toggle="modal">
                         <img src="img/icon-3.svg" class="img-responsive doc-image img-circle" alt="Publications">
@@ -417,7 +447,6 @@
 </section>
 
 
-
 <!-- Services/pricing Section-->
                 
 <section class="pricing py-5" id="services">
@@ -429,7 +458,7 @@
 
             </div>
 
-        <div class="col-md-4">
+        <div class="col-lg-4 animated fadeInRight wow">
           <div class="card mb-5 mb-lg-0">
             <div class="card-body">
                 <div>
@@ -449,9 +478,9 @@
           </div>
         </div>
 
-        <div class="col-md-4">
-          <div class="card mb-5 mb-lg-0">
-            <div class="card-body">
+        <div class="col-lg-4 animated fadeInRight wow" data-wow-delay=".5s">
+            <div class="card">
+              <div class="card-body">
                     <div>
                         <img class="img-responsive services-img" src="img/standard-version-icon.svg" alt="">
                     </div>
@@ -469,12 +498,12 @@
           </div>
         </div>
 
-        <div class="col-md-4">
-          <div class="card">
-            <div class="card-body">
+        <div class="col-lg-4 animated fadeInRight wow" data-wow-delay="1s">
+            <div class="card mb-5 mb-lg-0">
+              <div class="card-body">
                     <div>
-                            <img class="img-responsive services-img" src="img/enterprise-version-icon.svg" alt="">
-                        </div>
+                        <img class="img-responsive services-img" src="img/enterprise-version-icon.svg" alt="">
+                    </div>
               <h5 class="card-title text-muted text-uppercase text-center">Business Edition</h5>
               <h6 class="card-price text-center">ask&nbsp;€<span class="period">/year</span></h6>
               <hr>
@@ -505,7 +534,7 @@
 
       
       <div class="row">
-        <div class="col-sm-4">
+            <div class="col-sm-4 animated fadeInUp wow" >
           <div class="team-member">
             <img class="mx-auto rounded-circle" src="img/team/profile-christof.svg" alt="">
             <h4>Prof. Dr. Christof Fetzer</h4>
@@ -514,7 +543,7 @@
           </div>
         </div>
 
-        <div class="col-sm-4">
+        <div class="col-sm-4 animated fadeInUp wow" data-wow-delay=".1s">
             <div class="team-member">
               <img class="mx-auto rounded-circle" src="img/team/profile-franz.svg" alt="">
               <h4>Franz Gregor</h4>
@@ -523,7 +552,7 @@
             </div>
           </div>
 
-          <div class="col-sm-4">
+          <div class="col-sm-4 animated fadeInUp wow" data-wow-delay=".2s">
             <div class="team-member">
               <img class="mx-auto rounded-circle" src="img/team/profile-sergei.svg" alt="">
               <h4>Sergei Arnautov</h4>
@@ -537,7 +566,7 @@
 
    <div class="row">
 
-        <div class="col-sm-4">
+        <div class="col-sm-4 animated fadeInUp wow" data-wow-delay="1s">
                 <div class="team-member">
                   <img class="mx-auto rounded-circle" src="img/team/profile-do.svg" alt="">
                   <h4>Dr. Do Le Quoc</h4>
@@ -547,7 +576,7 @@
         </div>
       
 
-      <div class="col-sm-4">
+        <div class="col-sm-4 animated fadeInUp wow" data-wow-delay="1.1s">
         <div class="team-member">
           <img class="mx-auto rounded-circle team" src="img/team/profile-karin.svg" alt="">
           <h4>Dr. Karin Fetzer</h4>
@@ -557,7 +586,7 @@
       </div>
 
 
-      <div class="col-sm-4">
+      <div class="col-sm-4 animated fadeInUp wow" data-wow-delay="1.2s">
         <div class="team-member">
           <img class="mx-auto rounded-circle" src="img/team/profile-wanted.svg" alt="">
           <h4>Wanted!</h4>
@@ -581,7 +610,7 @@
       <div class="row">
           <div class="col-lg-3"></div>
         <div class="col-lg-6 text-center">
-          <h3 class="section-subheading text-muted-contact">If you are interested in the SCONE platform, SCONE curated images or if you want to work for us, please use the contact box below or send email to </h3> 
+          <h3 class="section-subheading text-muted-contact">If you are interested in the SCONE platform, SCONE curated images or if you want to work for us, please use the contact button below or send email to <a>info@scontain.com</a></h3> 
                 <p style="margin-bottom:1cm;"></p>
                 <a href="mailto:info@scontain.com?subject=Contact&amp;body=Hi%20SCONE%20Team,%0D%0A%0D%0A..." class="btn btn-primary btn-community text-uppercase">Send Message</a>            
 
@@ -642,7 +671,7 @@
                                 confidentiality as well as integrity of the application can be ensured even if executing in untrusted environments.
                                 In untrusted environments, we have to protect against adversaries that have gained root access and can use this to read or even
                                 modify our application's data.</p>
-                            <img class="img-responsive img-centered" src="img/scheme/2.jpg" alt="application-oriented security">
+                            <img class="img-responsive img-centered" src="img/scheme/Application-oriented Security.svg" alt="application-oriented security">
 
                             <p><strong>SCONE</strong> supports naturally modern cloud-native applications that are composed of a set of microservices.
                                 Our general recommendation is that each microservice runs inside of an
@@ -678,7 +707,7 @@
                             <!-- Project Details Go Here -->
                             <h2>Intel SGX Enclaves</h2>
                             <p class="item-intro text-muted">SCONE uses Intel SGX Enclaves to protect application components.</p>
-                            <img class="img-responsive img-centered" src="img/scheme/1.jpg" alt="Intel SGX">
+                            <img class="img-responsive img-centered" src="img/scheme/Intel SGX Enclaves.svg" alt="Intel SGX">
                             <p>SCONE helps developers to run their applications inside of SGX enclaves. An Intel SGX enclave
                                 facilitates an application to protect its data from accesses by all other software - even the operating system.
                                 In particular, an application can protect all its data against adversaries with root access.
@@ -714,7 +743,7 @@
                             <!-- Project Details Go Here -->
                             <h2>SCONE crosscompiler support</h2>
                             <p class="item-intro text-muted">SCONE support cross-compilers for C, C++, Rust, Go and Fortran.</p>
-                            <img class="img-responsive img-centered" src="img/scheme/3.jpg" alt="Scone Cross Compilers">
+                            <img class="img-responsive img-centered" src="img/scheme/Crosscompiler Support.svg" alt="Scone Cross Compilers">
                             <p>
                                 <strong>SCONE</strong> supports different programming languages. We provide different base container
                                 images that can be pulled from DockerHub. These images permit to create new container images with the help of Dockerfiles.
@@ -748,7 +777,7 @@
                             <!-- Project Details Go Here -->
                             <h2>SCONE Docker Integration</h2>
                             <p class="item-intro text-muted">SCONE supports the Docker workflow of creating applications.</p>
-                            <img class="img-responsive img-centered" src="img/scheme/4.jpg" alt="Scone Docker Integration">
+                            <img class="img-responsive img-centered" src="img/scheme/Docker Integration.svg" alt="Scone Docker Integration">
                             <p>
                                 <strong>SCONE</strong> supports the development and operations of applications similar to that
                                 of Docker. However, SCONE will run the microservices of an application inside of containers.
@@ -758,7 +787,7 @@
                                 We provide some examples in our <A href="https://sconedocs.github.io/">SCONE tutorial</A>.
                             </p>
 
-                            <img class="img-responsive img-centered" src="img/scheme/7.jpg" alt="Confidentiallity and Integrity">
+                            <img class="img-responsive img-centered" src="img/scheme/Docker Integration II.svg" alt="Confidentiallity and Integrity">
 
                             <p>
                                 <strong>SCONE</strong> helps to ensure the confidentiality and integrity of an application.
@@ -794,7 +823,7 @@
                             <!-- Project Details Go Here -->
                             <h2>SCONE Shielding</h2>
                             <p class="item-intro text-muted">SCONE supports transparent encryption of files, network traffic and stdin/stdout.</p>
-                            <img class="img-responsive img-centered" src="img/scheme/5.jpg" alt="Scone shielding">
+                            <img class="img-responsive img-centered" src="img/scheme/Shielding.svg" alt="Scone shielding">
 
                             <p>
                                 Legacy services like memcached, were designed for operating in a trusted environment.
@@ -849,7 +878,7 @@
                             <!-- Project Details Go Here -->
                             <h2>SCONE Curated Images</h2>
                             <p class="item-intro text-muted">SCONE support a set of curated container images.</p>
-                            <img class="img-responsive img-centered" src="img/scheme/6.jpg" alt="Scone Curated Images">
+                            <img class="img-responsive img-centered" src="img/scheme/" alt="Scone Curated Images">
 
                             <p>
                                 <strong>SCONE</strong> supports a set of curated images to simplify the task
