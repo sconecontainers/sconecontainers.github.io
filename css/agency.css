@@ -1444,7 +1444,7 @@ li.not:before {
       text-align: center;
       display: block; }
 
-section#nutshell, section#documentation, section#services, section#team{
+section#nutshell, section#documentation, section#services, section#partners, section#team{
   background-image: url("../img/polygon-bg.svg");
   background-attachment: fixed; 
   background-position: center;
