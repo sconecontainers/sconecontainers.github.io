@@ -217,6 +217,18 @@ padding: 5px 5px;
     .navbar-custom .navbar-nav > .active > a {
       border-radius: 3px; } }
 
+@media (max-width:1000px){
+    .navbar-custom .nav li a {
+        font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        padding: 8px 5px;
+        margin: 9px 0px;
+        color: #330066; }
+    
+    }
+
 @media (min-width: 768px) {
   .navbar-custom.affix {
     background-color: #fff;
