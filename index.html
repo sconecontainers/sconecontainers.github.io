@@ -115,54 +115,101 @@
 
 
 <!-- Header -->
-<header class="masthead">
+<header>
 
-    <div id="particles-js"></div>
-    <script src="js/lib/particles.min.js"></script>
-    <script src="js/app.js"></script> 
-    
-    <div class="container container-header">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="8000">
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner landing" role="listbox">
+          
+          <div class="item active">
+            
+            <div id="particles-js"></div>
+            <script src="js/lib/particles.min.js"></script>
+            <script src="js/app.js"></script>
+
+            <div class="banner" style="background-image: url(img/header-bg.png);"></div>
+
+            <div class="carousel-caption">
+                <div class="row">
+                    <div class="col-sm-10">
+                        <div class="intro-text">
+                            <div class="intro-lead-in animated fadeInDown">Give hackers no chance.</div>
+                            <div class="intro-heading animated fadeInUp">work with</div>
+                            <img class="title-logo animated fadeInUp" src="img/logo-vector-white-text.svg"/></img>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="intro-text">
+                            <div class="intro-sentence animated fadeInUp"><br> We enable confidential computing of containers and host programs using Intel&nbsp;SGX.</br> 
+                                <br> SCONE supports Kubernetes, MaaS, Docker, Azure Confidential Computing, native Linux hosts, and Windows 10/HyperV.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="intro-text">
+                            <a class="btn btn-link text-uppercase js-scroll-trigger animated free-version fadeInLeftBig slow" href="#services"><span class="glyphicon glyphicon-arrow-right"> </span>&nbsp;Try our free version</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tell-more-position">
+                    <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger tell-more animated fadeInUp" href="#nutshell">Tell Me More</a>
+                    <span class="glyphicon glyphicon-triangle-bottom text-center triangle" aria-hidden="true"></span>
+                </div>
+            </div>
+          </div>       
        
-        <div class="row">
-         
-            <div class="col-sm-1"></div>
-            <div class="col-sm-10">
-                <div class="intro-text">
-                    <div class="intro-lead-in animated fadeInDown">Give hackers no chance</div>
-                    <div class="intro-heading animated fadeInUp">work with</div>
+
+
+          <div class="item">
+            
+
+            <div class="banner" style="background-image: url(img/clouds-header.png);"></div>
+            
+            <div class="carousel-caption">
+
+                <div class="row">
+                    <div class="col-sm-8">
+                        <div class="intro-text">
+                            <div class="intro-heading animated fadeInDown"></div>
+                            <img class="title-logo animated fadeInDown" src="img/logo-vector-white-text.svg"/><br>&nbsp;<br>&nbsp;</img>
+                           
+                            <div class="intro-lead-in animated fadeInUp">Confidential cloud-native application.</div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                        <div class="col-sm-6">
+                            <div class="intro-text">
+                                <div class="intro-sentence animated fadeInUp">SCONE confidential cloud-native application can protect the security - confidentiality, integrity, and freshness&nbsp;- <br>of YOUR data, code, and keys.
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8">
+                        <div class="intro-text">
+                            <a class="btn btn-link text-uppercase js-scroll-trigger animated free-version fadeInLeftBig slow" href="#news"><span class="glyphicon glyphicon-plus-sign"> </span>&nbsp; Tell me more about SCONE CCNA</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tell-more-position">
+                    <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger tell-more animated fadeInUp" href="#services">Get SCONE</a>
+                    <a> <span class="glyphicon glyphicon-triangle-bottom text-center triangle" aria-hidden="true"></span></a>
                 </div>
             </div>
         </div>
-
-        <div class="row">
-            <div class="col-sm-1"></div>
-            <div class="col-sm-4">
-                <img class="title-logo animated fadeInUp" src="img/logo-vector-white-text.svg"/></img>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-1"></div>
-            <div class="col-sm-6">
-                <div class="intro-text">
-                    <div class="intro-sentence animated fadeInUp"><br> We enable confidential computing of containers and host programs using Intel&nbsp;SGX.</br> 
-                                                                    <br> SCONE supports Kubernetes, MaaS, Docker, Azure Confidential Computing, native Linux hosts, and Windows 10/HyperV.</div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-1"></div>
-            <div class="col-sm-8">
-                <div class="intro-text">
-                    <a class="btn btn-link text-uppercase js-scroll-trigger free-version animated fadeInUp" href="#services">Try our free version > </a>
-                </div>
-            </div>
-        </div>
-        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger tell-more animated fadeInUp page-scroll" href="#nutshell">Tell Me More</a>
-       <a> <span class="glyphicon glyphicon-triangle-bottom text-center triangle" aria-hidden="true"></span></a>
-
     </div>
+        <!-- Controls -->
+        <a class="left carousel-control landing" href="#carousel-example-generic" role="button" data-slide="prev">
+        </a>
+        <a class="right carousel-control landing" href="#carousel-example-generic" role="button" data-slide="next">
+        </a>
+      </div>
+
 </header>
 
 
