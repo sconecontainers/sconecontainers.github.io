@@ -115,59 +115,184 @@
 
 
 
-
 <!-- Header -->
-<header class="masthead">
+<header>
 
-        <div id="particles-js"></div>
-        <script src="js/lib/particles.min.js"></script>
-        <script src="js/app.js"></script> 
+  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="8000">
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner landing" role="listbox">
         
-        <div class="container container-header">
-           
-            <div class="row">
-             
-                <div class="col-sm-1"></div>
-                <div class="col-sm-10">
-                    <div class="intro-text">
-                        <div class="intro-lead-in animated fadeInDown">não dê chance aos hackers</div>
-                        <div class="intro-heading animated fadeInUp">Proteja suas aplicações com</div>
-                    </div>
-                </div>
-            </div>
+        <div class="item active">
+          
+          <div id="particles-js"></div>
+          <script src="js/lib/particles.min.js"></script>
+          <script src="js/app.js"></script>
 
-            <div class="row">
-                <div class="col-sm-1"></div>
-                <div class="col-sm-4">
-                    <img class="title-logo animated fadeInUp" src="img/logo-vector-white-text.svg"/></img>
-                </div>
-            </div>
+          <div class="banner" style="background-image: url(img/header-bg.png);"></div>
 
-            <div class="row">
-                <div class="col-sm-1"></div>
-                <div class="col-sm-6">
-                    <div class="intro-text">
-                        <div class="intro-sentence animated fadeInUp"><br>Permitimos a computação confidencial de contêineres e programas host usando o Intel&nbsp;SGX. </br>
-                          <br> O SCONE suporta Kubernetes, MaaS, Docker, Computação Confidencial do Azure, hosts Linux nativos e Windows&nbsp;10/HyperV. <br> </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-sm-1"></div>
-                <div class="col-sm-8">
-                    <div class="intro-text">
-                        <a class="btn btn-link text-uppercase js-scroll-trigger free-version animated fadeInUp" href="#services">Teste nossa versão gratuita > </a>
-                    </div>
-                </div>
-            </div>
-            <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger tell-more animated fadeInUp" href="#nutshell">mais detalhes</a>
-           <a> <span class="glyphicon glyphicon-triangle-bottom text-center triangle" aria-hidden="true"></span></a>
-
-        </div>
-  </header>
+          <div class="carousel-caption">
+              <div class="row">
+                  <div class="col-sm-10">
+                      <div class="intro-text">
+                          <div class="intro-lead-in animated fadeInDown">Não dê chance aos hackers.</div>
+                          <div class="intro-heading animated fadeInUp" style="animation-delay: .8s">Proteja suas aplicações com</div>
+                          <img class="title-logo animated fadeInUp" style="animation-delay: .8s" src="img/logo-vector-white-text.svg"/></img>
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-sm-6">
+                      <div class="intro-text">
+                          <div class="intro-sentence animated fadeInUp" style="animation-delay: 1.5s"><br>Permitimos a computação confidencial de contêineres e programas host usando o Intel&nbsp;SGX. </br>
+                            <br> O SCONE suporta Kubernetes, MaaS, Docker, Computação Confidencial do Azure, hosts Linux nativos e Windows&nbsp;10/HyperV. <br> </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-sm-6">
+                      <div class="intro-text">
+                          <a class="btn btn-link text-uppercase js-scroll-trigger animated free-version fadeInLeftBig slow" style="animation-delay: 1s" href="#services"><span class="glyphicon glyphicon-arrow-right"> </span>&nbsp;Teste nossa versão gratuita</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="tell-more-position">
+                  <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger tell-more animated fadeInUp" href="#nutshell">Mais detalhes</a>
+                  <span class="glyphicon glyphicon-triangle-bottom text-center triangle" aria-hidden="true"></span>
+              </div>
+          </div>
+        </div>       
+     
 
 
+        <div class="item">
+          
+
+          <div class="banner" style="background-image: url(img/clouds-header.png);"></div>
+          
+          <div class="carousel-caption">
+
+              <div class="row">
+                  <div class="col-sm-8">
+                      <div class="intro-text">
+                          <div class="intro-heading animated fadeInDown"></div>
+                          <img class="title-logo animated fadeInDown" src="img/logo-vector-white-text.svg"/><br>&nbsp;<br>&nbsp;</img>
+                         
+                          <div class="intro-lead-in animated fadeInUp">Aplicativo nativo da nuvem confidencial.</div>
+
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                      <div class="col-sm-6">
+                          <div class="intro-text">
+                              <div class="intro-sentence animated fadeInUp">O aplicativo nativo da nuvem confidencial SCONE pode proteger a segurança - confidencialidade, integridade e atualização - <br> de SEUS dados, códigos e chaves.
+                              </div>
+                          </div>
+                      </div>
+              </div>
+              <div class="row">
+                  <div class="col-sm-8">
+                      <div class="intro-text">
+                          <a class="btn btn-link text-uppercase js-scroll-trigger animated free-version fadeInLeftBig slow" href="#news"><span class="glyphicon glyphicon-plus-sign"> </span>&nbsp; Mais detalhes sobre SCONE CCNA</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="tell-more-position">
+                  <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger tell-more animated fadeInUp" href="#services">Obter SCONE</a>
+                  <a> <span class="glyphicon glyphicon-triangle-bottom text-center triangle" aria-hidden="true"></span></a>
+              </div>
+          </div>
+      </div>
+  </div>
+      <!-- Controls -->
+      <a class="left carousel-control landing" href="#carousel-example-generic" role="button" data-slide="prev">
+      </a>
+      <a class="right carousel-control landing" href="#carousel-example-generic" role="button" data-slide="next">
+      </a>
+    </div>
+
+</header>
+
+
+
+<!-- News -->
+<section class="page-section bg-light-gray" id="news">
+
+  <div class="container nutshell">
+    <div class="row">
+      <div class="col-lg-12 text-center plus-pad">
+        <h2 class="section-heading text-uppercase">Notícia</h2>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+
+          <div class="col-sm-4 fadeInRight wow animated news-card">
+                  <a class="black" href="download/CCNA.pdf">
+                      <div class="card mb-5 mb-lg-0 blog-grids">
+                          <div class="grid">
+                              <div class="entry-media">
+                                  <img src="img/news/CCNA.png" alt="CCNA Slide Preview">
+                              </div>
+                              <div class="entry-body">
+                                  <span class="cat">Informação</span>
+                                  <h4 class="black">Recursos explicados: <br> Aplicativo nativo da nuvem confidencial </h4>
+                                  <p> Deseja saber mais sobre o SCONE CCNA (aplicativo nativo da nuvem confidencial)? Explicamos como resolvemos os problemas atuais e apresentamos alguns casos de uso em nossos slides. </p>
+                                  <div class="read-more-date">
+                                      <a>Ver pdf (em inglês)..</a>
+                                      <span class="date">01/27/2020</span>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </a>
+              </div>
+
+              <div class="col-sm-4 fadeInRight wow animated news-card">
+                  <a href="download/CCNA-Scone-in-a-nutshell.pdf">
+                      <div class="card mb-5 mb-lg-0 blog-grids">
+                          <div class="grid">
+                              <div class="entry-media">
+                                  <img src="img/news/Nutshell-Slides.png" alt="SCONE Platform Slide Preview">
+                              </div>
+                              <div class="entry-body">
+                                  <span class="cat">Informação</span>
+                                  <h4 class="black">Recursos explicados:<br> Plataforma SCONE</h4>
+                                  <p>Aprenda a garantir confidencialidade, integridade e atualização se o seu adversário tiver acesso root e hardware.</p>
+                                  <div class="read-more-date">
+                                      <a>Ver pdf (em inglês)..</a>
+                                      <span class="date">01/14/2020</span>
+                                  </div>
+                              </div>
+                          </div>
+                        </div> 
+                      </a>
+                  </div>
+
+              <div class="col-sm-4 fadeInRight wow animated news-card">
+                  <a href="https://sconedocs.github.io/">
+                      <div class="card mb-5 mb-lg-0 blog-grids">
+                          <div class="grid">
+                              <div class="entry-media">
+                                  <img src="img/news/bee.png" alt="Busy Bee Graphic"></a>
+                              </div>
+                              <div class="entry-body">
+                                  <span class="cat">Em breve</span>
+                                  <h4 class="black">Estamos ocupados</h4>
+                                  <p class="black">Nós, a equipe da SCONE, estamos trabalhando permanentemente em novas soluções. Em breve, você terá mais informações. Até lá, verifique nossa <a href="https://sconedocs.github.io/"> documentação técnica.</a></p>
+                                  <div class="read-more-date">
+                                      <a href="https://sconedocs.github.io/" target="_blank">Leia mais (em inglês)..</a>
+                                      <span class="date">12/12/2019</span>
+                              </div>
+                          </div>
+                      </div>
+                  </a>
+              </div>
+          </div>
+
+  </div>
+</section>
 
 
 <!-- Tell me more  Section -->
@@ -430,16 +555,7 @@
                     <p class="text-muted">Tutorial e detalhes técnicos</p>
                 </div>
             </div>
-            <div class="col-sm-4 animated fadeInUp wow">
-                <div class="documentation">
-                    <!--<a href="#techdoc1" class="portfolio-link"  data-toggle="modal">-->
-                    <a href="https://sconedocs.github.io/" target="_blank">
-                        <img src="img/icon-2.svg" class="img-responsive doc-image img-circle" alt="Docker-based Scone Documentation">
-                    </a>
-                    <h4>Documentação<br>offline</h4>
-                    <p class="text-muted">Fornecemos uma imagem de contêiner Docker da documentação do SCONE</p>
-                </div>
-            </div>
+
             <div class="col-sm-4 animated fadeInUp wow">
                 <div class="documentation">
                     <a href="#techdoc2" class="portfolio-link"  data-toggle="modal">
@@ -450,6 +566,16 @@
                     </p>
                 </div>
             </div>
+
+            <div class="col-sm-4 animated fadeInUp wow" data-wow-delay="1s">
+              <div class="documentation">
+                  <img src="img/onboarding-icon.svg" class="img-responsive img-circle" alt="Onboarding Icon">
+                  </a>
+                  <h4>Tutorial de <br>integração</h4>
+                  <p class="text-muted">Em breve: <br> nosso tutorial passo a passo sobre integração. 
+                  </p>
+              </div>
+          </div>
         </div>
     </div>
 </section>
@@ -653,7 +779,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">A equipe do SCONE</h2>
+          <h2 class="section-heading text-uppercase">Fundadores do Scone</h2>
           <h3 class="section-subheading text-muted">Conheça os criadores: reunimos um time com  nível sem precedentes de talento prático.</h3>
         </div>
       </div>
@@ -948,7 +1074,7 @@
                             Enquanto algumas aplicações (como o MySQL) podem criptografar alguns de seus arquivos, a maioria não fornece criptografia de arquivos. Portanto, fornecemos um mecanismo no SCONE para criptografar arquivos de forma transparente. Este mecanismo é ativado através do arquivo Docker Compose/Stack da aplicação.
                           </p>
                           <p>
-                            Também fornecemos um mecanismo para criptografar de forma transparente <strong>stdin, stdout</strong> e <strong>stderr</strong>.  Novamente, isso pode ser ativado no arquivo Docker Compose/Stack da aplicação.
+                            Também fornecemos um mecanismo para criptografar de forma transparente <strong>stdin, stdout</strong> e <strong>stderr</strong>.
                           </p>
                           <p>
                             Alguns aplicativos obtêm seus segredos por meio de variáveis de ambiente ou argumentos de linha de comando. O SCONE suporta a transferência segura de variáveis de ambiente e argumentos de linha de comando por meio do serviço de configuração e atestação.
