@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1001 47" style="enable-background:new 0 0 1001 47;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;}
+	.st1{fill:#33CC99;}
+	.st2{fill:#E6E6E6;}
+	.st3{fill:none;stroke:#FFFFFF;stroke-width:3;stroke-miterlimit:10;}
+	.st4{fill:url(#SVGID_1_);}
+</style>
+<pattern  y="47" width="31.3" height="20.9" patternUnits="userSpaceOnUse" id="Neues_Musterfeld_2" viewBox="0 -44.7 31.3 20.9" style="overflow:visible;">
+	<g>
+		<rect y="-44.7" class="st0" width="31.3" height="20.9"/>
+		<g>
+			<rect x="7.8" y="-68.6" class="st1" width="4.1" height="26.8"/>
+			<rect x="15.7" y="-68.6" class="st1" width="4.1" height="26.8"/>
+		</g>
+		<g>
+			<rect x="23.5" y="-58.2" class="st1" width="4.1" height="26.8"/>
+		</g>
+		<g>
+			<rect x="7.8" y="-47.7" class="st1" width="4.1" height="26.8"/>
+			<rect x="15.7" y="-47.7" class="st1" width="4.1" height="26.8"/>
+		</g>
+		<g>
+			<rect x="0" y="-58.2" class="st1" width="4.1" height="26.8"/>
+		</g>
+		<g>
+			<rect x="23.5" y="-37.3" class="st1" width="4.1" height="26.8"/>
+		</g>
+		<g>
+			<rect x="7.8" y="-26.8" class="st1" width="4.1" height="26.8"/>
+			<rect x="15.7" y="-26.8" class="st1" width="4.1" height="26.8"/>
+		</g>
+		<g>
+			<rect x="0" y="-37.3" class="st1" width="4.1" height="26.8"/>
+		</g>
+	</g>
+</pattern>
+<title>progress</title>
+<path class="st2" d="M5.5,37h992c2.2,0,4,1.8,4,4v2c0,2.2-1.8,4-4,4H5.5c-2.2,0-4-1.8-4-4v-2C1.5,38.8,3.3,37,5.5,37z"/>
+<line class="st3" x1="800" y1="37" x2="800" y2="47"/>
+<line class="st3" x1="600" y1="37" x2="600" y2="47"/>
+<line class="st3" x1="400" y1="37" x2="400" y2="47"/>
+<line class="st3" x1="200" y1="37" x2="200" y2="47"/>
+<pattern  id="SVGID_1_" xlink:href="#Neues_Musterfeld_2" patternTransform="matrix(1 0 0 1 0 -1)">
+</pattern>
+<path class="st4" d="M5.4,47h193V37H5.4c-2.2,0-3.9,1.8-3.9,4v2C1.5,45.2,3.3,47,5.4,47z"/>
+</svg>
