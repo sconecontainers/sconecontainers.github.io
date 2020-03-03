@@ -101,8 +101,7 @@
                     <a class="page-scroll" href="#contact">Contact</a>
                 </li>
                 <li class="nav-item language-label">
-                    <a href="index_pt.html"> <mark>En</mark>/Pt </a> 
-                  
+                    <a class="language"><a class="language" href="index_de.html">DE</a> <mark>EN</mark> <a class="language" href="index_pt.html"> PT</a>
                 </li>
             </ul>
         </div>
@@ -570,11 +569,11 @@
 
             <div class="col-sm-4 animated fadeInUp wow" data-wow-delay="1s">
                 <div class="documentation">
-            
+                    <a href="#quickstart" class="portfolio-link"  data-toggle="modal">
                         <img src="img/onboarding-icon.svg" class="img-responsive img-circle" alt="Onboarding Icon">
                     </a>
                     <h4>Onboarding<br> Tutorial</h4>
-                    <p class="text-muted">Coming soon:<br> our step-by-step onboarding tutorial. 
+                    <p class="text-muted">Our SCONE onboarding tutorial - use SCONE after a few simple steps.
                     </p>
                 </div>
             </div>
@@ -1259,6 +1258,333 @@
     </div>
 </div>
 
+
+<!-- Quickstart Guide Welcome-->
+<div class="portfolio-modal modal" id="quickstart" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog .modal-sm">
+        <div class="modal-content card-background">
+                <div class="close-modal quickstart" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div> 
+                    </div> 
+                </div>     
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body quickstart">
+                            <!-- Project Details Go Here -->
+                            <img class="img-center quickstart" src="img/quickstart/scone-logo-quickstart.svg" style="width: 20%">
+                        </div>
+                    </div>
+                </div>
+                <!-- Card -->
+                <div class="card left">
+                        <div class="col-lg-3 quickstart-numbers">
+                        </div>   
+                    <!-- Content -->
+                    <div class="card-style col-lg-6 text-white d-flex rgba-black-strong py-5 px-4 quickstart">
+                        <img class="img-responsive img-centered quickstart" src="img/quickstart/waving-hand.svg" style="width: 10%"> 
+                            <h3 class="card-title pt-2"><strong>Welcome to SCONE!</strong></h3>
+                            <p> Use our step-by-step onboarding tutorial to run your projects in a secure environment.</p>
+
+                            <h2> Docker</h2>
+                            <p> <i class="fa fa-arrow-right"></i> You will need to have Docker. <br>Find the data and instructions here:<br>  
+                            <a href="https://hub.docker.com/?overlay=onboarding">https://hub.docker.com/?overlay=onboarding</a></p>
+                            <img class="docker-logo" src="img/quickstart/docker-logo.svg" style="max-width:120px" alt="Docker logo">
+
+                            <h2>Access to Repos</h2>
+                            <p> <i class="fa fa-arrow-right"></i> To get access to the repositories of the tutorial, please send us your Docker-ID:
+                            <a href="mailto:info@scontain.com?subject=My Docker-ID for the SCONE Tutorial&amp;">info@scontain.com</a></p>
+                        </div>
+                    </div>
+                    <!-- Content -->
+                </div>
+                <!-- Card -->
+                            <button type="button" class="btn btn-next" data-dismiss="modal" id="quickstartModal1" data-toggle="modal" data-target="#quickstart1"> Start <i class="fa fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Quickstart Guide #1-->
+<div class="portfolio-modal modal" id="quickstart1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content card-background">
+            <div class="close-modal quickstart" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body quickstart">
+                            <!-- Project Details Go Here -->
+                            <img class="img-responsive img-centered" src="img/logo-vector-white-text.svg" style="width: 15%">
+                        </div>
+                    </div>
+                </div>
+                <!-- Card -->
+                <div class="card left">
+                        <div class="col-lg-3 quickstart-numbers">
+                        </div>   
+                    <!-- Content -->
+                    <div class="card-style col-lg-6 text-white d-flex rgba-black-strong py-5 px-4 quickstart">
+                            <img class="img-responsive img-centered" src="img/quickstart/progress.svg">
+                            <h5 class="pink-text"></i> Step 1</h5>
+                            <h3 class="card-title pt-2"><strong>SCONE-RUSTC / SCONE RUSTC</strong></h3>
+
+                            <p> You can compile Rust programs but links against the SCONE libc instead of a standard libc.  </p>
+                            <p> To print the version of Rust execute (inside container <strong>sconecuratedimages/crosscompilers:ubuntu</strong>):
+                                <pre><code>docker run -it sconecuratedimages/crosscompilers:ubuntu<br>$ scone rustc --version</code></pre>
+
+                                <p> You should get: </p>
+                                <pre><code>rustc 1.38.0 (625451e37 2019-09-23)</code></pre>
+                        </div>
+                    </div>
+                    <!-- Content -->
+                </div>
+                <!-- Card -->
+                            <button type="button" class="btn btn-previous" href="#quickstart" data-dismiss="modal" data-toggle="modal" data-target="#quickstart"><i class="fa fa-chevron-left"></i> Previous </button>
+                            <button type="button" class="btn btn-next" href="#quickstart2" data-dismiss="modal" data-toggle="modal" data-target="#quickstart2"> Next <i class="fa fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Quickstart Guide #2-->
+<div class="portfolio-modal modal" id="quickstart2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content card-background">
+            <div class="close-modal quickstart" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body quickstart">
+                            <!-- Project Details Go Here -->
+                            <img class="img-responsive img-centered" src="img/logo-vector-white-text.svg" style="width: 15%">
+                        </div>
+                    </div>
+                </div>
+                <!-- Card -->
+                <div class="card left">
+                        <div class="col-lg-3 quickstart-numbers">
+                        </div>   
+                    <!-- Content -->
+                    <div class="card-style col-lg-6 text-white d-flex rgba-black-strong py-5 px-4 quickstart">
+                            <img class="img-responsive img-centered" src="img/quickstart/progress1.svg">
+                            <h5 class="pink-text"></i> Step 2</h5>
+                            <h3 class="card-title pt-2"><strong>Hello World</strong></h3>
+                            <p>Let's try a simple hello world program.</p>
+                            <pre><code>$ mkdir ~/projects<br>$ cd ~/projects<br>$ mkdir hello_world<br>$ cd hello_world</code></pre>
+                        </div>
+                    </div>
+                    <!-- Content -->
+                </div>
+
+                <!-- Card -->
+                            <button type="button" class="btn btn-previous" href="#quickstart1" data-dismiss="modal" data-toggle="modal"><i class="fa fa-chevron-left"></i> Previous </button>
+                            <button type="button" class="btn btn-next" href="#quickstart3" data-dismiss="modal" data-toggle="modal"> Next <i class="fa fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Quickstart Guide #3-->
+<div class="portfolio-modal modal" id="quickstart3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content card-background">
+            <div class="close-modal quickstart" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body quickstart">
+                            <!-- Project Details Go Here -->
+                            <img class="img-responsive img-centered" src="img/logo-vector-white-text.svg" style="width: 15%">
+                        </div>
+                    </div>
+                </div>
+                <!-- Card -->
+                <div class="card left">
+                        <div class="col-lg-3 quickstart-numbers">
+                        </div>   
+                    <!-- Content -->
+                    <div class="card-style col-lg-6 text-white d-flex rgba-black-strong py-5 px-4 quickstart">
+                            <img class="img-responsive img-centered" src="img/quickstart/progress2.svg">
+                            <h5 class="pink-text"></i> Step 3</h5>
+                            <h3 class="card-title pt-2"><strong>Rust</strong></h3>
+                            <p> Let's try our rust program:</p>
+                            <pre><code>$ cat > main.rs << EOF<br>fn main() {<br>println!("Hello, world!");<br>}<br>EOF</pre></code>
+                        </div>
+                    </div>
+                    <!-- Content -->
+                </div>
+                <!-- Card -->
+                            <button type="button" class="btn btn-previous" href="#quickstart2" data-dismiss="modal" data-toggle="modal"><i class="fa fa-chevron-left"></i>Previous </button>
+                            <button type="button" class="btn btn-next" href="#quickstart4" data-dismiss="modal" data-toggle="modal"> Next <i class="fa fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Quickstart Guide #4-->
+<div class="portfolio-modal modal" id="quickstart4" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content card-background">
+            <div class="close-modal quickstart" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body quickstart">
+                            <!-- Project Details Go Here -->
+                            <img class="img-responsive img-centered" src="img/logo-vector-white-text.svg" style="width: 15%">
+                        </div>
+                    </div>
+                </div>
+                <!-- Card -->
+                <div class="card left">
+                        <div class="col-lg-3 quickstart-numbers">
+                        </div>   
+                    <!-- Content -->
+                    <div class="card-style col-lg-6 text-white d-flex rgba-black-strong py-5 px-4 quickstart">
+                        <img class="img-responsive img-centered" src="img/quickstart/progress3.svg">
+                            <h5 class="pink-text"></i> Step 4</h5>
+                            <h3 class="card-title pt-2"><strong>In the enclave</strong></h3>
+                            <p> Let's compile the program for running inside of enclaves:</p>
+                            <pre><code>$ scone rustc main.rs --target=x86_64-scone-linux-musl<br>$ ls<br>main main.rs</pre></code>
+                        </div>
+                    </div>
+                    <!-- Content -->
+                </div>
+                <!-- Card -->
+                            <button type="button" class="btn btn-previous" href="#quickstart3" data-dismiss="modal" data-toggle="modal"><i class="fa fa-chevron-left"></i> Previous </button>
+                            <button type="button" class="btn btn-next" href="#quickstart5" data-dismiss="modal" data-toggle="modal" > Next <i class="fa fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Quickstart Guide #5-->
+<div class="portfolio-modal modal" id="quickstart5" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content card-background">
+            <div class="close-modal quickstart" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body quickstart">
+                            <!-- Project Details Go Here -->
+                            <img class="img-responsive img-centered" src="img/logo-vector-white-text.svg" style="width: 15%">
+                        </div>
+                    </div>
+                </div>
+                <!-- Card -->
+                <div class="card left">
+                        <div class="col-lg-3 quickstart-numbers">
+                        </div>   
+                    <!-- Content -->
+                    <div class="card-style col-lg-6 text-white d-flex rgba-black-strong py-5 px-4 quickstart">
+                        <img class="img-responsive img-centered" src="img/quickstart/progress4.svg">
+                            <h5 class="pink-text"></i> Step 5</h5>
+                            <h3 class="card-title pt-2"><strong>Print information</strong></h3>
+                            <p> Let's run main inside an enclave and print some debug information:</p>
+                            <pre><code>$ SCONE_MODE=HW SCONE_VERSION=1 ./main<br>export SCONE_QUEUES=4<br>export SCONE_SLOTS=256<br>export SCONE_SIGPIPE=0<br>export SCONE_MMAP32BIT=0<br>export SCONE_SSPINS=100<br>export SCONE_SSLEEP=4000<br>export SCONE_KERNEL=0<br>export SCONE_HEAP=67108864<br>export SCONE_CONFIG=/etc/sgx-musl.conf<br>export SCONE_MODE=hw<br>export SCONE_SGXBOUNDS=no<br>export SCONE_VARYS=no<br>export SCONE_ALLOW_DLOPEN=no<br>export SCONE_ALLOW_DLOPEN2=no
+                                <br>Hello, world!</pre></code>
+                        </div>
+                    </div>
+                    <!-- Content -->
+                </div>
+                <!-- Card -->
+                            <button type="button" class="btn btn-previous" href="#quickstart4" data-dismiss="modal" data-toggle="modal"><i class="fa fa-chevron-left"></i> Previous </button>
+                            <button type="button" class="btn btn-next" href="#quickstart6" data-dismiss="modal" data-toggle="modal"></i> Next<i class="fa fa-chevron-right"></i> </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Quickstart Guide #6-->
+<div class="portfolio-modal modal" id="quickstart6" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content card-background">
+            <div class="close-modal quickstart" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body quickstart">
+                            <!-- Project Details Go Here -->
+                            <img class="img-responsive img-centered" src="img/logo-vector-white-text.svg" style="width: 15%">
+                        </div>
+                    </div>
+                </div>
+                <!-- Card -->
+                <div class="card left">
+                        <div class="col-lg-3 quickstart-numbers">
+                        </div>   
+                    <!-- Content -->
+                    <div class="card-style col-lg-6 text-white d-flex rgba-black-strong py-5 px-4 quickstart">
+                        <img class="img-responsive img-centered" src="img/quickstart/progress5.svg">
+                            <h5 class="pink-text"></i>Congratulations, now you run SCONE!</h5>
+                            <h3 class="card-title pt-2"><strong>Want more information?</strong></h3>
+                            <p>On <a href="https://sconedocs.github.io/">https://sconedocs.github.io/</a> we have more examples for you.</p>
+                            <p>Or would you like to use our standard, business or enterprise version?<br> Then contact us:<a href="mailto:info@scontain.com"> info@scontain.com</a></p>
+                        </div>
+                    </div>
+                    <!-- Content -->
+                </div>
+                <!-- Card -->
+                            <button type="button" class="btn btn-previous" href="#quickstart4" data-dismiss="modal" data-toggle="modal"><i class="fa fa-chevron-left"></i> Previous </button>
+                            <button type="button" class="btn" data-dismiss="modal" data-toggle="modal"> Finish <i class="fa fa-times"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- Legal Notice-->
 
