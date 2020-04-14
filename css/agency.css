@@ -78,11 +78,11 @@ h1, h2, h3, h4, h5, h6 {
   .btn-primary:focus, .btn-primary.focus {
     color: white;
     background-color: #3399ff;
-    border-color: #3399ff; }
+    border-color: transparent; }
   .btn-primary:hover {
     color: white;
     background-color: #3399ff;
-    border-color: #3399ff; }
+    border-color: transparent; }
   .btn-primary:active, .btn-primary.active,
   .open > .btn-primary.dropdown-toggle {
     color: white;
@@ -1334,8 +1334,8 @@ li.not:before {
     .open > .btn-community.dropdown-toggle:focus,
     .open > .btn-community.dropdown-toggle.focus {
       color: white;
-      background-color: #841153;
-      border-color: #841153; }
+      background-color: #e0a500;
+      border-color: #e0a500; }
   .btn-community:active, .btn-community.active,
   .open > .btn-community.dropdown-toggle {
     background-image: none; }
@@ -1343,11 +1343,11 @@ li.not:before {
   fieldset[disabled] .btn-community:hover,
   fieldset[disabled] .btn-community:focus,
   fieldset[disabled] .btn-community.focus {
-    background-color: #990066;
-    border-color: #990066; }
+    background-color: #efb900;
+    border-color: #efb900; }
   .btn-community .badge {
-    color: #990066;
-    background-color:  #990066; }
+    color: #efb900;
+    background-color:  #efb900; }
 
 
 
@@ -1597,7 +1597,7 @@ padding-left: 0px;
   /*Quickstart*/
   .card-background{
     background-color: #330066;
-    background-image: url("../img/background\ colors.jpg");
+    background-image: url("../img/background-colors.jpg");
     background-attachment: fixed; 
     background-position: center;
     background-repeat: no-repeat; 
@@ -1898,7 +1898,7 @@ text-align: center;
 
 header .carousel-inner .item{
   height: 100vh;
-  background-color: #eee;
+  background-color: #330066;
 }
 
 .carousel-inner.landing{
@@ -1969,4 +1969,4 @@ header .carousel-inner .item{
     padding-left: 0;
     padding-right: 0;
   }
-
+}

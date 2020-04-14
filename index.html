@@ -59,7 +59,6 @@
 
 </head>
 
-<body id="page-top" class="index">
 <!-- Navigation -->
 <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
     <div class="container">
@@ -101,7 +100,7 @@
                     <a class="page-scroll" href="#contact">Contact</a>
                 </li>
                 <li class="nav-item language-label">
-                    <a class="language"><a class="language" href="index_de.html?lang=de">DE</a> <mark>EN</mark> <a class="language" href="index_pt.html?lang=pt"> PT</a>
+                    <a class="language"><a class="language" href="index_de.html?lang=de">DE</a> <mark>EN</mark> <a class="language" href="index_pt.html?lang=pt"> PT</a><a class="language" href="index_ru.html?lang=ru"> RU</a>
                 </li>
             </ul>
         </div>
@@ -248,7 +247,7 @@
                 </div>
 
                 <div class="col-sm-4 fadeInRight wow animated news-card">
-                    <a href="download/ConfCNC-Scone-in-a-nutshell.pdf">
+                    <a href="download/Scone-in-a-nutshell.pdf">
                         <div class="card mb-5 mb-lg-0 blog-grids">
                             <div class="grid">
                                 <div class="entry-media">
@@ -570,7 +569,7 @@
             <div class="col-sm-4 animated fadeInUp wow" data-wow-delay="1s">
                 <div class="documentation">
                     <a href="#quickstart" class="portfolio-link"  data-toggle="modal">
-                        <img src="img/onboarding-icon.svg" class="img-responsive img-circle" alt="Onboarding Icon">
+                        <img src="img/onboarding-icon.svg" class="img-responsive doc-image img-circle" alt="Onboarding Icon">
                     </a>
                     <h4>Onboarding<br> Tutorial</h4>
                     <p class="text-muted">Our SCONE onboarding tutorial - use SCONE after a few simple steps.
@@ -861,12 +860,9 @@
           <div class="col-lg-3"></div>
         <div class="col-lg-6 text-center">
           <h3 class="section-subheading text-muted-contact">If you are interested in the SCONE platform, SCONE curated images or if you want to work for us, please use the contact button below or send email to <a>info@scontain.com</a></h3> 
-                <p style="margin-bottom:1cm;"></p>
                 <a href="mailto:info@scontain.com?subject=Contact&amp;body=Hi%20SCONE%20Team,%0D%0A%0D%0A..." class="btn btn-primary btn-community text-uppercase">Send Message</a>            
-
         </div>
       </div>
-
   </section>
 
 <footer>
@@ -1920,6 +1916,7 @@ $(document).ready(function() {
   });
 </script>
 
+
 <script type= "text/javascript">
 
     var url = document.location.href;
@@ -1927,13 +1924,17 @@ $(document).ready(function() {
     if(n === -1){
         var language = window.navigator.language;
         
-        if(language.slice(0, 2)=="pt"){
-            window.location.href = "https://scontain.com/index_pt.html?lang=pt";
+        if(language.slice(0, 2)=="ru"){
+            window.location.href = "https://scontain.com/index_ru.html?lang=ru";
         }
-
+ 
         if(language.slice(0, 2)=="de"){
             window.location.href = "https://scontain.com/index_de.html?lang=de";
         } 
+
+        if(language.slice(0, 2)=="pt"){
+            window.location.href = "https://scontain.com/index_pt.html?lang=pt";
+            }
     }
     
     window.history.pushState("", "", "/index.html?lang=en");
