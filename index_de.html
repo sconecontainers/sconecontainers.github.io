@@ -101,7 +101,7 @@
                     <a class="page-scroll" href="#contact">Kontakt</a>
                 </li>
                 <li class="nav-item language-label">
-                    <mark> DE</mark> <a class="language" href="index.html"> EN </a><a class="language" href="index_pt.html">PT</a> 
+                    <mark> DE</mark> <a class="language" href="index.html?lang=en"> EN </a><a class="language" href="index_pt.html?lang=pt">PT</a> 
                 </li>
             </ul>
         </div>
@@ -1906,17 +1906,24 @@
 
 
 <script type= "text/javascript">
-    var language = window.navigator.language;
-    
-    if(language == "pt" || language == "pt-BR" || language == "pt-PT"){
-    window.location.href = "https://scontain.com/index_pt.html";
+
+    var url = document.location.href;
+    var n = url.indexOf("lang");
+    if(n === -1){
+        var language = window.navigator.language;
+
+        if(language.slice(0, 2)=="pt"){
+            window.location.href = "https://scontain.com/index_pt.html?lang=pt";
+        }
+
+        if(language.slice(0, 2)=="en"){
+            window.location.href = "https://scontain.com/index.html?lang=en";
+        } 
     }
 
-    if(language == "en" || language == "en-US" || language == "en-AU" || language == "en-GB" || language == "en-UK"){
-    window.location.href = "https://scontain.com/index.html";
-    }
+    window.history.pushState("", "", "/index_de.html?lang=de");
 
-    </script>
+</script>
 
 </body>
 
