@@ -77,24 +77,24 @@ h1, h2, h3, h4, h5, h6 {
 
   .btn-primary:focus, .btn-primary.focus {
     color: white;
-    background-color: #3399ff;
+    background-color: #ffcc00;
     border-color: transparent; }
   .btn-primary:hover {
     color: white;
-    background-color: #3399ff;
+    background-color: #efb900;
     border-color: transparent; }
   .btn-primary:active, .btn-primary.active,
   .open > .btn-primary.dropdown-toggle {
     color: white;
-    background-color: #3399ff;
-    border-color: #3399ff; }
-    .btn-primary:active:hover, .btn-primary:active:focus, .btn-primary:active.focus, .btn-primary.active:hover, .btn-primary.active:focus, .btn-primary.active.focus,
+    background-color: #efb900;
+    border-color: transparent; }
+  .btn-primary:active:hover, .btn-primary:active:focus, .btn-primary:active.focus, .btn-primary.active:hover, .btn-primary.active:focus, .btn-primary.active.focus,
     .open > .btn-primary.dropdown-toggle:hover,
     .open > .btn-primary.dropdown-toggle:focus,
     .open > .btn-primary.dropdown-toggle.focus {
       color: white;
-      background-color: #0089ee;
-      border-color: #0089ee; }
+      background-color: #efb900;
+      border-color: transparent; }
   .btn-primary:active, .btn-primary.active,
   .open > .btn-primary.dropdown-toggle {
     background-image: none; }
@@ -102,10 +102,10 @@ h1, h2, h3, h4, h5, h6 {
   fieldset[disabled] .btn-primary:hover,
   fieldset[disabled] .btn-primary:focus,
   fieldset[disabled] .btn-primary.focus {
-    background-color: #86c2eb;
-    border-color: #86c2eb; }
+    background-color: #efb900;
+    border-color: transparent; }
   .btn-primary .badge {
-    color: #3399ff;
+    color: #efb900;
     background-color: white; }
 
 .btn-xl {
@@ -1449,6 +1449,7 @@ li.not:before {
       text-align: center;
       display: block; }
 
+
 section#nutshell, section#documentation, section#services, section#team, section#news{
   background-image: url("../img/polygon-bg.svg");
   background-attachment: fixed; 
@@ -1731,20 +1732,23 @@ padding-left: 0px;
 }
 
 .blog-grids .grid {
-    background-color: #fff;
+    background-color: none;
     padding: 15px;
     margin: .5em auto;
     border-radius: 1rem;
-
     cursor: pointer;
     transition: all .5s;
 }
 
-.blog-grids .grid:hover {
-  margin-top: -.1px;
-  margin-bottom: .1px;
-  opacity: .8;
+.blog-grids .grid:hover{
+ /* margin-top: -.1px;
+  margin-bottom: .1px;*/
+  background-color: #fff;
+  opacity: 1;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(0);
 }
+
 
 @media screen and (min-width:768px){
 .news-card{
@@ -1753,21 +1757,38 @@ padding-left: 0px;
 }}
 
 .entry-media img {
+  margin-top: .5em;
     border-radius: 5px;
     width: 100%;
 }
 
 .entry-body {
-    padding: 15px 0px 0px 0px;
+    padding: 0.2em 0px 0px 0px;
 }
 
-.entry-body .cat {
+.entry-media .video {
     font-family: "PT Sans", sans-serif;
     font-size: 1rem;
     letter-spacing: .1em;
     font-weight: 300;
     text-transform: uppercase;
-    color: #ffcc00;
+    color: #3399ff;
+}
+.entry-media .info {
+  font-family: "PT Sans", sans-serif;
+  font-size: 1rem;
+  letter-spacing: .1em;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #ffcc00;
+}
+.entry-media .news {
+  font-family: "PT Sans", sans-serif;
+  font-size: 1rem;
+  letter-spacing: .1em;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #33cc99;
 }
 
 .entry-body h3 {
@@ -1781,7 +1802,10 @@ padding-left: 0px;
   line-height: 1.3;
   color: #330066; 
   opacity: .6;
+<<<<<<< Updated upstream
   margin-bottom: 2em;
+=======
+>>>>>>> Stashed changes
 }
 
 .read-more-date {
@@ -1969,4 +1993,51 @@ header .carousel-inner .item{
     padding-left: 0;
     padding-right: 0;
   }
+}
+
+
+
+/*loadmore https://codepen.io/Tigran_91/pen/JyaZPz' */
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.content {
+  margin: 5px;
+  display: none;
+}
+#loadMore {
+  width: 250px;
+  color: #fff;
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  background-color: #3399ff;
+  transition: .5s;
+}
+
+#loadMore:hover{
+  width: 300px; 
+  transition: 1s;
+  background-color: #0089ee;
+}
+
+.noContent {
+  color: #330066 !important;
+  font-weight: 100;
+  text-transform: none; 
+  background-color: transparent !important;
+  pointer-events: none;
+}
+
+.container-load-more{
+  margin-right: 30px;
 }
