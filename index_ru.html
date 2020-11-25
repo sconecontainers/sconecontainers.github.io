@@ -41,6 +41,9 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
 
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -210,6 +213,7 @@
 </header>
 
 
+
 <!-- News -->
 <section class="page-section bg-light-gray" id="news">
 
@@ -221,22 +225,23 @@
       </div>
 
       <div class="container">
-        <div class="row">
 
-            <div class="col-sm-4 fadeInRight wow animated news-card">
-                <a class="black" href="video/Scontain Animation 2020.mp4">
+ <!-- Section 1 -->
+        <div class="row content">
+            <div class="col-sm-4 fadeInUp wow animated news-card">
+                <a class="black" href="video/Animation VM Management.mp4">
                     <div class="card mb-5 mb-lg-0 blog-grids">
                         <div class="grid">
                             <div class="entry-media">
-                                <img src="img/news/video.png" alt="Video Teaser Picture">
+                                <span class="video">видео</span>
+                                <img src="img/news/Animation VM.png" alt="Animation Teaser Picture">
                             </div>
                             <div class="entry-body">
-                                <span class="cat">видео</span>
-                                <h4 class="black">SCONTAIN в движении</h4>
-                                <p>В нашем новом коротком видео мы даем четкий обзор целей и истории Scontain.</p>
+                                <h4 class="black">Алиса и Боб эпизод III:<br>Конфиденциальный аутсорсинг</h4>
+                                <p>SCONE Confidential Computing упрощает конфиденциальный аутсорсинг таких услуг, как управление виртуальными машинами, и даже критически важных услуг, таких как управление ключами.</p>
                                 <div class="read-more-date">
-                                    <a>Смотреть видео...</a>
-                                    <span class="date">20/06/2020</span>
+                                    <p>Смотреть видео...
+                                    <span class="date">05/11/2020</span></p>
                                 </div>
                             </div>
                         </div>
@@ -244,51 +249,316 @@
                 </a>
             </div>
 
-
-		        <div class="col-sm-4 fadeInRight wow animated news-card">
-                    <a class="black" href="download/ConfCNC.pdf">
-                        <div class="card mb-5 mb-lg-0 blog-grids">
-                            <div class="grid">
-                                <div class="entry-media">
-                                    <img src="img/news/ConfCNC.png" alt="ConfCNC Slide Preview">
-                                </div>
-                                <div class="entry-body">
-                                    <span class="cat">Информация</span>
-                                    <h4 class="black">Возможности SCONE: <br> Конфиденциальные облачные приложения</h4>
-                                    <p>Хотите узнать больше о конфиденциальных облачных приложениях? Мы описываем, какие проблемы решает SCONE и представляем варианты использования в наших слайдах.</p>
-                                    <div class="read-more-date">
-                                        <a>Смотреть слайды <br>(на английском языке)</a>
-                                        <span class="date">01/27/2020</span>
-                                    </div>
+            <div class="col-sm-4 fadeInUp wow animated news-card">
+                <a class="black" href="video/Animation Confidential Cooperation.mp4">
+                    <div class="card mb-5 mb-lg-0 blog-grids">
+                        <div class="grid">
+                            <div class="entry-media">
+                                <span class="video">видео</span>
+                                <img src="img/news/Animation Webcache.png" alt="Video Teaser Picture">
+                            </div>
+                            <div class="entry-body">
+                                <h4 class="black">Алиса и Боб эпизод II:<br>Безопасное использование веб-кэшей</h4>
+                                <p>С помощью SCONE Confidential Computing можно гарантировать, что, например, работодатель не сможет прочитать зашифрованный трафик данных своих сотрудников, несмотря на веб-кеширование; можно проверить шифрование связи.</p>
+                                <div class="read-more-date">
+                                    <p>Смотреть видео...
+                                    <span class="date">25/10/2020</span></p>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-sm-4  fadeInUp wow animated news-card">
+                <a class="black" href="https://hostingjournalist.com/cloud-hosting/aggregion-now-connected-to-g-core-labs-public-cloud-platform/">
+                    <div class="card mb-5 mb-lg-0 blog-grids">
+                        <div class="grid">
+                            <div class="entry-media">
+                                <span class="news">пресс-релиз</span>
+                                <img src="img/news/GCore.png" alt="logos">
+                            </div>
+                            <div class="entry-body">
+                                <h4 class="black">Aggregion сотрудничает с G-Core Labs Cloud</h4>
+                                <p>При поддержке Scontain G-Core Labs смогла подключить свое облако к Aggregion. Aggregion предлагает решения для совместной работы с данными и создает партнерские экосистемы.</p>
+                                <div class="read-more-date">
+                                    <p> Статья...
+                                    <span class="date">23/10/2020</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+    </div>
+
+  <!-- Section 2 -->
+    <div class="row content">
+
+            <div class="col-sm-4  fadeInUp wow animated  news-card">
+                <a class="black" href="https://newsroom.intel.com/news/intel-sgx-enables-magnit-create-trusted-computing-environment/#gs.koqzbi">
+                    <div class="card mb-5 mb-lg-0 blog-grids">
+                        <div class="grid">
+                            <div class="entry-media">
+                                <span class="news">пресс-релиз</span>
+                                <img src="img/news/magnit.png" alt="Magnit logo">
+                            </div>
+                            <div class="entry-body">
+                                
+                                <h4 class="black">SCONE и Aggregion сотрудничают с Магнитом</h4>
+                                <p>«Магнит», одна из ведущих российских сетей розничной торговли продуктами питания, с более чем 20 000 магазинов и 16 миллионами посетителей в день, предоставила надежную платформу для управления данными цифровой рекламы. Платформа была разработана Aggregion и Scontain и использует SCONE для защиты данных клиентов. (Изображение:&nbsp;Магнит)</p>
+                                <div class="read-more-date">
+                                    <p> Статья...
+                                    <span class="date">14/10/2020</span></p>
+                                </div>
+                            </div>
+                        </div>
+                      </div> 
                     </a>
                 </div>
 
-                <div class="col-sm-4 fadeInRight wow animated news-card">
-                    <a href="download/Scone-in-a-nutshell.pdf">
+
+                <div class="col-sm-4  fadeInUp wow animated news-card">
+                    <a class="black" href="video/Animation Confidential Cooperation.mp4">
                         <div class="card mb-5 mb-lg-0 blog-grids">
                             <div class="grid">
                                 <div class="entry-media">
-                                    <img src="img/news/Nutshell-Slides.png" alt="SCONE Platform Slide Preview">
+                                    <span class="video">видео</span>
+                                    <img src="img/news/Animation Confidential Cooperation pic.png" alt="Animation Teaser Picture">
                                 </div>
                                 <div class="entry-body">
-                                    <span class="cat">Информация</span>
-                                    <h4 class="black">Возможности платформы SCONE</h4>
-                                    <p>Узнайте как обеспечить конфиденциальность и целостность данных и кода, если у злоумышленника есть права root и доступ к оборудованию.</p>
+                                    
+                                    <h4 class="black">Алиса и Боб эпизод I:<br>Безопасное сотрудничество</h4>
+                                    <p> Используйте SCONE Confidential Computing для согласования общей кодовой базы и безопасного обмена конфиденциальными данными. Например, в случае использования анализа геномных данных.</p>
                                     <div class="read-more-date">
-                                        <a>Смотреть слайды <br>(на английском языке)</a>
-                                        <span class="date">01/14/2020</span>
+                                        <p>Смотреть видео...
+                                        <span class="date">09/10/2020</span></p>
                                     </div>
                                 </div>
                             </div>
-                          </div>
+                          </div> 
                         </a>
                     </div>
 
+                    <div class="col-sm-4 fadeInUp wow animated news-card">
+                        <a class="black" href="https://techcommunity.microsoft.com/t5/video-hub/new-developments-for-protecting-data-in-use-with-azure/m-p/1698836">
+                            <div class="card mb-5 mb-lg-0 blog-grids">
+                                <div class="grid">
+                                    <div class="entry-media">
+                                        <span class="video">видео</span>
+                                        <img src="img/news/AzureNewDev.png" alt="Video Teaser Picture">
+                                    </div>
+                                    <div class="entry-body">
+                                        
+                                        <h4 class="black">Microsoft Azure:<br>новые разработки для данных в использовании</h4>
+                                        <p>Microsoft Azure представляет новые приложения для конфиденциальных вычислений в видеоролике: В 10-й минуте показан пример использования «Магнит» (розничный продавец в России). Минута 18:50 показывает пример больницы Ламна Microsoft; оба основаны на платформе SCONE.</p>
+                                        <div class="read-more-date">
+                                            <p>Смотреть видео...
+                                            <span class="date">22/09/2020</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+            </div>
+
+
+ <!-- Section 3 -->
+    <div class="row content">
+            
+
+        <div class="col-sm-4 news-card">
+            <a class="black" href="https://www.secunet.com/en/news/article/secustack-uses-scone-and-intelr-software-guard-extensions-for-novel-secure-cloud-applications/">
+                <div class="card mb-5 mb-lg-0 blog-grids">
+                    <div class="grid">
+                        <div class="entry-media">
+                            <span class="news">пресс-релиз</span>
+                            <img src="img/news/SecuStack.png" alt="SecuStack Logo">
+                        </div>
+                        <div class="entry-body">
+                            
+                            <h4 class="black">SecuStack интегрирует безопасную платформу SCONE</h4>
+                            <p>SecuStack, немецкая облачная операционная система, скоро будет поддерживать анклавы Intel® SGX на базе нашей платформы SCONE. Это обеспечивает безопасный обмен данными в облачных приложениях, таких как машинное обучение и многосторонние вычисления.</p>
+                            <div class="read-more-date">
+                                <p> Статья...
+                                <span class="date">17/09/2020</span></p>
+                            </div>
+                        </div>
+                    </div>
+                  </div> 
+                </a>
+        </div> 
+
+        
+        <div class="col-sm-4 news-card">
+            <a class="black" href="https://www.youtube.com/watch?v=CCPI7C1lhh0&feature=youtu.be">
+                <div class="card mb-5 mb-lg-0 blog-grids">
+                    <div class="grid">
+                        <div class="entry-media">
+                            <span class="video">видео</span>
+                            <img src="img/news/T-Systems.png" alt="Youtube Excerpt">
+                        </div>
+                        <div class="entry-body">
+                           
+                            <h4 class="black">SCONE & T-Systems:<br>Конфиденциальные вычисления</h4>
+                            <p>Доминик Нэгеле из T-Systems International, д-р Иван Гудименко из T-Systems Multimedia Solution и наш главный операционный директор профессор д-р Кристоф Фетцер говорят о конфиденциальных вычислениях.</p>
+                            <div class="read-more-date">
+                                <p>Смотреть видео...
+                                <span class="date">08/09/2020</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>     
+
+        <div class="col-sm-4 news-card">
+            <a class="black" href="https://www.t-systems-mms.com/en/expertise/downloads/whitepaper-confidential-cloud-native-computing.html">
+                <div class="card mb-5 mb-lg-0 blog-grids">
+                    <div class="grid">
+                        <div class="entry-media">
+                            <span class="info">белая бумага</span>
+                            <img src="img/news/tsystems whitepaper.png" alt="Youtube Excerpt">
+                        </div>
+                        <div class="entry-body">
+                            
+                            <h4 class="black">Конфиденциальные облачные вычисления в больших кластерах Kubernetes</h4>
+                            <p>Совместно с T-Systems Multimedia Solutions мы опубликовали официальный документ на тему надежных облачных вычислений в крупных кластерах Kubernetes.</p>
+                            <div class="read-more-date">
+                                <p> Pdf...
+                                <span class="date">08/09/2020</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
     </div>
+
+
+     <!-- Section 4 -->
+      <div class="row content">
+
+        <div class="col-sm-4 news-card">
+            <a class="black" href="video/Scontain Animation 2020.mp4">
+                <div class="card mb-5 mb-lg-0 blog-grids">
+                    <div class="grid">
+                        <div class="entry-media">
+                            <span class="video">видео</span>
+                            <img src="img/news/video.png" alt="Video Teaser Picture">
+                        </div>
+                        <div class="entry-body">
+                            
+                            <h4 class="black">SCONTAIN в движении</h4>
+                            <p>В нашем новом коротком видео мы даем четкий обзор целей и истории Scontain.</p>
+                            <div class="read-more-date">
+                                <p>Смотреть видео...
+                                <span class="date">20/06/2020</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+
+        <div class="col-sm-4 news-card">
+            <a class="black" href="download/ConfCNC.pdf">
+                <div class="card mb-5 mb-lg-0 blog-grids">
+                    <div class="grid">
+                        <div class="entry-media">
+                            <span class="info">Информация</span>
+                            <img src="img/news/ConfCNC.png" alt="ConfCNC Slide Preview">
+                        </div>
+                        <div class="entry-body">
+                            
+                            <h4 class="black">Возможности SCONE:<br>Конфиденциальные облачные приложения</h4>
+                            <p>Хотите узнать больше о конфиденциальных облачных приложениях? Мы описываем, какие проблемы решает SCONE и представляем варианты использования в наших слайдах.</p>
+                            <div class="read-more-date">
+                                <p> Смотреть слайды...
+                                <span class="date">27/01/2020</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-sm-4 news-card">
+            <a href="download/ConfCNC-Scone-in-a-nutshell.pdf">
+                <div class="card mb-5 mb-lg-0 blog-grids">
+                    <div class="grid">
+                        <div class="entry-media">
+                            <span class="info">Информация</span>
+                            <img src="img/news/Nutshell-Slides.png" alt="SCONE Platform Slide Preview">
+                        </div>
+                        <div class="entry-body">
+                            
+                            <h4 class="black">Возможности платформы SCONE</h4>
+                            <p>Узнайте как обеспечить конфиденциальность и целостность данных и кода, если у злоумышленника есть права root и доступ к оборудованию.</p>
+                            <div class="read-more-date">
+                                <p>Смотреть слайды <br>(на английском языке))</a>
+                                <span class="date">14/01/2020</span></p>
+                            </div>
+                        </div>
+                    </div>
+                  </div> 
+                </a>
+            </div>
+
+    </div>
+
+ <!-- Section 5 -->
+ <div class="row content">
+
+
+    <div class="col-sm-4 news-card">
+        <a class="black" href="https://www.saechsische.de/anzeige/dresden-baut-sicherheit-fuer-die-ganze-welt-7556.html">
+            <div class="card mb-5 mb-lg-0 blog-grids">
+                <div class="grid">
+                    <div class="entry-media">
+                        <span class="news">пресс-релиз</span>
+                        <img src="img/news/sächsischeZeitung.png" alt="Article Screenshot">
+                    </div>
+                    <div class="entry-body">
+                        
+                        <h4 class="black">Sächsiche Zeitung:<br>"Дрезден укрепляет безопасность"</h4>
+                        <p>В статье в «Sächsische Zeitung» от 11 октября 2019 года Дрезден назван местом исследований и разработок безопасных операционных систем. Мы участвуем.</p>
+                        <div class="read-more-date">
+                            <p> Статья...
+                            <span class="date">11/10/2019</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+
+</div>
+
+    <div class="container-load-more">
+            <a class="btn btn-primary tell-more animated fadeInUp" id="loadMore">Загрузить больше сообщений</a>
+    </div>
+
+<script>
+        $(document).ready(function(){
+        $(".content").slice(0, 2).show();
+        $("#loadMore").on("click", function(e){
+          e.preventDefault();
+          $(".content:hidden").slice(0, 1).slideDown();
+          if($(".content:hidden").length == 0) {
+            $("#loadMore").text("Более старые записи недоступны").addClass("noContent");
+          }
+        });
+      })
+</script> 
+      
 </section>
+
+
 
 <!-- Tell me more  Section -->
   <!-- Nutshell -->
@@ -1896,7 +2166,7 @@
         }
       });
     </script>
-   
+ <!--  
    <script type= "text/javascript">
 
         var url = document.location.href;
@@ -1920,6 +2190,6 @@
         window.history.pushState("", "", "/index.html_ru?lang=ru");
     
     </script>
-    
+-->
     </body>
     </html>
