@@ -551,18 +551,6 @@
             <a class="btn btn-primary tell-more animated fadeInUp" href="#" id="loadMore">Weitere Beiträge laden</a>
     </div>
 
-<script>
-  $(document).ready(function(){
-  $(".content").slice(0, 2).show();
-  $("#loadMore").on("click", function(e){
-    e.preventDefault();
-    $(".content:hidden").slice(0, 1).slideDown();
-    if($(".content:hidden").length == 0) {
-      $("#loadMore").text("Keine älteren Beiträge mehr vorhanden").addClass("noContent");
-    }
-  });
-})
-</script> 
 
 </section>
 
@@ -2184,6 +2172,9 @@
 
 <!-- Theme JavaScript -->
 <script src="js/agency.min.js"></script>
+
+<!-- News Items: Load more -->
+<script src="js/loadmore.js"></script>
 
 
 <script type= "text/javascript">
