@@ -1818,19 +1818,17 @@ padding-left: 0px;
 }
 
 .read-more-date p {
-    font-size: 14px;
-    font-weight: 600;
-    color: #330066;
-    text-transform: uppercase;
-    opacity: .8;
-}
-
-.read-more-date p{
   font-size: .9em;
   font-weight: 600;
   color: #330066;
   text-transform: uppercase;
   opacity: .8;
+}
+
+.read-more-date .ovh {
+  text-transform: none;
+  text-decoration: underline;
+  color: #3399ff;
 }
 
 .read-more-date .date {
