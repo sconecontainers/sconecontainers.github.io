@@ -1277,6 +1277,16 @@ li.feature:before {
   color: #33cc99;
 }
 
+li.info:before {
+  content: "\e092";
+  font-family: 'Glyphicons Halflings';
+  font-size: 9px;
+  float: left;
+  margin-top: 4px;
+  margin-left: -17px;
+  color: #330066;
+}
+
 li.not:before {
   content: "\e014";
   font-family: 'Glyphicons Halflings';
