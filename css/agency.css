@@ -95,6 +95,17 @@ h1, h2, h3, h4, h5, h6 {
     color: white;
     background-color: #efb900;
     border-color: transparent; }
+
+    .btn-tutorial:hover {
+      color: white;
+      background-color: #00a979;
+      border-color: transparent; }
+
+      .btn-tutorial:hover {
+        color: white;
+        background-color: #00a979;
+        border-color: transparent; }
+
   .btn-primary:active, .btn-primary.active,
   .open > .btn-primary.dropdown-toggle {
     color: white;
@@ -495,10 +506,12 @@ section {
       list-style: none;
       padding: 0;
       position: relative; }
+
       .timeline-pg > li {
-        margin-bottom: 50px;
+        margin-bottom: 30px;
         position: relative;
         min-height: 50px; }
+        
         .timeline-pg > li:before, .timeline-pg > li:after {
           content: " ";
           display: table; }
@@ -534,6 +547,7 @@ section {
           border-radius: 100%;
           text-align: center; 
         }
+
 
     .timeline-pg > li .timeline-pg-image-big:hover{
       top: -7px;
@@ -576,6 +590,31 @@ section {
     margin-bottom: 0; 
     margin-top: 0px; }
 
+@media (max-width: 768px){
+  .timeline-pg > li .timeline-pg-image {
+    left: 50;
+    margin-left: 0;
+    margin-bottom: 30px;
+    width: 35%;
+    position: absolute;
+    z-index: 100;
+    color: white;
+    border-radius: 100%;
+    text-align: center; }
+
+  .timeline-pg .timeline-pg-panel{
+    width: 100%;
+    float: right;
+    padding: 0 20px 20px 37%;
+    position: relative;
+    text-align: left; }
+
+  .timeline-pg > li.timeline-pg-inverted > .timeline-pg-panel {
+    float: right;
+    text-align: left;
+    padding: 0 20px 20px 37%; }
+}
+
 @media (min-width: 768px) {
       .timeline-pg:before {
         left: 50%; }
@@ -583,14 +622,14 @@ section {
         margin-bottom: 20px;
         min-height: 100px; }
         .timeline-pg > li .timeline-pg-panel {
-          width: 33%;
+          width: 35%;
           float: left;
           padding: 0 20px 20px 30px;
           text-align: right; }
         .timeline-pg > li .timeline-pg-image {
-          width: 35%;
+          width: 30%;
           left: 50%;
-          margin-left: -17,5%; }
+          margin-left: -15%; }
           .timeline-pg > li .timeline-pg-image h4 {
             font-size: 13px;
             margin-top: 16px;
@@ -934,13 +973,10 @@ ul.social-buttons {
   opacity: 0;
   display: none; }
 
-
 body.modal-open {
   position: inherit;
     overflow: visible;
   }
-
-
 
 ::-moz-selection {
   text-shadow: none;
@@ -949,6 +985,10 @@ body.modal-open {
 ::selection {
   text-shadow: none;
   background: #fed136; }
+
+  .btn-tutorial::selection {
+    text-shadow: none;
+    background: #00a979; }
 
 img::selection {
   background: transparent; }
@@ -1496,11 +1536,11 @@ li.note:before {
 
   .btn-community:focus, .btn-community.focus {
     color: white;
-    background-color: #ffcc00;
-    border-color: #ffcc00; }
+    background-color: #e0a900;
+    border-color: #e0a900; }
   .btn-community:hover {
     color: white;
-    background-color: #ffcc00;
+    background-color: #e0a900;
     border-color: none; 
 }
   .btn-community:active, .btn-community.active,
@@ -1824,7 +1864,7 @@ padding-left: 0px;
 }
 
 .marketplace {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   display: block;
   margin: none;
 }
@@ -1836,29 +1876,43 @@ padding-left: 0px;
   border-radius: none !important;
 }
 
-.marketplace .blockleft h4 {
+.marketplace.blockleft h4 {
   margin-top: 0px;
   margin-bottom: .5rem;
   text-transform: uppercase;
   text-align: right;
-  font-size: 5em;
-}
-.marketplace .blockright h4 {
-  margin-top: 0px;
-  margin-bottom: .5rem;
-  text-transform: uppercase;
-  text-align: left;
+  font-size: 18px;
 }
 
-.marketplace .blockleft p {
+.marketplace.blockleft p {
   margin-top: 10px;
   line-height: 1.5;
   text-align: right;
 }
-.marketplace .blockright p {
+.marketplace.blockright p {
   margin-top: 10px;
   line-height: 1.5;
   text-align: left;
+}
+.marketplace.blockright h4 {
+  margin-top: 0px;
+  margin-bottom: .5rem;
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 767px) {
+  .marketplace.blockleft img {
+    max-width: 60%;
+    padding-bottom: 20px; }
+  .marketplace.blockright img {
+    max-width: 80%;
+    padding-bottom: 20px; }
+  .marketplace.blockleft h4 {
+    text-align: left; }
+  .marketplace.blockleft p {
+    text-align: left; }
 }
 
 @media (min-width: 767px) {
@@ -1898,6 +1952,7 @@ padding-left: 0px;
     color: white;
     background-color: transparent;
   }
+
   .modal-dialog .btn-previous:hover{
     color: #3399ff;
     background-color: transparent;
