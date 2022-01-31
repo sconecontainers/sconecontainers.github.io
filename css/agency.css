@@ -278,8 +278,8 @@ padding: 5px 5px;
       line-height: 55px;
       margin-bottom: 0px; 
       letter-spacing: .02em;
-
     }
+
     header .intro-text .intro-heading {
       font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-weight: 400;
@@ -317,8 +317,8 @@ padding: 5px 5px;
       font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
       color: #ffcc00;
       text-transform: uppercase;
-          padding-top: 0px;
-          padding-bottom: 0px; 
+      padding-top: 0px;
+      padding-bottom: 0px; 
       font-size: 50px;
       line-height: 60px;
       margin-bottom: 0px; 
@@ -326,17 +326,17 @@ padding: 5px 5px;
       top: 30vh !important;}
     header .intro-text .intro-heading {
       font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-          padding-top: 15px;
-          padding-bottom: 0px;
+      padding-top: 15px;
+      padding-bottom: 0px;
       font-weight: 400;
       font-size: 25px;
       line-height: 30px;
       margin-bottom: 0px; 
-      position: relative;} 
+      position: relative;  } 
+
       header .intro-text .intro-sentence {
         font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-
-            padding-bottom: 0px;
+        padding-bottom: 0px;
         font-weight: 400;
         font-size: 22px;
         line-height: 30px;
@@ -344,14 +344,15 @@ padding: 5px 5px;
         position: relative;} 
       header .intro-text .intro-link {
         font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-            padding-top: 20px;
+        padding-top: 20px;
         text-decoration: underline; 
         color: #3399ff;
         font-weight: 400;
         font-size: 30px;
         line-height: 35px;
         margin-bottom: 0px;
-        position: relative;}  }
+        position: relative;} 
+}
           
 
 
@@ -1803,8 +1804,6 @@ width: 200px;
 padding-left: 0px;
   }
 
-
-
 .carousel .carousel-control {
   width: 5%;
   background: none;
@@ -1882,6 +1881,9 @@ padding-left: 0px;
   text-transform: uppercase;
   text-align: right;
   font-size: 18px;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
 }
 
 .marketplace.blockleft p {
@@ -1900,6 +1902,9 @@ padding-left: 0px;
   text-transform: uppercase;
   text-align: left;
   font-size: 18px;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
 }
 
 @media screen and (max-width: 767px) {
@@ -2321,6 +2326,15 @@ header .carousel-inner .item{
     }
  }
 
+ @media screen and (max-width:1100px){
+  .carousel-caption {
+    right:0%;
+    left:0%;
+    padding:15vh 3rem 3rem 3rem;
+    background-color: rgba(35, 21, 63, 0.6);
+    height: 100%;
+  } } 
+
  .banner{
   -webkit-background-size: cover; 
   background-size: cover;
@@ -2335,8 +2349,6 @@ header .carousel-inner .item{
     padding-right: 0;
   }
 }
-
-
 
 /*loadmore https://codepen.io/Tigran_91/pen/JyaZPz' */
 
