@@ -119,13 +119,13 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner landing" role="listbox">
           
-          <div class="item active">
+          <div class="item">
             
             <div id="particles-js"></div>
             <script src="js/lib/particles.min.js"></script>
             <script src="js/app.js"></script>
 
-            <div class="banner" style="background-image: url(img/header-bg.png);"></div>
+            <div class="banner" style="background-image: url(img/landing/anonymous-header.jpg);"></div>
 
             <div class="carousel-caption">
                 <div class="row">
@@ -163,10 +163,8 @@
 
        
     <div class="item">
-            
 
-            <div class="banner" style="background-image: url(img/clouds-header.png);"></div>
-            
+            <div class="banner" style="background-image: url(img/landing/clouds-header.jpg);"></div>
             <div class="carousel-caption">
 
                 <div class="row">
@@ -174,9 +172,7 @@
                         <div class="intro-text">
                             <div class="intro-heading animated fadeInDown"></div>
                             <img class="title-logo animated fadeInDown" src="img/logo-vector-white-text.svg"/><br>&nbsp;<br>&nbsp;</img>
-                           
                             <div class="intro-lead-in animated fadeInUp">Confidential Cloud Native Computing.</div>
-
                         </div>
                     </div>
                 </div>
@@ -197,6 +193,83 @@
                 </div>
                 <div class="tell-more-position">
                     <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger tell-more animated fadeInUp" href="#services">Get SCONE</a>
+                    <a> <span class="glyphicon glyphicon-triangle-bottom text-center triangle" aria-hidden="true"></span></a>
+                </div>
+            </div>
+        </div>
+
+        
+    <div class="item active">
+
+        <div class="banner" style="background-image: url(img/landing/background-pyspark.jpg);"></div>
+        <div class="carousel-caption">
+
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="intro-text">
+                        <div class="intro-heading animated fadeInDown"></div>
+                        <img class="title-logo animated fadeInDown" src="img/logo-vector-white-text.svg"/><br>&nbsp;<br>&nbsp;</img>
+                        <div class="intro-lead-in animated fadeInUp">Confidential PySpark <br> Virtual Machine:</div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                    <div class="col-sm-6">
+                        <div class="intro-text">
+                            <div class="intro-sentence animated fadeInUp"><br>Run confidential PySpark applications in Kubernetes clusters <br> whilst protecting the application code and data. 
+                            </div>
+                            <div class="intro-sentence animated fadeInUp">Now available on Azure Marketplace.</div>
+                        </div>
+                    </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="intro-text">
+                        <a class="btn btn-link text-uppercase js-scroll-trigger animated free-version fadeInLeftBig slow" href="#pyspark"><img class="title-logo-small animated fadeInDown" src="img/logo-azure.svg"/></img> &nbsp; More details about our offer</a>
+                    </div>
+                </div>
+            </div>
+            <div class="tell-more-position">
+                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger tell-more animated fadeInUp" href="#pyspark">Tell me more</a>
+                <a> <span class="glyphicon glyphicon-triangle-bottom text-center triangle" aria-hidden="true"></span></a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="item">
+
+            <div class="banner" style="background-image: url(img/landing/background-playground.jpg);"></div>
+            <div class="carousel-caption">
+
+                <div class="row">
+                    <div class="col-sm-8">
+                        <div class="intro-text">
+                            <img class="title-logo animated fadeInDown" src="img/logo-vector-white-text.svg"/><br>&nbsp;<br>&nbsp;</img>
+                            <div class="intro-lead-in animated fadeInUp">Confidential Computing <br> Playground Virtual Machine</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                        <div class="col-sm-6">
+                            <div class="intro-text">
+                                <div class="intro-sentence animated fadeInUp"><br> We supply you easy access to all the needed tools for building confidential images and deploying them.
+                                </div>
+                                <div class="intro-sentence animated fadeInUp">Now available on Azure Marketplace.</div>
+                            </div>
+                            
+                        </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8">
+                        <div class="intro-text">
+                            <a class="btn btn-link text-uppercase js-scroll-trigger animated free-version fadeInUpBig slow" href="#playground"><img class="title-logo-small animated fadeInDown" src="img/logo-azure.svg"/></img> &nbsp; More details about our offer</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tell-more-position">
+                    <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger tell-more animated fadeInUp" href="#playground">More Information</a>
                     <a> <span class="glyphicon glyphicon-triangle-bottom text-center triangle" aria-hidden="true"></span></a>
                 </div>
             </div>
@@ -1155,8 +1228,236 @@
 </section>
 
 
+
+<!-- Azure Pyspark Virtual Machine-->
+<section id="pyspark" class="bg-light-gray">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">SCONE Offers on Azure Marketplace</h2>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="sub">
+                        <h1>SCONE Confidential PySpark on Kubernetes</h1>
+                    <p>We aim to provide an easy starting point for evaluating the SCONE Confidential PySpark offering. <br> It includes all the needed tools and images for running confidential PySpark applications in Kubernetes clusters.<br><br></p>
+                </div>
+            </div>
+        
+
+        <div class="row">
+            <div class="col-sm-5 animated fadeInLeft wow">
+
+                <div class="marketplace blockleft col-sm-6">
+                    <h4>Always encrypted</h4>
+                    <h4>&mdash;</h4>
+                    <p>Confidential Spark protects your data and code by ensuring that code and data are ALWAYS encrypted - in use, in flight and at rest.
+                    </p>
+                </div>
+                <div class="marketplace blockleft col-sm-6">
+                    <a href="#atrestinflightmodal" class="portfolio-link"  data-toggle="modal">
+                    <img  src="img/azure_marketplace/atrest_inflight_icon.svg"  alt="https://sconedocs.github.io/"></img></a>
+                </div>
+            </div>
+           
+            <div class="col-sm-7 animated fadeInRight wow">
+                <div class="marketplace blockright col-sm-8">
+                    <a href="#sparktaskmodal" class="portfolio-link"  data-toggle="modal">
+                    <img src="img/azure_marketplace/pyspark_tasks_icon.svg" alt="Publications">
+                </a>
+                </div>
+                <div class="marketplace blockright col-sm-4">
+                    <h4>Support of large-scale tasks</h4>
+                    <h4>&mdash;</h4>
+                    <p>Spark is a high-performance engine that fits your large-scale computing tasks and supports various programming languages.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="pricing boxinthemiddle">
+            <div class="col-lg-4 animated fadeInLeft wow">
+                <div class="card">
+                  <div class="card-body">
+                        <div>
+                            <img class="img-responsive services-img" src="img/azure_marketplace/tutorial_icon.svg" alt="">
+                        </div>
+                  <h4 class="card-title text-muted text-uppercase text-center">Quickstart</h4>
+                  <h6 class="card-price text-center">Tutorial</h6>
+                  <hr>
+                  <ul>
+                    <li class="feature text-left"><strong>Our tutorial provides an easy starting point for evaluating the SCONE Confidential PySpark offering. All the needed tools and images for running confidential applications in Kubernetes clusters are included.</strong></li>
+                  </ul>
+                  <a href="https://sconedocs.github.io/azure/scone-pyspark/" class="btn btn-primary btn-tutorial text-uppercase">Go to Tutorial</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 animated fadeInRight wow">
+                <div class="card">
+                  <div class="card-body">
+                        <div>
+                            <img class="img-responsive services-img" src="img/azure_marketplace/azure_market_icon.svg" alt="">
+                        </div>
+                  <h4 class="card-title text-muted text-uppercase text-center">Azure Marketplace</h4>
+                  <h6 class="card-price text-center">Our Offer</h6>
+                  <hr>
+                  <ul>
+                    <li><strong>Have a look at our offer on Azure Marketplace and get detailed information about:</strong></li>
+                    <li class="feature text-left"><strong>possibilities,</strong></li>
+                    <li class="feature text-left"><strong>plans and</strong></li>
+                    <li class="feature text-left"><strong>pricing.</strong></li>
+                  </ul>
+                  <a href="https://portal.azure.com/#create/scontainug1595751515785.scone-pysparkstandard" class="btn btn-primary btn-community text-uppercase">Go to Azure Marketplace</a>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        </div>
+    </div>
+
+
+<!-- Confidential Computing Playground Virtual Machine -->
+    <div class="container" id="playground">
+        
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                            <div class="sub">
+                                <h1>SCONE Confidential Computing Playground Virtual Machine</h1>
+                            <p>We aim to provide an easy starting point for evaluating the SCONE Confidential Computing Platform. <br>It includes all the needed tools for building confidential images (from scratch or from an existing native image) and deploying them.<br><br></p>
+                            <h4>Our Confidential Computing University explains:<br><br></h4>
+                        </div>
+                    </div>
+
+        <div class="row">
+            <div class="col-lg-12">
+              <ul class="timeline-pg">
+    
+                <li>
+                  <div class="timeline-pg-image wow fadeInRight animated pointer">
+                    <a href="#sconebuildmodal" class="portfolio-link"  data-toggle="modal">
+                    <img class="rounded-circle svg-fluid" src="img/azure_marketplace/scone_build_icon.svg" alt="transparent encryption icon"></a> 
+                  </div>
+                  <div class="timeline-pg-panel wow fadeInLeft animated">
+                    <div class="timeline-pg-heading">
+                        <h4>SCONE Build</h4>
+                    </div>
+                    <div class="timeline-pg-body">
+                      <p class="text-muted">How to build confidential container images from existing native Python images in one step. The resulting image runs on remotely-attested Intel SGX enclaves and has an encrypted filesystem.</p>
+                      <a class="btn btn-primary btn-sm text-uppercase more-details animated fadeInLeft" href="https://se.inf.tu-dresden.de/lectures/CC/2_Scone-Build-EN.mp4">Watch Screencast</a>
+                    </div>
+                  </div>
+                </li>
+    
+                <li class="timeline-pg-inverted">
+                  <div class="timeline-pg-image wow fadeInLeft animated pointer">
+                    <a href="#servicemeshesmodal" class="portfolio-link"  data-toggle="modal">
+                    <img class="rounded-circle svg-fluid" src="img/azure_marketplace/service_mesh_icon.svg" alt="transparent attestation"></a>
+                  </div>
+                  <div class="timeline-pg-panel wow fadeInRight animated">
+                    <div class="timeline-pg-heading">
+                        <h4>Confidential</h4>
+                        <h4>Service Meshes</h4>
+                    </div>
+                    <div class="timeline-pg-body">
+                      <p class="text-muted">A service mesh facilitates the communication between services or microservices. We introduce a confidential service mesh which ensures end-to-end encryption with mutual authentication. </p>
+                      <a class="btn btn-primary btn-sm text-uppercase more-details animated fadeInRight" href="https://se.inf.tu-dresden.de/lectures/CC/6_confidential-service-meshes-EN.mp4">Watch Screencast</a>                   
+                    </div>
+                  </div>
+                </li>
+    
+                <li>
+                  <div class="timeline-pg-image wow fadeInRight animated pointer">
+                    <a href="#multistakeholdermodal" class="portfolio-link"  data-toggle="modal">
+                    <img class="rounded-circle svg-fluid" src="img/azure_marketplace/multi_stakeholder_icon.svg" alt="curated images icon"></a>
+                  </div>
+                  <div class="timeline-pg-panel wow fadeInLeft animated">
+                    <div class="timeline-pg-heading">
+                        <h4>Multi-Stakeholder</h4>
+                        <h4>Workflow</h4>
+                    </div>
+                    <div class="timeline-pg-body">
+                      <p class="text-muted"><p>
+                        We have multiple different partners collaborating whilst protecting their intellectual property (code, data) from each other and from cluster administrators.</p>
+                        <a class="btn btn-primary btn-sm text-uppercase more-details animated fadeInLeft" href="https://se.inf.tu-dresden.de/lectures/CC/3_multiStakeholder-EN.mp4">Watch Screencast</a> 
+                    </div>
+                </div>
+            </li>
+
+            <li class="timeline-pg-inverted">
+                <div class="timeline-pg-image wow fadeInLeft animated pointer">
+                    <a href="#multistakeholdermlmodal" class="portfolio-link"  data-toggle="modal">
+                  <img class="rounded-circle svg-fluid" src="img/azure_marketplace/ms_machine_learning_icon.svg" alt="transparent attestation"></a>
+                </div>
+                <div class="timeline-pg-panel wow fadeInRight animated">
+                  <div class="timeline-pg-heading">
+                      <h4>Multi-Stakeholder</h4>
+                      <h4>Machine Learning</h4>
+                  </div>
+                  <div class="timeline-pg-body">
+                    <p class="text-muted">The objective of this work is to provide a platform that allows multiple stakeholders such data owner, code owner, model owner, who do not necessarily trust each other, still can come together an perform machine learning to unlock all the benefits of AI. </p>
+                    <a class="btn btn-primary btn-sm text-uppercase more-details animated fadeInRight" href="https://se.inf.tu-dresden.de/lectures/CC/4_secure-multi-parties-ml-EN.mp4">Watch Screencast</a>                   
+                  </div>
+                </div>
+              </li>
+
+        </ul>
+    </div>
+</div>
+
+    <div class="pricing boxinthemiddle">
+        <div class="col-lg-4 animated fadeInLeft wow">
+            <div class="card">
+              <div class="card-body">
+                    <div>
+                        <img class="img-responsive services-img" src="img/azure_marketplace/tutorial_icon.svg" alt="">
+                    </div>
+                    <h4 class="card-title text-muted text-uppercase text-center">Quickstart</h4>
+                    <h6 class="card-price text-center">Tutorial</h6>
+              <hr>
+              <ul>
+                <li class="feature text-left"><strong>Our tutorial provides an easy starting point for evaluating the SCONE Playground Confidential VM offering. All the needed tools and images and many examples and demos of the SCONE platform.</strong></li>
+              </ul>
+              <a href="https://sconedocs.github.io/azure/scone-playground/" class="btn btn-primary btn-tutorial text-uppercase">Go to Tutorial</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 animated fadeInRight wow">
+            <div class="card">
+              <div class="card-body">
+                    <div>
+                        <img class="img-responsive services-img" src="img/azure_marketplace/azure_market_icon.svg" alt="">
+                    </div>
+                    <h4 class="card-title text-muted text-uppercase text-center">Azure Marketplace</h4>
+                    <h6 class="card-price text-center">Our Offer</h6>
+              <hr>
+              <ul>
+                <li><strong>Have a look at our offer on Azure Marketplace and get detailed information about:</strong></li>
+                <li class="feature text-left"><strong>possibilities,</strong></li>
+                <li class="feature text-left"><strong>plans and</strong></li>
+                <li class="feature text-left"><strong>pricing.</strong></li>
+              </ul>
+              <a href="https://portal.azure.com/#create/scontainug1595751515785.scone-demosstandard-gen2" class="btn btn-primary btn-community text-uppercase">Go to Azure Marketplace</a>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    </div>
+
+    </div>
+</section>
+
 <!-- Documentation -->
-<section id="documentation" class="bg-light-gray">
+<section id="documentation" class="bg-light">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
@@ -1202,7 +1503,7 @@
 </section>
 
   <!-- Partners -->
-  <section id="partners" class="py-5">
+  <section id="partners" class="page-section bg-light">
         <div class="container">
 
                 <div class="row">
@@ -1785,6 +2086,7 @@
     </div>
 </div>
 
+
 <!-- Portfolio USP 6 -->
 <div class="portfolio-modal modal fade" id="techdoc1" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
@@ -1893,6 +2195,97 @@
     </div>
 </div>
 
+
+<!-- Azure Marketplace Modals -->
+<div class="modal fade" id="atrestinflightmodal" tabindex="-1" role="dialog" aria-labelledby="at rest in flight modal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <img class="img-responsive img-centered" src="img/azure_marketplace/atrest_inflight_icon.svg" alt="Scone Curated Images">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="sparktaskmodal" tabindex="-1" role="dialog" aria-labelledby="spark engine tasks modal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <img class="img-responsive img-centered" src="img/azure_marketplace/pyspark_tasks_icon.svg" alt="Scone Curated Images">
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="modal fade" id="sconebuildmodal" tabindex="-1" role="dialog" aria-labelledby="scone build modal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <img class="img-responsive img-centered" src="img/azure_marketplace/scone_build_icon.svg" alt="Scone Curated Images">
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="modal fade" id="servicemeshesmodal" tabindex="-1" role="dialog" aria-labelledby="service meshes modal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <img class="img-responsive img-centered" src="img/azure_marketplace/service_mesh_icon.svg" alt="Scone Curated Images">
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="modal fade" id="multistakeholdermodal" tabindex="-1" role="dialog" aria-labelledby="multistakeholder modal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <img class="img-responsive img-centered" src="img/azure_marketplace/multi_stakeholder_icon.svg" alt="Service Mesh Icon">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="multistakeholdermlmodal" tabindex="-1" role="dialog" aria-labelledby="multistakeholderml modal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <img class="img-responsive img-centered" src="img/azure_marketplace/ms_machine_learning_icon.svg" alt="Multi Stakeholder Machine Learning Icon">
+        </div>
+      </div>
+    </div>
+  </div>
 
 <!-- Quickstart Guide Welcome-->
 <div class="portfolio-modal modal" id="quickstart" tabindex="-1" role="dialog" aria-hidden="true">
@@ -2558,7 +2951,6 @@ $(document).ready(function() {
 
 <!-- News Items: Load more -->
 <script src="js/loadmore.js"></script>
-
 
 <script type= "text/javascript">
 
