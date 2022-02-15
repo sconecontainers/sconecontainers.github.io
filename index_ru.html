@@ -41,6 +41,9 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
 
+    <!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -119,13 +122,13 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner landing" role="listbox">
 
-          <div class="item active">
+          <div class="item">
 
             <div id="particles-js"></div>
             <script src="js/lib/particles.min.js"></script>
             <script src="js/app.js"></script>
 
-            <div class="banner" style="background-image: url(img/header-bg.png);"></div>
+            <div class="banner" style="background-image: url(img/landing/anonymous-header.jpg);"></div>
 
             <div class="carousel-caption">
                 <div class="row">
@@ -164,7 +167,7 @@
           <div class="item">
 
 
-            <div class="banner" style="background-image: url(img/clouds-header.png);"></div>
+            <div class="banner" style="background-image: url(img/landing/clouds-header.jpg);"></div>
 
             <div class="carousel-caption">
 
@@ -199,6 +202,83 @@
                 </div>
             </div>
         </div>
+
+        <div class="item">
+
+            <div class="banner" style="background-image: url(img/landing/background-pyspark.jpg);"></div>
+            <div class="carousel-caption">
+    
+                <div class="row">
+                    <div class="col-sm-8">
+                        <div class="intro-text">
+                            <div class="intro-heading animated fadeInDown"></div>
+                            <img class="title-logo animated fadeInDown" src="img/logo-vector-white-text.svg"/><br>&nbsp;<br>&nbsp;</img>
+                            <div class="intro-lead-in animated fadeInUp">Confidential PySpark <br> Virtual Machine:</div>
+    
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                        <div class="col-sm-6">
+                            <div class="intro-text">
+                                <div class="intro-sentence animated fadeInUp"><br>Запускайте конфиденциальные приложения PySpark в кластере Kubernetes при этом защищая код и данные приложения.
+                                </div>
+                                <div class="intro-sentence animated fadeInUp">Теперь доступно на <b>Azure Marketplace</b>.</div>
+                            </div>
+                        </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8">
+                        <div class="intro-text">
+                            <a class="btn btn-link text-uppercase js-scroll-trigger animated free-version fadeInLeftBig slow" href="#pyspark"><img class="title-logo-small animated fadeInDown" src="img/logo-azure.svg"/></img> &nbsp; Подробнее о нашем предложении</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tell-more-position">
+                    <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger tell-more animated fadeInUp" href="#pyspark">Читать далее</a>
+                    <a> <span class="glyphicon glyphicon-triangle-bottom text-center triangle" aria-hidden="true"></span></a>
+                </div>
+            </div>
+        </div>
+    
+    
+        <div class="item active">
+    
+                <div class="banner" style="background-image: url(img/landing/background-playground.jpg);"></div>
+                <div class="carousel-caption">
+    
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <div class="intro-text">
+                                <img class="title-logo animated fadeInDown" src="img/logo-vector-white-text.svg"/><br>&nbsp;<br>&nbsp;</img>
+                                <div class="intro-lead-in animated fadeInUp">Confidential Computing <br> Playground Virtual Machine</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                            <div class="col-sm-6">
+                                <div class="intro-text">
+                                    <div class="intro-sentence animated fadeInUp"><br> Найдите все необходимые инструменты для создания конфиденциальных образов и их развертывания.
+                                    </div>
+                                    <div class="intro-sentence animated fadeInUp">Теперь доступно на <b>Azure Marketplace</b>.</div>
+                                </div>
+                                
+                            </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <div class="intro-text">
+                                <a class="btn btn-link text-uppercase js-scroll-trigger animated free-version fadeInUpBig slow" href="#playground"><img class="title-logo-small animated fadeInDown" src="img/logo-azure.svg"/></img> &nbsp; Подробнее о нашем предложении</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tell-more-position">
+                        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger tell-more animated fadeInUp" href="#playground">Читать далее</a>
+                        <a> <span class="glyphicon glyphicon-triangle-bottom text-center triangle" aria-hidden="true"></span></a>
+                    </div>
+                </div>
+            </div>
+
     </div>
         <!-- Controls -->
         <a class="left carousel-control landing" href="#carousel-example-generic" role="button" data-slide="prev">
@@ -224,6 +304,28 @@
 
          <!-- Section 1 -->
          <div class="row content">
+            
+            <div class="col-sm-4 fadeInUp wow animated news-card">
+                <a class="black" href="https://www.youtube.com/watch?v=pv6e1izDcj0">
+                    <div class="card mb-5 mb-lg-0 blog-grids">
+                        <div class="grid">
+                            <div class="entry-media">
+                                <span class="video">Bидео</span>
+                                <img src="img/news/Securing Cloud Encryption Proxies with Confidential Computing.png" alt="Securing Cloud Encryption Proxies with Confidential Computing Youtube Video Preview Picture">
+                            </div>
+                            <div class="entry-body">
+                                
+                                <h4 class="black">Защита прокси-серверов с облачным шифрованием с помощью конфиденциальных вычислений</h4>
+                                <p>Посмотрите это видео нашего партнера T-Systems MMS, чтобы узнать больше о практическом применении конфиденциальных вычислений. Начиная с 8:58 минуты, мы рассказываем о важнейших технологических достижениях в интервью с нашим главным операционным директором, профессором Кристофом Фетцером.</p>
+                                <div class="read-more-date">
+                                    <p> Смотреть видео...
+                                    <span class="date">07/01/2022</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
 
             <div class="col-sm-4 fadeInUp wow animated news-card">
                 <a class="black" href="https://sconedocs.github.io/azure/scone-pyspark/">
@@ -236,7 +338,79 @@
                             <div class="entry-body">
                                 
                                 <h4 class="black">SCONE Playground <br> виртуальная машина</h4>
-                                <p>является одним из предложений Azure Marketplace от Scontain. Он включает в себя все необходимые инструменты для создания конфиденциальных образов и их развертывания с целью обеспечить легкую отправную точку для оценки платформы конфиденциальных вычислений SCONE.</p>
+                                <p>является одним из предложений Azure Marketplace от Scontain. Она включает в себя все необходимые инструменты для создания конфиденциальных образов и их развертывания с целью обеспечить легкую отправную точку для оценки платформы конфиденциальных вычислений SCONE.</p>
+                                <div class="read-more-date">
+                                    <p> Cсылка...
+                                    <span class="date">22/11/2021</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-sm-4 fadeInUp wow animated news-card">
+                <a class="black" href="https://sconedocs.github.io/azure/scone-pyspark/">
+                    <div class="card mb-5 mb-lg-0 blog-grids">
+                        <div class="grid">
+                            <div class="entry-media">
+                                <span class="news">Новости</span>
+                                <img src="img/news/pyspark virtual machine.png" alt="pyspark virtual machine Teaser Picture">
+                            </div>
+                            <div class="entry-body">
+                                
+                                <h4 class="black">SCONE PySpark <br> Виртуальная машина</h4>
+                                <p>является одним из предложений Azure Marketplace от Scontain. Она включает в себя все необходимые инструменты и образы для запуска конфиденциальных приложений PySpark в кластерах Kubernetes и, следовательно, обеспечивает легкую отправную точку для оценки предложения SCONE Confidential PySpark.</p>
+                                <div class="read-more-date">
+                                    <p> Cсылка...
+                                    <span class="date">15/12/2021</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+    </div>
+
+<!-- Section 2 -->
+        <div class="row content">
+
+          
+            <div class="col-sm-4 fadeInUp wow animated news-card">
+                <a class="black" href="https://se.inf.tu-dresden.de/lectures/CC/6_confidential-service-meshes-EN.mp4">
+                    <div class="card mb-5 mb-lg-0 blog-grids">
+                        <div class="grid">
+                            <div class="entry-media">
+                                <span class="video">Bидео</span>
+                                <img src="img/news/6_confidential-service-meshes EN.png" alt="Demo Preview Picture">
+                            </div>
+                            <div class="entry-body">
+                                
+                                <h4 class="black">6 - Конфиденциальные <br> Сервисные сети</h4>
+                                <p>Сетки сервисов (Service Mesh) облегчают взаимодействие между сервисами или микросервисами. Мы покажем, как можно гарантировать конфиденциальное сквозное шифрование с помощью Intel SGX и платформы SCONE.</p>
+                                <div class="read-more-date">
+                                    <p> Смотреть видео...
+                                    <span class="date">27/10/2021</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-sm-4 fadeInUp wow animated news-card">
+                <a class="black" href="https://se.inf.tu-dresden.de/lectures/CC/5_confidential-cloud-native-apps-EN.mp4">
+                    <div class="card mb-5 mb-lg-0 blog-grids">
+                        <div class="grid">
+                            <div class="entry-media">
+                                <span class="video">Bидео</span>
+                                <img src="img/news/5_confidential-cloud-native-apps-EN.png" alt="Demo Preview Picture">
+                            </div>
+                            <div class="entry-body">
+                                
+                                <h4 class="black">5 - Конфиденциальные облачные нативные приложения</h4>
+                                <p>Мы представляем концепцию облачных нативных приложений и показываем их преимущества, а также демонстрируем приложение, состоящее из нескольких сервисов, в котором используется несколько языков программирования.</p>
                                 <div class="read-more-date">
                                     <p> Cсылка...
                                     <span class="date">22/11/2021</span></p>
@@ -269,79 +443,12 @@
                 </a>
             </div>
 
-            <div class="col-sm-4 fadeInUp wow animated news-card">
-                <a class="black" href="https://se.inf.tu-dresden.de/lectures/CC/6_confidential-service-meshes-EN.mp4">
-                    <div class="card mb-5 mb-lg-0 blog-grids">
-                        <div class="grid">
-                            <div class="entry-media">
-                                <span class="video">Bидео</span>
-                                <img src="img/news/6_confidential-service-meshes EN.png" alt="Demo Preview Picture">
-                            </div>
-                            <div class="entry-body">
-                                
-                                <h4 class="black">6 - Конфиденциально <br> Сервисные сети</h4>
-                                <p>Сетки сервисов облегчают взаимодействие между сервисами или микросервисами. Мы покажем, как можно гарантировать конфиденциальное сквозное шифрование с помощью Intel SGX и платформы SCONE.</p>
-                                <div class="read-more-date">
-                                    <p> Смотреть видео...
-                                    <span class="date">27/10/2021</span></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-
     </div>
 
-<!-- Section 2 -->
+ <!-- Section 3 -->
         <div class="row content">
-            
-            <div class="col-sm-4 fadeInUp wow animated news-card">
-                <a class="black" href="https://se.inf.tu-dresden.de/lectures/CC/5_confidential-cloud-native-apps-EN.mp4">
-                    <div class="card mb-5 mb-lg-0 blog-grids">
-                        <div class="grid">
-                            <div class="entry-media">
-                                <span class="video">Видео</span>
-                                <img src="img/news/5_confidential-cloud-native-apps-EN.png" alt="Demo Preview Picture">
-                            </div>
-                            <div class="entry-body">
-                                
-                                <h4 class="black">5 - Конфиденциальные облачные приложения</h4>
-                                <p>Мы представляем концепции облачных приложений и показываем их преимущества, а также демонстрацию приложения, которое состоит из нескольких служб и в котором используются несколько языков программирования.</p>
-                                <div class="read-more-date">
-                                    <p> Смотреть видео...
-                                    <span class="date">27/10/2021</span></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
 
-            <div class="col-sm-4 fadeInUp wow animated news-card">
-                <a class="black" href="https://se.inf.tu-dresden.de/lectures/CC/4_secure-multi-parties-ml-EN.mp4">
-                    <div class="card mb-5 mb-lg-0 blog-grids">
-                        <div class="grid">
-                            <div class="entry-media">
-                                <span class="video">Видео</span>
-                                <img src="img/news/4_secure-multi-parties-ml EN.png" alt="Demo Preview Picture">
-                            </div>
-                            <div class="entry-body">
-                                
-                                <h4 class="black">4 - Машинное обучение с несколькими заинтересованными сторонами</h4>
-                                <p>В этом демонстрационном видео мы показываем, как можно использовать приложения, в которых несколько заинтересованных сторон безопасно предоставляют свои данные и код с помощью SCONE. В этом демонстрационном видео вы можете предоставить платформу с Intel SGX и SCONE, которая позволит различным заинтересованным сторонам безопасно работать вместе. Им не обязательно доверять друг другу, чтобы использовать преимущества ИИ.</p>
-                                <div class="read-more-date">
-                                    <p> Смотреть видео...
-                                    <span class="date">27/10/2021</span></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-sm-4 fadeInUp wow animated news-card">
+            <div class="col-sm-4 news-card">
                 <a class="black" href="https://se.inf.tu-dresden.de/lectures/CC/3_multiStakeholder-EN.mp4">
                     <div class="card mb-5 mb-lg-0 blog-grids">
                         <div class="grid">
@@ -351,7 +458,7 @@
                             </div>
                             <div class="entry-body">
                                 
-                                <h4 class="black">3 - Расчеты с участием многих заинтересованных сторон</h4>
+                                <h4 class="black">3 - Вычисления с участием многих заинтересованных сторон</h4>
                                 <p>В этом демонстрационном видео мы показываем, как можно использовать приложения SCONE, в которых несколько заинтересованных сторон безопасно предоставляют свои данные и код.</p>
                                 <div class="read-more-date">
                                     <p>Смотреть видео...
@@ -362,12 +469,6 @@
                     </div>
                 </a>
             </div>
-
-    </div>
-
- <!-- Section 3 -->
-        <div class="row content">
-
             
             <div class="col-sm-4 news-card">
                 <a class="black" href="https://se.inf.tu-dresden.de/lectures/CC/2_Scone-Build-EN.mp4">
@@ -401,8 +502,8 @@
                             </div>
                             <div class="entry-body">
                                 
-                                <h4 class="black">1 - Булочка Вступление</h4>
-                                <p>В этом первом из шести видеороликов мы мотивируем необходимость конфиденциальных вычислений, объясняем, что такое конфиденциальные вычисления и как добиться конфиденциальных вычислений с помощью Intel SGX и платформы SCONE.</p>
+                                <h4 class="black">1 - Представление SCONE</h4>
+                                <p> В этом первом из шести видеороликов мы мотивируем необходимость конфиденциальных вычислений, объясняем, что такое конфиденциальные вычисления, и как достичь конфиденциальных вычислений с помощью Intel SGX и платформы SCONE.</p>
                                 <div class="read-more-date">
                                     <p> Смотреть видео...
                                     <span class="date">27/10/2021</span></p>
@@ -412,35 +513,32 @@
                     </div>
                 </a>
             </div>
-
-            
-            <div class="col-sm-4 news-card">
-                <a class="black" href="https://www.t-systems-mms.com/en/company/newsroom/detail-eng/new-partnerships-for-the-future-proof-it-security-based-on-confidential-computing.html">
-                    <div class="card mb-5 mb-lg-0 blog-grids">
-                        <div class="grid">
-                            <div class="entry-media">
-                                <span class="news">Новости</span>
-                                <img src="img/news/Tsystemsmms.png" alt="ohv webcast Teaser Picture">
-                            </div>
-                            <div class="entry-body">
-                                
-                                <h4 class="black">Сотрудничество с <br> T-Systems MMS</h4>
-                                <p>Новые партнерства для будущей ИТ-безопасности на основе конфиденциальных вычислений.</p>
-                                <div class="read-more-date">
-                                    <p> Cсылка...
-                                    <span class="date">29/04/2021</span></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-          
     </div>
 
   <!-- Section 4 -->
     <div class="row content">
+
+        <div class="col-sm-4 news-card">
+            <a class="black" href="https://www.t-systems-mms.com/en/company/newsroom/detail-eng/new-partnerships-for-the-future-proof-it-security-based-on-confidential-computing.html">
+                <div class="card mb-5 mb-lg-0 blog-grids">
+                    <div class="grid">
+                        <div class="entry-media">
+                            <span class="news">Новости</span>
+                            <img src="img/news/Tsystemsmms.png" alt="ohv webcast Teaser Picture">
+                        </div>
+                        <div class="entry-body">
+                            
+                            <h4 class="black">Сотрудничество с <br> T-Systems MMS</h4>
+                            <p>Новые партнерства для будущей ИТ-безопасности на основе конфиденциальных вычислений.</p>
+                            <div class="read-more-date">
+                                <p> Cсылка...
+                                <span class="date">29/04/2021</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
 
         <div class="col-sm-4 news-card">
             <a class="black" href="download/ConfidentialCloud.pdf">
@@ -475,7 +573,7 @@
                         <div class="entry-body">
                             
                             <h4 class="black">Confidential Computing explained</h4>
-                            <p>На наших слайдах объясняется, как SCONE защищает данные и код посредством аттестации платформы и кода, обеспечивая при этом отличную производительность. Далее показан пример использования вычислений с участием многих заинтересованных сторон.</p>
+                            <p>На наших слайдах мы объясняем, как SCONE защищает данные и код посредством аттестации платформы и кода, обеспечивая при этом отличную производительность. Далее показан пример использования вычислений с участием многих заинтересованных сторон.</p>
                             <div class="read-more-date">
                                 <p> Pdf...
                                 <span class="date">15/04/2021</span></p>
@@ -486,7 +584,11 @@
             </a>
         </div>
 
-        
+ </div>
+
+ <!-- Section 5 -->
+    <div class="row content">
+
         <div class="col-sm-4 news-card">
             <a class="black" href="https://www.youtube.com/watch?v=NGA6QY4zTTs">
                 <div class="card mb-5 mb-lg-0 blog-grids">
@@ -508,13 +610,6 @@
                 </div>
             </a>
         </div>
-
-            </div>
-
-
- <!-- Section 5 -->
-    <div class="row content">
-
         
         <div class="col-sm-4 news-card">
             <a class="black" href="https://lnkd.in/esF82D3">
@@ -561,6 +656,35 @@
             </a>
         </div>
 
+            
+            <div class="col-sm-4 news-card">
+                <a class="black" href="https://www.t-systems-mms.com/en/company/newsroom/detail-eng/new-partnerships-for-the-future-proof-it-security-based-on-confidential-computing.html">
+                    <div class="card mb-5 mb-lg-0 blog-grids">
+                        <div class="grid">
+                            <div class="entry-media">
+                                <span class="news">Новости</span>
+                                <img src="img/news/Tsystemsmms.png" alt="ohv webcast Teaser Picture">
+                            </div>
+                            <div class="entry-body">
+                                
+                                <h4 class="black">Сотрудничество с <br> T-Systems MMS</h4>
+                                <p>Новые партнерства для будущей ИТ-безопасности на основе конфиденциальных вычислений.</p>
+                                <div class="read-more-date">
+                                    <p> Cсылка...
+                                    <span class="date">29/04/2021</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+          
+    </div>
+
+     <!-- Section 6 -->
+      <div class="row content">
+
         <div class="col-sm-4 news-card">
             <a class="black" href="https://hostingjournalist.com/cloud-hosting/aggregion-now-connected-to-g-core-labs-public-cloud-platform/">
                 <div class="card mb-5 mb-lg-0 blog-grids">
@@ -581,12 +705,6 @@
                 </div>
             </a>
         </div>
-
-    </div>
-
-
-     <!-- Section 6 -->
-      <div class="row content">
 
         <div class="col-sm-4 news-card">
             <a class="black" href="https://newsroom.intel.com/news/intel-sgx-enables-magnit-create-trusted-computing-environment/#gs.koqzbi">
@@ -632,32 +750,31 @@
             </a>
         </div>
 
-        <div class="col-sm-4 news-card">
-            <a class="black" href="video/Animation VM Management.mp4">
-                <div class="card mb-5 mb-lg-0 blog-grids">
-                    <div class="grid">
-                        <div class="entry-media">
-                            <span class="video">Видео</span>
-                            <img src="img/news/Animation VM.png" alt="Animation Teaser Picture">
-                        </div>
-                        <div class="entry-body">
-                            <h4 class="black">Алиса и Боб. Эпизод III: <br> Конфиденциальный аутсорсинг</h4>
-                            <p>SCONE Confidential Computing упрощает конфиденциальный аутсорсинг таких услуг, как управление виртуальными машинами, и даже критически важных услуг, таких как управление ключами.</p>
-                            <div class="read-more-date">
-                                <p> Видео...
-                                <span class="date">11/05/2020</span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
-
     </div>
-
 
  <!-- Section 7 -->
  <div class="row content">
+
+    <div class="col-sm-4 news-card">
+        <a class="black" href="video/Animation VM Management.mp4">
+            <div class="card mb-5 mb-lg-0 blog-grids">
+                <div class="grid">
+                    <div class="entry-media">
+                        <span class="video">Видео</span>
+                        <img src="img/news/Animation VM.png" alt="Animation Teaser Picture">
+                    </div>
+                    <div class="entry-body">
+                        <h4 class="black">Алиса и Боб. Эпизод III: <br> Конфиденциальный аутсорсинг</h4>
+                        <p>SCONE Confidential Computing упрощает конфиденциальный аутсорсинг таких услуг, как управление виртуальными машинами, и даже критически важных услуг, таких как управление ключами.</p>
+                        <div class="read-more-date">
+                            <p> Видео...
+                            <span class="date">11/05/2020</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
 
     <div class="col-sm-4 news-card">
         <a class="black" href="video/Animation Confidential Cooperation.mp4">
@@ -703,7 +820,11 @@
         </a>
     </div>
     
-  
+</div>
+
+     <!-- Section 8 -->
+ <div class="row content">
+
     <div class="col-sm-4 news-card">
         <a class="black" href="https://www.secunet.com/en/news/article/secustack-uses-scone-and-intelr-software-guard-extensions-for-novel-secure-cloud-applications/">
             <div class="card mb-5 mb-lg-0 blog-grids">
@@ -724,12 +845,7 @@
                 </div>
               </div> 
             </a>
-    </div> 
-
-</div>
-
-     <!-- Section 8 -->
- <div class="row content">
+    </div>
 
     <div class="col-sm-4 news-card">
         <a class="black" href="https://www.youtube.com/watch?v=CCPI7C1lhh0&feature=youtu.be">
@@ -774,7 +890,11 @@
             </div>
         </a>
     </div>
+</div>
 
+
+<!-- Section 9 -->
+ <div class="row content">
 
     <div class="col-sm-4 news-card">
         <a class="black" href="video/Scontain Animation 2020.mp4">
@@ -797,11 +917,6 @@
             </div>
         </a>
     </div>
-
-    </div>
-
-             <!-- Section 9 -->
- <div class="row content">
      
     <div class="col-sm-4 news-card">
         <a class="black" href="download/ConfCNC.pdf">
@@ -847,6 +962,11 @@
             </a>
         </div>
 
+</div>
+
+<!-- Section 10 -->
+<div class="row content">
+
     <div class="col-sm-4 news-card">
         <a class="black" href="https://www.saechsische.de/anzeige/dresden-baut-sicherheit-fuer-die-ganze-welt-7556.html">
             <div class="card mb-5 mb-lg-0 blog-grids">
@@ -865,19 +985,16 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </a>
+            </div> 
+          </a>
+      </div>
     </div>
-
-</div>
 
     <div class="container-load-more">
             <a class="btn btn-primary tell-more animated fadeInUp" id="loadMore">Загрузи больше</a>
     </div>
-
-      
+          
 </section>
-
 
 
 <!-- Tell me more  Section -->
@@ -1119,8 +1236,237 @@
 </section>
 
 
+
+<!-- Azure Pyspark Virtual Machine-->
+<section id="pyspark" class="bg-light-gray">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Предложения SCONE на Azure Marketplace</h2>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="sub">
+                        <h1>Конфиденциальный PySpark в Kubernetes</h1>
+                    <p>Наше предложение является отправной точкой для тестирования возможностей SCONE PySpark.<br> Оно уже включает все инструменты и образы, необходимые для запуска конфиденциальных приложений PySpark в кластере Kubernetes.<br><br></p>
+                </div>
+            </div>
+        
+
+        <div class="row">
+
+            <div class="col-sm-5 animated fadeInLeft wow">
+                <div class="marketplace blockleft col-sm-6">
+                    <h4>Всегда <br> зашифровано</h4>
+                    <h4>&mdash;</h4>
+                    <p>Confidential Spark защищает c помощью шифрования ваши данные и код: будь то во время использования, передачи или хранения.
+                    </p>
+                </div>
+                <div class="marketplace blockleft col-sm-6">
+                    <a href="#atrestinflightmodal" class="portfolio-link"  data-toggle="modal">
+                    <img  src="img/azure_marketplace/atrest_inflight_icon_RU.svg"  alt="https://sconedocs.github.io/"></img></a>
+                </div>
+            </div>
+           
+            <div class="col-sm-7 animated fadeInRight wow">
+                <div class="marketplace blockright col-sm-8">
+                    <a href="#sparktaskmodal" class="portfolio-link"  data-toggle="modal">
+                    <img src="img/azure_marketplace/pyspark_tasks_icon_RU.svg" alt="Publications">
+                </a>
+                </div>
+                <div class="marketplace blockright col-sm-4">
+                    <h4>Поддержка масштабных задач</h4>
+                    <h4>&mdash;</h4>
+                    <p>Spark - это высокопроизводительный движок, который подходит для решения масштабных вычислительных задач и поддерживает различные языки программирования.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="pricing boxinthemiddle">
+            <div class="col-lg-4 animated fadeInLeft wow">
+                <div class="card">
+                  <div class="card-body">
+                        <div>
+                            <img class="img-responsive services-img" src="img/azure_marketplace/tutorial_icon.svg" alt="">
+                        </div>
+                  <h4 class="card-title text-muted text-uppercase text-center">Быстрый старт</h4>
+                  <h6 class="card-price text-center">Руководство</h6>
+                  <hr>
+                  <ul>
+                    <li class="feature text-left"><strong>Наше руководство это простая отправная точка для оценики предложения SCONE Confidential PySpark. Мы включили все необходимые инструменты и образы для запуска конфиденциальных приложений в кластере Kubernetes.</strong></li>
+                  </ul>
+                  <a href="https://sconedocs.github.io/azure/scone-pyspark/" class="btn btn-primary btn-tutorial text-uppercase">Перейти к руководству</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 animated fadeInRight wow">
+                <div class="card">
+                  <div class="card-body">
+                        <div>
+                            <img class="img-responsive services-img" src="img/azure_marketplace/azure_market_icon.svg" alt="">
+                        </div>
+                  <h4 class="card-title text-muted text-uppercase text-center">Azure Marketplace</h4>
+                  <h6 class="card-price text-center">Предложение</h6>
+                  <hr>
+                  <ul>
+                    <li><strong>Ознакомьтесь с нашим предложением в Azure Marketplace и получите подробную информацию о:</strong></li>
+                    <li class="feature text-left"><strong>возможностях,</strong></li>
+                    <li class="feature text-left"><strong>вариантах и</strong></li>
+                    <li class="feature text-left"><strong>ценах.</strong></li>
+                  </ul>
+                  <a href="https://portal.azure.com/#create/scontainug1595751515785.scone-pysparkstandard" class="btn btn-primary btn-community text-uppercase">Прямой доступ к Azure Marketplace</a>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        </div>
+    </div>
+
+
+<!-- Confidential Computing Playground Virtual Machine -->
+    <div class="container" id="playground">
+        
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                            <div class="sub">
+                                <h1>Виртуальная машина SCONE Confidential Computing Playground Virtual Machine</h1>
+                            <p>Наша цель - облегчить вам начало тестирования платформы SCONE Confidential Computing Platform. Мы предоставляем все необходимые инструменты для создания конфиденциальных образов (с нуля или из существующего собственного образа) и их развертывания.<br><br></p>
+                            <h4>Наш Университет конфиденциальных вычислений объясняет:<br><br></h4>
+                        </div>
+                    </div>
+
+        <div class="row">
+            <div class="col-lg-12">
+              <ul class="timeline-pg">
+    
+                <li>
+                  <div class="timeline-pg-image wow fadeInRight animated pointer">
+                    <a href="#sconebuildmodal" class="portfolio-link"  data-toggle="modal">
+                    <img class="rounded-circle svg-fluid" src="img/azure_marketplace/scone_build_icon_RU.svg" alt="transparent encryption icon"></a> 
+                  </div>
+                  <div class="timeline-pg-panel wow fadeInLeft animated">
+                    <div class="timeline-pg-heading">
+                        <h4>SCONE Build</h4>
+                    </div>
+                    <div class="timeline-pg-body">
+                      <p class="text-muted">Как за один шаг создать конфиденциальные образы контейнеров из существующих нативных образов Python. Полученный образ работает на удаленно заверенных анклавах Intel SGX и имеет зашифрованную файловую систему.</p>
+                      <a class="btn btn-primary btn-sm text-uppercase more-details animated fadeInLeft" href="https://se.inf.tu-dresden.de/lectures/CC/2_Scone-Build-EN.mp4">Смотреть скринкаст (En) </a>
+                    </div>
+                  </div>
+                </li>
+    
+                <li class="timeline-pg-inverted">
+                  <div class="timeline-pg-image wow fadeInLeft animated pointer">
+                    <a href="#servicemeshesmodal" class="portfolio-link"  data-toggle="modal">
+                    <img class="rounded-circle svg-fluid" src="img/azure_marketplace/service_mesh_icon_RU.svg" alt="transparent attestation"></a>
+                  </div>
+                  <div class="timeline-pg-panel wow fadeInRight animated">
+                    <div class="timeline-pg-heading">
+                        <h4>Confidential</h4>
+                        <h4>Service Meshes</h4>
+                    </div>
+                    <div class="timeline-pg-body">
+                      <p class="text-muted">Сервисная сетка (Service Mesh) облегчает коммуникацию между сервисами или микросервисами. Мы представляем конфиденциальную сетку сервисов, которая обеспечивает сквозное шифрование с взаимной аутентификацией.</p>
+                      <a class="btn btn-primary btn-sm text-uppercase more-details animated fadeInRight" href="https://se.inf.tu-dresden.de/lectures/CC/6_confidential-service-meshes-EN.mp4">Смотреть скринкаст (En)</a>                   
+                    </div>
+                  </div>
+                </li>
+    
+                <li>
+                  <div class="timeline-pg-image wow fadeInRight animated pointer">
+                    <a href="#multistakeholdermodal" class="portfolio-link"  data-toggle="modal">
+                    <img class="rounded-circle svg-fluid" src="img/azure_marketplace/multi_stakeholder_icon.svg" alt="curated images icon"></a>
+                  </div>
+                  <div class="timeline-pg-panel wow fadeInLeft animated">
+                    <div class="timeline-pg-heading">
+                        <h4>Multi-Stakeholder</h4>
+                        <h4>Workflow</h4>
+                    </div>
+                    <div class="timeline-pg-body">
+                      <p class="text-muted">
+                        В нашем примере несколько различных партнеров работают вместе и могут одновременно защищать свою интеллектуальную собственность (код, данные) друг от друга и от администраторов кластера.</p>
+                        <a class="btn btn-primary btn-sm text-uppercase more-details animated fadeInLeft" href="https://se.inf.tu-dresden.de/lectures/CC/3_multiStakeholder-EN.mp4">Смотреть скринкаст (En)</a> 
+                    </div>
+                </div>
+            </li>
+
+            <li class="timeline-pg-inverted">
+                <div class="timeline-pg-image wow fadeInLeft animated pointer">
+                    <a href="#multistakeholdermlmodal" class="portfolio-link"  data-toggle="modal">
+                  <img class="rounded-circle svg-fluid" src="img/azure_marketplace/ms_machine_learning_icon_RU.svg" alt="transparent attestation"></a>
+                </div>
+                <div class="timeline-pg-panel wow fadeInRight animated">
+                  <div class="timeline-pg-heading">
+                      <h4>Multi-Stakeholder</h4>
+                      <h4>Machine Learning</h4>
+                  </div>
+                  <div class="timeline-pg-body">
+                    <p class="text-muted">Цель данной работы - предоставить платформу, которая позволит нескольким заинтересованным сторонам, таким как владелец данных, владелец кода, владелец модели, которые не обязательно доверяют друг другу, но тем не менее, они могут работать вместе и выполнить машинное обучение, чтобы раскрыть все преимущества ИИ. </p>
+                    <a class="btn btn-primary btn-sm text-uppercase more-details animated fadeInRight" href="https://se.inf.tu-dresden.de/lectures/CC/4_secure-multi-parties-ml-EN.mp4">Смотреть скринкаст (En)</a>                   
+                  </div>
+                </div>
+              </li>
+
+        </ul>
+    </div>
+</div>
+
+    <div class="pricing boxinthemiddle">
+        <div class="col-lg-4 animated fadeInLeft wow">
+            <div class="card">
+              <div class="card-body">
+                    <div>
+                        <img class="img-responsive services-img" src="img/azure_marketplace/tutorial_icon.svg" alt="">
+                    </div>
+                    <h4 class="card-title text-muted text-uppercase text-center">Быстрый старт</h4>
+                    <h6 class="card-price text-center">Руководство</h6>
+              <hr>
+              <ul>
+                <li class="feature text-left"><strong>Наше руководство это простая отправная точка для оценики предложения SCONE Playground Confidential VM. Оно включает необходимые инструменты и образы, а также множество примеров и демонстраций платформы SCONE.</strong></li>
+              </ul>
+              <a href="https://sconedocs.github.io/azure/scone-playground/" class="btn btn-primary btn-tutorial text-uppercase">Перейти к руководству</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 animated fadeInRight wow">
+            <div class="card">
+              <div class="card-body">
+                    <div>
+                        <img class="img-responsive services-img" src="img/azure_marketplace/azure_market_icon.svg" alt="">
+                    </div>
+                    <h4 class="card-title text-muted text-uppercase text-center">Azure Marketplace</h4>
+                    <h6 class="card-price text-center">Предложение</h6>
+              <hr>
+              <ul>
+                <li><strong>Ознакомьтесь с нашим предложением в Azure Marketplace и получите подробную информацию о:</strong></li>
+                <li class="feature text-left"><strong>возможностях,</strong></li>
+                <li class="feature text-left"><strong>вариантах и</strong></li>
+                <li class="feature text-left"><strong>ценах.</strong></li>
+              </ul>
+              <a href="https://portal.azure.com/#create/scontainug1595751515785.scone-demosstandard-gen2" class="btn btn-primary btn-community text-uppercase">Прямой доступ к Azure Marketplace</a>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    </div>
+
+    </div>
+</section>
+
+
 <!-- Documentation -->
-<section id="documentation" class="bg-light-gray">
+<section id="documentation">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
@@ -1836,6 +2182,96 @@
 </div>
 
 
+<!-- Azure Marketplace Modals -->
+<div class="modal fade" id="atrestinflightmodal" tabindex="-1" role="dialog" aria-labelledby="at rest in flight modal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <img class="img-responsive img-centered" src="img/azure_marketplace/atrest_inflight_icon_RU.svg" alt="Scone Curated Images">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="sparktaskmodal" tabindex="-1" role="dialog" aria-labelledby="spark engine tasks modal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <img class="img-responsive img-centered" src="img/azure_marketplace/pyspark_tasks_icon_RU.svg" alt="Scone Curated Images">
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="modal fade" id="sconebuildmodal" tabindex="-1" role="dialog" aria-labelledby="scone build modal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <img class="img-responsive img-centered" src="img/azure_marketplace/scone_build_icon_RU.svg" alt="Scone Curated Images">
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="modal fade" id="servicemeshesmodal" tabindex="-1" role="dialog" aria-labelledby="service meshes modal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <img class="img-responsive img-centered" src="img/azure_marketplace/service_mesh_icon_RU.svg" alt="Scone Curated Images">
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="modal fade" id="multistakeholdermodal" tabindex="-1" role="dialog" aria-labelledby="multistakeholder modal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <img class="img-responsive img-centered" src="img/azure_marketplace/multi_stakeholder_icon.svg" alt="Service Mesh Icon">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="multistakeholdermlmodal" tabindex="-1" role="dialog" aria-labelledby="multistakeholderml modal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <img class="img-responsive img-centered" src="img/azure_marketplace/ms_machine_learning_icon_RU.svg" alt="Multi Stakeholder Machine Learning Icon">
+        </div>
+      </div>
+    </div>
+  </div>
 
 <!-- Quickstart Guide Welcome-->
 <div class="portfolio-modal modal" id="quickstart" tabindex="-1" role="dialog" aria-hidden="true">
@@ -1863,7 +2299,7 @@
                     <!-- Content -->
                     <div class="card-style col-lg-6 text-white d-flex rgba-black-strong py-5 px-4 quickstart">
                         <img class="img-responsive img-centered quickstart" src="img/quickstart/waving-hand.svg" style="width: 10%">
-                            <h3 class="card-title pt-2"><strong>Добро пожаловать в SCONE!</strong></h3>
+                            <h3 class="card-title -2"><strong>Добро пожаловать в SCONE!</strong></h3>
                             <p> Следуйте пошаговым инструкциям, чтобы защитить свои приложения с помощью SCONE. </p>
 
                             <h2> Docker</h2>
@@ -1915,7 +2351,7 @@
                     <div class="card-style col-lg-6 text-white d-flex rgba-black-strong py-5 px-4 quickstart">
                             <img class="img-responsive img-centered" src="img/quickstart/progress.svg">
                             <h5 class="pink-text"></i> Шаг 1</h5>
-                            <h3 class="card-title pt-2"><strong>SCONE-RUSTC / SCONE RUSTC</strong></h3>
+                            <h3 class="card-title -2"><strong>SCONE-RUSTC / SCONE RUSTC</strong></h3>
                             <p> Используйте scone-rustc для компиляции Rust приложений </p>
                             <p> Чтобы вывести на экран версию Rust, выполните  (внутри контейнера <strong> sconecuratedimages/crosscompilers:ubuntu</strong>) следующие команды:
                                 <pre><code>docker run -it sconecuratedimages/crosscompilers:ubuntu<br>$ scone rustc --version</code></pre>
@@ -1964,7 +2400,7 @@
                     <div class="card-style col-lg-6 text-white d-flex rgba-black-strong py-5 px-4 quickstart">
                             <img class="img-responsive img-centered" src="img/quickstart/progress1.svg">
                             <h5 class="pink-text"></i>  Шаг 2</h5>
-                            <h3 class="card-title pt-2"><strong>Hello World</strong></h3>
+                            <h3 class="card-title -2"><strong>Hello World</strong></h3>
                             <p>Давайте попробуем простую helloworld-программу </p>
                             <pre><code>$ mkdir ~/projects<br>$ cd ~/projects<br>$ mkdir hello_world<br>$ cd hello_world</code></pre>
                         </div>
@@ -2011,7 +2447,7 @@
                     <div class="card-style col-lg-6 text-white d-flex rgba-black-strong py-5 px-4 quickstart">
                             <img class="img-responsive img-centered" src="img/quickstart/progress2.svg">
                             <h5 class="pink-text"></i> Шаг 3</h5>
-                            <h3 class="card-title pt-2"><strong>Rust</strong></h3>
+                            <h3 class="card-title -2"><strong>Rust</strong></h3>
                             <p> Давайте попробуем Rust программу:</p>
                             <pre><code>$ cat > main.rs << EOF<br>fn main() {<br>println!("Hello, world!");<br>}<br>EOF</pre></code>
                         </div>
@@ -2054,7 +2490,7 @@
                     <div class="card-style col-lg-6 text-white d-flex rgba-black-strong py-5 px-4 quickstart">
                         <img class="img-responsive img-centered" src="img/quickstart/progress3.svg">
                             <h5 class="pink-text"></i> Шаг 4</h5>
-                            <h3 class="card-title pt-2"><strong>Внутри анклава</strong></h3>
+                            <h3 class="card-title -2"><strong>Внутри анклава</strong></h3>
                             <p> Скомпилируем программу для запуска внутри анклава</p>
                             <pre><code>$ scone rustc main.rs --target=x86_64-scone-linux-musl<br>$ ls<br>main main.rs</pre></code>
                         </div>
@@ -2099,7 +2535,7 @@
                     <div class="card-style col-lg-6 text-white d-flex rgba-black-strong py-5 px-4 quickstart">
                         <img class="img-responsive img-centered" src="img/quickstart/progress4.svg">
                             <h5 class="pink-text"></i> Шаг 5</h5>
-                            <h3 class="card-title pt-2"><strong>Вывести на экран информацию об анклаве</strong></h3>
+                            <h3 class="card-title -2"><strong>Вывести на экран информацию об анклаве</strong></h3>
                             <p> Давайте запустим main внутри анклава и распечатаем некоторую отладочную информацию:</p>
                             <pre><code>$ SCONE_MODE=HW SCONE_VERSION=1 ./main<br>export SCONE_QUEUES=4<br>export SCONE_SLOTS=256<br>export SCONE_SIGPIPE=0<br>export SCONE_MMAP32BIT=0<br>export SCONE_SSPINS=100<br>export SCONE_SSLEEP=4000<br>export SCONE_KERNEL=0<br>export SCONE_HEAP=67108864<br>export SCONE_CONFIG=/etc/sgx-musl.conf<br>export SCONE_MODE=hw<br>export SCONE_SGXBOUNDS=no<br>export SCONE_VARYS=no<br>export SCONE_ALLOW_DLOPEN=no<br>export SCONE_ALLOW_DLOPEN2=no
                                 <br>Hello, world!</pre></code>
@@ -2145,7 +2581,7 @@
                     <div class="card-style col-lg-6 text-white d-flex rgba-black-strong py-5 px-4 quickstart">
                         <img class="img-responsive img-centered" src="img/quickstart/progress5.svg">
                             <h5 class="pink-text"></i>Поздравляем, вы запустили первое SCONE-приложение!</h5>
-                            <h3 class="card-title pt-2"><strong>Хотите узнать больше?</strong></h3>
+                            <h3 class="card-title -2"><strong>Хотите узнать больше?</strong></h3>
                             <p>Зайдите на <a href="https://sconedocs.github.io/">https://sconedocs.github.io/</a> где вы найдете дополнительные примеры.</p>
                             <p>Вы хотите использовать нашу стандартную или корпоративную версию, включая поддержку?  <br> Тогда свяжитесь с нами:<a href="mailto:info@scontain.com"> info@scontain.com</a></p>
                         </div>
@@ -2270,7 +2706,7 @@
                             <p>As the controller, the company name has implemented numerous technical and organizational measures to ensure the most complete protection of personal data processed through this website. However, Internet-based data transmissions may in principle have security gaps, so absolute protection may not be guaranteed. For this reason, every data subject is free to transfer personal data to us via alternative means, e.g. by telephone. </p>
 
                             <h4>1. Definitions</h4>
-                            <p>The data protection declaration of the company name is based on the terms used by the European legislator for the adoption of the General Data Protection Regulation (GDPR). Our data protection declaration should be legible and understandable for the general public, as well as our customers and business partners. To ensure this, we would like to first explain the terminology used.</p>
+                            <p>The data protection declaration of the company name is based on the terms used by the European legislator for the adoion of the General Data Protection Regulation (GDPR). Our data protection declaration should be legible and understandable for the general public, as well as our customers and business partners. To ensure this, we would like to first explain the terminology used.</p>
 
                             <p>In this data protection declaration, we use, inter alia, the following terms:</p>
 
@@ -2282,7 +2718,7 @@
                             <p>Data subject is any identified or identifiable natural person, whose personal data is processed by the controller responsible for the processing.</p>
                             </li>
                             <li><h4>c)    Processing</h4>
-                            <p>Processing is any operation or set of operations which is performed on personal data or on sets of personal data, whether or not by automated means, such as collection, recording, organisation, structuring, storage, adaptation or alteration, retrieval, consultation, use, disclosure by transmission, dissemination or otherwise making available, alignment or combination, restriction, erasure or destruction. </p>
+                            <p>Processing is any operation or set of operations which is performed on personal data or on sets of personal data, whether or not by automated means, such as collection, recording, organisation, structuring, storage, adaation or alteration, retrieval, consultation, use, disclosure by transmission, dissemination or otherwise making available, alignment or combination, restriction, erasure or destruction. </p>
                             </li>
                             <li><h4>d)    Restriction of processing</h4>
                             <p>Restriction of processing is the marking of stored personal data with the aim of limiting their processing in the future. </p>
@@ -2291,7 +2727,7 @@
                             <p>Profiling means any form of automated processing of personal data consisting of the use of personal data to evaluate certain personal aspects relating to a natural person, in particular to analyse or predict aspects concerning that natural person's performance at work, economic situation, health, personal preferences, interests, reliability, behaviour, location or movements. </p>
                             </li>
                             <li><h4>f)     Pseudonymisation</h4>
-                            <p>Pseudonymisation is the processing of personal data in such a manner that the personal data can no longer be attributed to a specific data subject without the use of additional information, provided that such additional information is kept separately and is subject to technical and organisational measures to ensure that the personal data are not attributed to an identified or identifiable natural person. </p>
+                            <p>Pseudonymisation is the processing of personal data in such a manner that the personal data can no longer be attributed to a specific data subject without the use of additional information, provided that such additional information is ke separately and is subject to technical and organisational measures to ensure that the personal data are not attributed to an identified or identifiable natural person. </p>
                             </li>
                             <li><h4>g)    Controller or controller responsible for the processing</h4>
                             <p>Controller or controller responsible for the processing is the natural or legal person, public authority, agency or other body which, alone or jointly with others, determines the purposes and means of the processing of personal data; where the purposes and means of such processing are determined by Union or Member State law, the controller or the specific criteria for its nomination may be provided for by Union or Member State law. </p>
@@ -2322,7 +2758,7 @@
                             <h4>3. Collection of general data and information</h4>
                             <p>The website of the company name collects a series of general data and information when a data subject or automated system calls up the website. This general data and information are stored in the server log files. Collected may be (1) the browser types and versions used, (2) the operating system used by the accessing system, (3) the website from which an accessing system reaches our website (so-called referrers), (4) the sub-websites, (5) the date and time of access to the Internet site, (6) an Internet protocol address (IP address), (7) the Internet service provider of the accessing system, and (8) any other similar data and information that may be used in the event of attacks on our information technology systems.</p>
 
-                            <p>When using these general data and information, the company name does not draw any conclusions about the data subject. Rather, this information is needed to (1) deliver the content of our website correctly, (2) optimize the content of our website as well as its advertisement, (3) ensure the long-term viability of our information technology systems and website technology, and (4) provide law enforcement authorities with the information necessary for criminal prosecution in case of a cyber-attack. Therefore, the company name analyzes anonymously collected data and information statistically, with the aim of increasing the data protection and data security of our enterprise, and to ensure an optimal level of protection for the personal data we process. The anonymous data of the server log files are stored separately from all personal data provided by a data subject.</p>
+                            <p>When using these general data and information, the company name does not draw any conclusions about the data subject. Rather, this information is needed to (1) deliver the content of our website correctly, (2) oimize the content of our website as well as its advertisement, (3) ensure the long-term viability of our information technology systems and website technology, and (4) provide law enforcement authorities with the information necessary for criminal prosecution in case of a cyber-attack. Therefore, the company name analyzes anonymously collected data and information statistically, with the aim of increasing the data protection and data security of our enterprise, and to ensure an oimal level of protection for the personal data we process. The anonymous data of the server log files are stored separately from all personal data provided by a data subject.</p>
 
                             <h4>4. Contact possibility via the website </h4>
                             <p>The website of the company name contains information that enables a quick electronic contact to our enterprise, as well as direct communication with us, which also includes a general address of the so-called electronic mail (e-mail address). If a data subject contacts the controller by e-mail or via a contact form, the personal data transmitted by the data subject are automatically stored. Such personal data transmitted on a voluntary basis by a data subject to the data controller are stored for the purpose of processing or contacting the data subject. There is no transfer of this personal data to third parties.</p>
@@ -2372,7 +2808,7 @@
                             <li>The personal data have been collected in relation to the offer of information society services referred to in Article 8(1) of the GDPR.</li>
 
                             </ul>
-                            <p>If one of the aforementioned reasons applies, and a data subject wishes to request the erasure of personal data stored by the company name, he or she may, at any time, contact any employee of the controller. An employee of company name shall promptly ensure that the erasure request is complied with immediately.</p>
+                            <p>If one of the aforementioned reasons applies, and a data subject wishes to request the erasure of personal data stored by the company name, he or she may, at any time, contact any employee of the controller. An employee of company name shall promly ensure that the erasure request is complied with immediately.</p>
 
                             <p>Where the controller has made personal data public and is obliged pursuant to Article 17(1) to erase the personal data, the controller, taking account of available technology and the cost of implementation, shall take reasonable steps, including technical measures, to inform other controllers processing the personal data that the data subject has requested erasure by such controllers of any links to, or copy or replication of, those personal data, as far as processing is not required. An employees of the company name will arrange the necessary measures in individual cases.</p>
                             </li>
@@ -2431,7 +2867,7 @@
 
                             <p>The operating company of LinkedIn is LinkedIn Corporation, 2029 Stierlin Court Mountain View, CA 94043, UNITED STATES. For privacy matters outside of the UNITED STATES LinkedIn Ireland, Privacy Policy Issues, Wilton Plaza, Wilton Place, Dublin 2, Ireland, is responsible.</p>
 
-                            <p>With each call-up to one of the individual pages of this Internet site, which is operated by the controller and on which a LinkedIn component (LinkedIn plug-in) was integrated, the Internet browser on the information technology system of the data subject is automatically prompted to the download of a display of the corresponding LinkedIn component of LinkedIn. Further information about the LinkedIn plug-in may be accessed under https://developer.linkedin.com/plugins. During the course of this technical procedure, LinkedIn gains knowledge of what specific sub-page of our website was visited by the data subject.</p>
+                            <p>With each call-up to one of the individual pages of this Internet site, which is operated by the controller and on which a LinkedIn component (LinkedIn plug-in) was integrated, the Internet browser on the information technology system of the data subject is automatically promed to the download of a display of the corresponding LinkedIn component of LinkedIn. Further information about the LinkedIn plug-in may be accessed under https://developer.linkedin.com/plugins. During the course of this technical procedure, LinkedIn gains knowledge of what specific sub-page of our website was visited by the data subject.</p>
 
                             <p>If the data subject is logged in at the same time on LinkedIn, LinkedIn detects with every call-up to our website by the data subject—and for the entire duration of their stay on our Internet site—which specific sub-page of our Internet page was visited by the data subject. This information is collected through the LinkedIn component and associated with the respective LinkedIn account of the data subject. If the data subject clicks on one of the LinkedIn buttons integrated on our website, then LinkedIn assigns this information to the personal LinkedIn user account of the data subject and stores the personal data.</p>
 
@@ -2442,7 +2878,7 @@
                             <h4>9. Legal basis for the processing </h4>
                             <p>Art. 6(1) lit. a GDPR serves as the legal basis for processing operations for which we obtain consent for a specific processing purpose. If the processing of personal data is necessary for the performance of a contract to which the data subject is party, as is the case, for example, when processing operations are necessary for the supply of goods or to provide any other service, the processing is based on Article 6(1) lit. b GDPR. The same applies to such processing operations which are necessary for carrying out pre-contractual measures, for example in the case of inquiries concerning our products or services. Is our company subject to a legal obligation by which processing of personal data is required, such as for the fulfillment of tax obligations, the processing is based on Art. 6(1) lit. c GDPR.
                             In rare cases, the processing of personal data may be necessary to protect the vital interests of the data subject or of another natural person. This would be the case, for example, if a visitor were injured in our company and his name, age, health insurance data or other vital information would have to be passed on to a doctor, hospital or other third party. Then the processing would be based on Art. 6(1) lit. d GDPR.
-                            Finally, processing operations could be based on Article 6(1) lit. f GDPR. This legal basis is used for processing operations which are not covered by any of the abovementioned legal grounds, if processing is necessary for the purposes of the legitimate interests pursued by our company or by a third party, except where such interests are overridden by the interests or fundamental rights and freedoms of the data subject which require protection of personal data. Such processing operations are particularly permissible because they have been specifically mentioned by the European legislator. He considered that a legitimate interest could be assumed if the data subject is a client of the controller (Recital 47 Sentence 2 GDPR).
+                            Finally, processing operations could be based on Article 6(1) lit. f GDPR. This legal basis is used for processing operations which are not covered by any of the abovementioned legal grounds, if processing is necessary for the purposes of the legitimate interests pursued by our company or by a third party, exce where such interests are overridden by the interests or fundamental rights and freedoms of the data subject which require protection of personal data. Such processing operations are particularly permissible because they have been specifically mentioned by the European legislator. He considered that a legitimate interest could be assumed if the data subject is a client of the controller (Recital 47 Sentence 2 GDPR).
                             </p>
 
                             <h4>10. The legitimate interests pursued by the controller or by a third party</h4>
@@ -2476,7 +2912,7 @@
 </div>
 
 <!-- jQuery -->
-<script src="vendor/jquery/jquery.min.js"></script>
+<scri src="vendor/jquery/jquery.min.js"></scri>
 
 <!-- Bootstrap Core JavaScript -->
 <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
