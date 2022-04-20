@@ -646,7 +646,7 @@ section {
     .timeline-pg > li .timeline-pg-panel {
       padding: 0 20px 20px; }
     .timeline-pg > li .timeline-pg-image {
-      width: 35%px;
+      width: 35%;
       margin-left: -17,5%; }
       .timeline-pg > li .timeline-pg-image h4 {
         font-size: 18px;
