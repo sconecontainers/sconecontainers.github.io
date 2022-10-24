@@ -100,7 +100,7 @@
                     <a class="page-scroll" href="#contact">Contact</a>
                 </li>
                 <li class="nav-item language-label">
-                    <a class="language"><a class="language" href="index_de.html?lang=de">DE</a> <mark>EN</mark> <a class="language" href="index_pt.html?lang=pt"> PT</a><a class="language" href="index_ru.html?lang=ru"> RU</a>
+                    <a class="language"><a class="language" href="index_de.html?lang=de">DE</a> <mark>EN</mark> <a class="language" href="index_pt.html?lang=pt"> PT</a>
                 </li>
             </ul>
         </div>
@@ -118,53 +118,7 @@
     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="8000">
         <!-- Wrapper for slides -->
         <div class="carousel-inner landing" role="listbox">
-          
-          <div class="item">
             
-            <div id="particles-js"></div>
-            <script src="js/lib/particles.min.js"></script>
-            <script src="js/app.js"></script>
-
-            <div class="banner" style="background-image: url(img/landing/anonymous-header.jpg);"></div>
-
-            <div class="carousel-caption">
-                <div class="row">
-                    <div class="col-sm-10">
-                        <div class="intro-text">
-                            <div class="intro-lead-in animated fadeInDown">Give hackers no chance.</div>
-                            <div class="intro-heading animated fadeInUp" style="animation-delay: .8s">work with</div>
-                            <img class="title-logo animated fadeInUp" style="animation-delay: .8s" src="img/logo-vector-white-text.svg"/></img>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div class="intro-text">
-                            <div class="intro-sentence animated fadeInUp" style="animation-delay: 1.5s"><br> We enable confidential computing of containers and host programs using Intel&nbsp;SGX.</br> 
-                                <br> SCONE supports Kubernetes, MaaS, Docker, Azure Confidential Computing, native Linux hosts, and Windows 10/HyperV.</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div class="intro-text">
-                            <a class="btn btn-link text-uppercase js-scroll-trigger animated free-version fadeInLeftBig slow" style="animation-delay: 1s" href="#services"><span class="glyphicon glyphicon-arrow-right"> </span>&nbsp;Try our free version</a>
-                        </div>
-                        <div>
-                            <a class="btn btn-primary btn-sm text-uppercase more-details animated fadeInLeftBig slow" style="animation-delay: 1.5s" href="#news">+++ We are hiring +++</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="tell-more-position">
-                    <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger tell-more animated fadeInUp" href="#nutshell">Tell Me More</a>
-                    <span class="glyphicon glyphicon-triangle-bottom text-center triangle" aria-hidden="true"></span>
-                </div>
-            </div>
-          </div>    
-          
-          
-
-       
     <div class="item">
 
             <div class="banner" style="background-image: url(img/landing/clouds-header.jpg);"></div>
@@ -2980,17 +2934,13 @@ $(document).ready(function() {
 
 <!-- News Items: Load more -->
 <script src="js/loadmore.js"></script>
-
+<!--
 <script type= "text/javascript">
 
     var url = document.location.href;
     var n = url.indexOf("lang");
     if(n === -1){
         var language = window.navigator.language;
-        
-        if(language.slice(0, 2)=="ru"){
-            window.location.href = "https://scontain.com/index_ru.html?lang=ru";
-        }
  
         if(language.slice(0, 2)=="de"){
             window.location.href = "https://scontain.com/index_de.html?lang=de";
@@ -3004,6 +2954,6 @@ $(document).ready(function() {
     window.history.pushState("", "", "/index.html?lang=en");
 
 </script>
-
+-->
 </body>
 </html>
