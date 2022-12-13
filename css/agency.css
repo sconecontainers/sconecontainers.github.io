@@ -2062,6 +2062,17 @@ padding-left: 0px;
 }
 */
 
+section#partners {
+  background-color: #330066;
+  background-image: url("../img/background-colors.jpg");
+  background-attachment: fixed; 
+  background-position: center;
+  background-repeat: no-repeat; 
+  background-size: cover; }
+
+  section#contact .section-heading {
+    color: white; }
+
   img.partners {
     position: relative;
     top: 0;
