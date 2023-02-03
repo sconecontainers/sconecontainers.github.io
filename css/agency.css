@@ -2062,6 +2062,11 @@ padding-left: 0px;
 }
 */
 
+  .container.flex {
+    display: flex;
+    justify-content: center;
+  }
+
 section#partners {
   background-color: #330066;
   background-image: url("../img/background-colors.jpg");
