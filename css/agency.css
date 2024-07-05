@@ -144,13 +144,13 @@ h1, h2, h3, h4, h5, h6 {
 
     .btn-tutorial:hover {
       color: white;
-      background-color: #00a979;
+      background-color:  rgba(0,0,0,0.2);
       border-color: transparent; }
 
       .btn-tutorial:hover {
         color: white;
-        background-color: #00a979;
-        border-color: transparent; }
+        background-color:#00a979;
+        border-color: #00A979; }
 
   .btn-primary:active, .btn-primary.active,
   .open > .btn-primary.dropdown-toggle {
@@ -178,16 +178,10 @@ h1, h2, h3, h4, h5, h6 {
     background-color: white; }
 
 .btn-xl {
+    background: rgba(0, 0, 0, 0.2);
+    border-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='none'%3e%3cpath stroke='url(%23a)' stroke-width='1.5' d='M8 1h84a7 7 0 0 1 7 7v84a7 7 0 0 1-7 7H8a7 7 0 0 1-7-7V8a7 7 0 0 1 7-7Z'/%3e%3cdefs%3e%3clinearGradient id='a' x1='20.27' x2='120.715' y1='125' y2='113.589' gradientUnits='userSpaceOnUse'%3e%3cstop stop-color='%233399ff'/%3e%3cstop offset='.367' stop-color='%23764aa5'/%3e%3cstop offset='.682' stop-color='%23990066'/%3e%3cstop offset='1' stop-color='%23990066'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e") 8 / 8px stretch;
+ ;
 
-  background:transparent;
-  border-image: url("data:");
-  border-color: #3399ff;
-  /*
-  border-image: linear-gradient(120deg, #3399ff, #990066);
-  border-image-slice: 1;
-  border-radius: 10px;
-*/
-  /*border-color: #3399ff;*/
   font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 400;
@@ -199,21 +193,22 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #3399ff;
     border-color: #3399ff; }
   .btn-xl:hover {
-    color: #f5f5f5;
-    background-color: #0089ee;
-    border-color: #0089ee; }
+    background: rgba(0, 0, 0, 0.4);
+    border-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='none'%3e%3cpath stroke='url(%23a)' stroke-width='1.5' d='M8 1h84a7 7 0 0 1 7 7v84a7 7 0 0 1-7 7H8a7 7 0 0 1-7-7V8a7 7 0 0 1 7-7Z'/%3e%3cdefs%3e%3clinearGradient id='a' x1='20.27' x2='120.715' y1='125' y2='113.589' gradientUnits='userSpaceOnUse'%3e%3cstop stop-color='%233399ff'/%3e%3cstop offset='.367' stop-color='%23764aa5'/%3e%3cstop offset='.682' stop-color='%23990066'/%3e%3cstop offset='1' stop-color='%23990066'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e") 8 / 8px stretch;
+  }
+  
   .btn-xl:active, .btn-xl.active,
   .open > .btn-xl.dropdown-toggle {
     color: white;
-    background-color: #3399ff;
-    border-color: #3399ff; }
+    background: rgba(0, 0, 0, 0.4);
+    border-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='none'%3e%3cpath stroke='url(%23a)' stroke-width='1.5' d='M8 1h84a7 7 0 0 1 7 7v84a7 7 0 0 1-7 7H8a7 7 0 0 1-7-7V8a7 7 0 0 1 7-7Z'/%3e%3cdefs%3e%3clinearGradient id='a' x1='20.27' x2='120.715' y1='125' y2='113.589' gradientUnits='userSpaceOnUse'%3e%3cstop stop-color='%233399ff'/%3e%3cstop offset='.367' stop-color='%23764aa5'/%3e%3cstop offset='.682' stop-color='%23990066'/%3e%3cstop offset='1' stop-color='%23990066'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e") 8 / 8px stretch; }
     .btn-xl:active:hover, .btn-xl:active:focus, .btn-xl:active.focus, .btn-xl.active:hover, .btn-xl.active:focus, .btn-xl.active.focus,
     .open > .btn-xl.dropdown-toggle:hover,
     .open > .btn-xl.dropdown-toggle:focus,
     .open > .btn-xl.dropdown-toggle.focus {
       color: white;
-      background-color: #3399ff;
-      border-color: #0089ee; }
+      background: rgba(0, 0, 0, 0.4);
+      border-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='none'%3e%3cpath stroke='url(%23a)' stroke-width='1.5' d='M8 1h84a7 7 0 0 1 7 7v84a7 7 0 0 1-7 7H8a7 7 0 0 1-7-7V8a7 7 0 0 1 7-7Z'/%3e%3cdefs%3e%3clinearGradient id='a' x1='20.27' x2='120.715' y1='125' y2='113.589' gradientUnits='userSpaceOnUse'%3e%3cstop stop-color='%233399ff'/%3e%3cstop offset='.367' stop-color='%23764aa5'/%3e%3cstop offset='.682' stop-color='%23990066'/%3e%3cstop offset='1' stop-color='%23990066'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e") 8 / 8px stretch;}
   .btn-xl:active, .btn-xl.active,
   .open > .btn-xl.dropdown-toggle {
     background-image: none; }
@@ -221,8 +216,9 @@ h1, h2, h3, h4, h5, h6 {
   fieldset[disabled] .btn-xl:hover,
   fieldset[disabled] .btn-xl:focus,
   fieldset[disabled] .btn-xl.focus {
-    background-color: #86c2eb;
-    border-color: #86c2eb; }
+    opacity: 0.8;
+    background: rgba(0, 0, 0, 0.4);
+    border-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='none'%3e%3cpath stroke='url(%23a)' stroke-width='1.5' d='M8 1h84a7 7 0 0 1 7 7v84a7 7 0 0 1-7 7H8a7 7 0 0 1-7-7V8a7 7 0 0 1 7-7Z'/%3e%3cdefs%3e%3clinearGradient id='a' x1='20.27' x2='120.715' y1='125' y2='113.589' gradientUnits='userSpaceOnUse'%3e%3cstop stop-color='%233399ff'/%3e%3cstop offset='.367' stop-color='%23764aa5'/%3e%3cstop offset='.682' stop-color='%23990066'/%3e%3cstop offset='1' stop-color='%23990066'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e") 8 / 8px stretch;}
   .btn-xl .badge {
     color: #3399ff;
     background-color: white; }
@@ -1155,8 +1151,8 @@ body {
 }
 
 .more-details {
-  background-color: #3399ff;
-  border-color: #3399ff;
+  background: rgba(0, 0, 0, 0.2);
+  border-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='none'%3e%3cpath stroke='url(%23a)' stroke-width='1.5' d='M8 1h84a7 7 0 0 1 7 7v84a7 7 0 0 1-7 7H8a7 7 0 0 1-7-7V8a7 7 0 0 1 7-7Z'/%3e%3cdefs%3e%3clinearGradient id='a' x1='20.27' x2='120.715' y1='125' y2='113.589' gradientUnits='userSpaceOnUse'%3e%3cstop stop-color='%233399ff'/%3e%3cstop offset='.367' stop-color='%23764aa5'/%3e%3cstop offset='.682' stop-color='%23990066'/%3e%3cstop offset='1' stop-color='%23990066'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e") 8 / 8px stretch;
   padding: .8em 1em;
   margin-right: 0;
   margin-top: 1em;
@@ -1165,7 +1161,8 @@ body {
   transition: .5s;
 }
 .more-details:hover{
-  background-color: #0089ee;
+  background: rgba(0, 0, 0, 0.5);
+  border-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='none'%3e%3cpath stroke='url(%23a)' stroke-width='1.5' d='M8 1h84a7 7 0 0 1 7 7v84a7 7 0 0 1-7 7H8a7 7 0 0 1-7-7V8a7 7 0 0 1 7-7Z'/%3e%3cdefs%3e%3clinearGradient id='a' x1='20.27' x2='120.715' y1='125' y2='113.589' gradientUnits='userSpaceOnUse'%3e%3cstop stop-color='%233399ff'/%3e%3cstop offset='.367' stop-color='%23764aa5'/%3e%3cstop offset='.682' stop-color='%23990066'/%3e%3cstop offset='1' stop-color='%23990066'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e") 8 / 8px stretch;
   padding: .8em 2em;
   transition: .5s;
 }
@@ -1585,10 +1582,11 @@ li.note:before {
 .pricing .btn {
   font-size: 1em;
   border-radius: 0.6rem;
+  border-width: 2px;
   letter-spacing: .1rem;
   font-weight: bold;
   padding: 1rem;
-  opacity: 0.7;
+  opacity: 0.9;
   transition: all 0.4s;
   max-width: none;
   margin-top: 25px;
@@ -1611,7 +1609,7 @@ li.note:before {
 
 .btn-community {
   color: white;
-  background-color: #ffcc00;
+  background-color: rgba(0,0,0,0.2);
   border-color: #ffcc00;}
 
   .btn-community:focus, .btn-community.focus {
@@ -1652,7 +1650,7 @@ li.note:before {
 
 .btn-standard {
   color: white;
-  background-color: #990066;
+  background-color: rgba(0,0,0,0.2);
   border-color: #990066;}
 
   .btn-standard:focus, .btn-standard.focus {
@@ -1692,7 +1690,8 @@ li.note:before {
 
 .btn-enterprise {
   color: white;
-  background-color: #3399ff;
+  background-color: rgba(0,0,0,0.2);
+  border-width: 2px;
   border-color: #3399ff }
   .btn-enterprise:focus, .btn-enterprise.focus {
     color: white;
@@ -1729,7 +1728,7 @@ li.note:before {
  
     .btn-tutorial {
       color: white;
-      background-color: #33cc99;
+      background-color: rgba(0,0,0,0.2);
       border-color: #33cc99 }
       .btn-enterprise:focus, .btn-enterprise.focus {
         color: white;
@@ -1737,8 +1736,8 @@ li.note:before {
         border-color: #33cc99; }
       .btn-enterprise:hover {
         color: white;
-        background-color: #00A979;
-        border-color: #00A979; }
+        background-color: #3399ff;
+        border-color: #3399ff; }
       .btn-enterprise:active, .btn-enterprise.active,
       .open > .btn-enterprise.dropdown-toggle {
         color: white;
@@ -1782,6 +1781,7 @@ li.note:before {
 
 .triangle {
       color: #3399ff;
+      opacity: 0.8;
       margin-top: 3px;
       font-size: 20px;
       text-align: center;
@@ -2493,16 +2493,16 @@ header .carousel-inner .item{
   margin-right: auto;
   margin-top: 2em;
   padding: 10px;
-  border-radius: 10px;
-  border: 1px solid transparent;
-  background-color: #3399ff;
+  background: rgba(0, 0, 0, 0.2);
+  border-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='none'%3e%3cpath stroke='url(%23a)' stroke-width='1.5' d='M8 1h84a7 7 0 0 1 7 7v84a7 7 0 0 1-7 7H8a7 7 0 0 1-7-7V8a7 7 0 0 1 7-7Z'/%3e%3cdefs%3e%3clinearGradient id='a' x1='20.27' x2='120.715' y1='125' y2='113.589' gradientUnits='userSpaceOnUse'%3e%3cstop stop-color='%233399ff'/%3e%3cstop offset='.367' stop-color='%23764aa5'/%3e%3cstop offset='.682' stop-color='%23990066'/%3e%3cstop offset='1' stop-color='%23990066'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e") 8 / 8px stretch;
   transition: .5s;
 }
 
 #loadMore:hover{
   width: 300px; 
   transition: 1s;
-  background-color: #0089ee;
+  background: rgba(0, 0, 0, 0.4);
+  border-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='none'%3e%3cpath stroke='url(%23a)' stroke-width='1.5' d='M8 1h84a7 7 0 0 1 7 7v84a7 7 0 0 1-7 7H8a7 7 0 0 1-7-7V8a7 7 0 0 1 7-7Z'/%3e%3cdefs%3e%3clinearGradient id='a' x1='20.27' x2='120.715' y1='125' y2='113.589' gradientUnits='userSpaceOnUse'%3e%3cstop stop-color='%233399ff'/%3e%3cstop offset='.367' stop-color='%23764aa5'/%3e%3cstop offset='.682' stop-color='%23990066'/%3e%3cstop offset='1' stop-color='%23990066'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e") 8 / 8px stretch;
 }
 
 .noContent {
