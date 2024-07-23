@@ -971,6 +971,14 @@ ul.social-buttons {
   width: auto; }
 
 .portfolio-modal .modal-content {
+  background : -moz-radial-gradient(34.04% 29.03%, circle farthest-corner, rgba(36, 23, 56, 1) 0%, rgba(31, 20, 48, 1) 32.05%, rgba(16, 10, 26, 1) 82.12%, rgba(10, 6, 16, 1) 100%);
+  background : -webkit-radial-gradient(34.04% 29.03%, circle farthest-corner, rgba(36, 23, 56, 1) 0%, rgba(31, 20, 48, 1) 32.05%, rgba(16, 10, 26, 1) 82.12%, rgba(10, 6, 16, 1) 100%);
+  background : -webkit-gradient(radial,34.04% 29.03% ,0 , 34.04% 29.03%, 1057.47 ,color-stop(0,rgba(36, 23, 56, 1) ),color-stop(0.3205,rgba(31, 20, 48, 1) ),color-stop(0.8212,rgba(16, 10, 26, 1) ),color-stop(1,rgba(10, 6, 16, 1) ));
+  background : -o-radial-gradient(34.04% 29.03%, circle farthest-corner, rgba(36, 23, 56, 1) 0%, rgba(31, 20, 48, 1) 32.05%, rgba(16, 10, 26, 1) 82.12%, rgba(10, 6, 16, 1) 100%);
+  background : -ms-radial-gradient(34.04% 29.03%, circle farthest-corner, rgba(36, 23, 56, 1) 0%, rgba(31, 20, 48, 1) 32.05%, rgba(16, 10, 26, 1) 82.12%, rgba(10, 6, 16, 1) 100%);
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Stlye=2);
+  background : radial-gradient(34.04% 29.03%, circle farthest-corner, rgba(36, 23, 56, 1) 0%, rgba(31, 20, 48, 1) 32.05%, rgba(16, 10, 26, 1) 82.12%, rgba(10, 6, 16, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Style=2);
   border-radius: 0;
   background-clip: border-box;
   -webkit-box-shadow: none;
@@ -1004,7 +1012,7 @@ ul.social-buttons {
       margin-bottom: 10px; }
 
 .portfolio-modal .close-modal {
-  color: white;
+  color: #f5f5f5;
   position: absolute;
   width: 50px;
   height: 50px;
@@ -1019,7 +1027,7 @@ ul.social-buttons {
     height: 50px;
     width: 1px;
     margin-left: 25px;
-    background-color: #222222;
+    background-color: #f5f5f5;
     transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     /* IE 9 */
@@ -1029,7 +1037,7 @@ ul.social-buttons {
     .portfolio-modal .close-modal .lr .rl {
       height: 50px;
       width: 1px;
-      background-color: #222222;
+      background-color: #f5f5f5;
       transform: rotate(90deg);
       -ms-transform: rotate(90deg);
       /* IE 9 */
@@ -1586,7 +1594,7 @@ li.note:before {
   letter-spacing: .1rem;
   font-weight: bold;
   padding: 1rem;
-  opacity: 0.9;
+  opacity: 0.7;
   transition: all 0.4s;
   max-width: none;
   margin-top: 25px;
@@ -2075,7 +2083,7 @@ padding-left: 0px;
   }
 
   .modal-dialog p{
-    color: black;
+    color: #f5f5f5;
   }
   
   .modal-dialog .quickstart p{
