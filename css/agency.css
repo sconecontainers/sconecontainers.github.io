@@ -7,11 +7,17 @@
 
 @media (min-width:1200px) {
   .container {
-      width: 1200px;
+      width: 1000px;
   }
 }
 
 @media (min-width:1400px) {
+  .container {
+      width: 1200px;
+  }
+}
+
+@media (min-width:1600px) {
   .container {
       width: 1400px;
   }
@@ -2524,3 +2530,4 @@ header .carousel-inner .item{
 .container-load-more{
   margin-right: 30px;
 }
+
