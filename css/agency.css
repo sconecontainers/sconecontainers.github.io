@@ -1590,11 +1590,11 @@ li.note:before {
 .pricing .btn {
   font-size: 1em;
   border-radius: 0.6rem;
-  border-width: 2px;
+  border-width: 0.2rem;
   letter-spacing: .1rem;
   font-weight: bold;
   padding: 1rem;
-  opacity: 0.7;
+  opacity: 1;
   transition: all 0.4s;
   max-width: none;
   margin-top: 25px;
