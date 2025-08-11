@@ -1898,14 +1898,17 @@ width: 200px;
   transition: all .5s ease-in-out;
 }
 .carousel-inner{
-  margin-left: 12%;
-  margin-right: 12%;
+  margin-left: 5%;
+  margin-right: 5%;
   width: auto;
 }
 
 .img-carousel {
   filter: grayscale(100%);
-  width: 80%;
+  width: 100%;
+  max-height: 120px;
+  max-width: 160px;
+  object-fit: contain;
   }
 
   ul.row.item.active{
